@@ -19,11 +19,11 @@ $router->get('/', function () use ($router) {
 $router->group(['prefix' => 'api'], function () use ($router) {
     $router->get('users',  ['uses' => 'RegistrationController@showAllUsers']);
 
-    $router->get('users/{id}', ['uses' => 'RegistrationController@showOneUser']);
+    $router->get('users/{id}', ['uses' => 'RegistrationController@findById']);
 
-    $router->post('user', ['uses' => 'RegistrationController@createUserWithActivation']);
+    $router->post('users', ['uses' => 'RegistrationController@createUserWithActivation']);
 
-    $router->delete('users/{id}', ['uses' => 'RegistrationController@delete']);
+    $router->delete('users/{id}', ['uses' => 'RegistrationController@deleteUser']);
 
     $router->put('users/{id}', ['uses' => 'RegsitrationController@update']);
 });
