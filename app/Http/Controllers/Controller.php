@@ -16,4 +16,14 @@ class Controller extends BaseController
     return $request->header('Content-Type')== self::$requestType ? true:false;
   
   }
+
+  //Add this method to the Controller class
+  protected function respondWithToken($token)
+  {
+    return response()->json([
+        'token' => $token,
+        'token_type' => 'bearer',
+        'expires_in' =>  3600
+    ], 200);
+  }
 }

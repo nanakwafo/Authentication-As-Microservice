@@ -94,6 +94,8 @@ $app->bind('Illuminate\Contracts\Cookie\QueueingFactory', 'cookie');
 // $app->register(App\Providers\EventServiceProvider::class);
  $app->register(Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class);
 
+// Add this line
+$app->register(Tymon\JWTAuth\Providers\LumenServiceProvider::class);
 /*
 |--------------------------------------------------------------------------
 | Load The Application Routes

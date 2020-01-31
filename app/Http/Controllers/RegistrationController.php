@@ -104,7 +104,7 @@ class RegistrationController extends controller{
      * Retrieve a user by an id  from your application
     */
     
-    public function findById($id){
+    public function findUserById($id){
         // TODO check if user exit
         $user = Sentinel::findById($id);
         return response()
