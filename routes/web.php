@@ -16,7 +16,7 @@ $router->get('/', function () use ($router) {
 });
 
 
-$router->group(['prefix' => 'resources/api'], function () use ($router) {
+$router->group(['prefix' => 'api'], function () use ($router) {
     $router->get('users',  ['uses' => 'RegistrationController@showAllUsers']);
 
     $router->get('users/{id}', ['uses' => 'RegistrationController@findById']);
@@ -31,6 +31,10 @@ $router->group(['prefix' => 'resources/api'], function () use ($router) {
     $router->put('users/{id}', ['uses' => 'RegsitrationController@findUserById']);
     $router->put('users/{email}', ['uses' => 'RegsitrationController@findByCredentials']);
     $router->put('users/{username}', ['uses' => 'RegsitrationController@findByUsername']);
+
+
+
+    $router->post('activateuser', ['uses' => 'RegistrationController@activateUser']);
 
 
     $router->post('login', ['uses' => 'AuthenticationController@login']);

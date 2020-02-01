@@ -7,7 +7,10 @@
  */
 
 namespace App\Http\Controllers;
-use Sentinel;
+
+use Illuminate\Http\Request;
+
+use Illuminate\Support\Facades\Auth;
 
 
 class AuthenticationController extends Controller
@@ -17,10 +20,10 @@ class AuthenticationController extends Controller
         $this->validate($request,[
             'email'=>'required|string',
             'password'=>'required|string'
-        ]);
+        ]); 
         $credentials= $request->only(['email','password']);
 
-        if (!$token =Sentinel::authenticate($credentials)){
+        if (!$token =Auth::attempt($credentials)){
             return response()->json(['message' => 'Unauthorized'], 401);
 
         }

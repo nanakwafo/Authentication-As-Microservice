@@ -74,9 +74,9 @@ $app->bind('Illuminate\Contracts\Cookie\QueueingFactory', 'cookie');
      \Illuminate\Session\Middleware\StartSession::class,
  ]);
 
-// $app->routeMiddleware([
-//     'auth' => App\Http\Middleware\Authenticate::class,
-// ]);
+ $app->routeMiddleware([
+     'auth' => App\Http\Middleware\Authenticate::class,
+ ]);
 
 /*
 |--------------------------------------------------------------------------
@@ -90,9 +90,9 @@ $app->bind('Illuminate\Contracts\Cookie\QueueingFactory', 'cookie');
 */
 
 // $app->register(App\Providers\AppServiceProvider::class);
-// $app->register(App\Providers\AuthServiceProvider::class);
+$app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
- $app->register(Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class);
+$app->register(Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class);
 
 // Add this line
 $app->register(Tymon\JWTAuth\Providers\LumenServiceProvider::class);

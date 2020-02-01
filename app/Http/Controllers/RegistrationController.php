@@ -3,11 +3,13 @@ namespace App\Http\Controllers;
 
 
 
+
+use Cartalyst\Sentinel\Laravel\Facades\Activation;
 use Illuminate\Http\Request;
 use Cartalyst\Sentinel\Users\EloquentUser;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 
-class RegistrationController extends controller{
+class RegistrationController extends Controller{
 
     public function __construct()
     {
@@ -131,4 +133,14 @@ class RegistrationController extends controller{
     public function findByUsername($username){
         //TODO retrieve all users by username
     }
+    public function activateUser(Request $email){
+        $credentials = [
+            'login' => $email,
+        ];
+
+        $user =Sentinel::findById(14);
+        $activation = Activation::create($user);
+        return  response()->json($activation);
+    }
+
 }
