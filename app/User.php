@@ -14,26 +14,8 @@ class User extends EloquentUser implements AuthenticatableContract, Authorizable
 {
 
 
-
     use Authenticatable, Authorizable;
-//
-//    /**
-//     * The attributes that are mass assignable.
-//     *
-//     * @var array
-//     */
-//    protected $fillable = [
-//        'name', 'email'
-//    ];
-//
-//    /**
-//     * The attributes excluded from the model's JSON form.
-//     *
-//     * @var array
-//     */
-//    protected $hidden = [
-//        'password',
-//    ];
+
 
     /**
      * Get the identifier that will be stored in the subject claim of the JWT.

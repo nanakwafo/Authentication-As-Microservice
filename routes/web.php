@@ -17,24 +17,17 @@ $router->get('/', function () use ($router) {
 
 
 $router->group(['prefix' => 'api'], function () use ($router) {
-    $router->get('users',  ['uses' => 'RegistrationController@showAllUsers']);
 
-    $router->get('users/{id}', ['uses' => 'RegistrationController@findById']);
-
-    $router->post('users', ['uses' => 'RegistrationController@createUserWithActivation']);
-    $router->post('users', ['uses' => 'RegistrationController@createUserWithOutActivation']);
-
-    $router->delete('users/{id}', ['uses' => 'RegistrationController@deleteUser']);
-
-    $router->put('users/{id}', ['uses' => 'RegsitrationController@updateUser']);
-
-    $router->put('users/{id}', ['uses' => 'RegsitrationController@findUserById']);
-    $router->put('users/{email}', ['uses' => 'RegsitrationController@findByCredentials']);
-    $router->put('users/{username}', ['uses' => 'RegsitrationController@findByUsername']);
-
-
-
-    $router->post('activateuser', ['uses' => 'RegistrationController@activateUser']);
+//    $router->get('users', ['uses' => 'RegistrationController@showAllUsers']);
+//    $router->get('users/{id}', ['uses' => 'RegistrationController@findById']);
+//    $router->post('users', ['uses' => 'RegistrationController@createUserWithActivation']);
+//    $router->post('users', ['uses' => 'RegistrationController@createUserWithOutActivation']);
+//    $router->delete('users/{id}', ['uses' => 'RegistrationController@deleteUser']);
+    $router->put('users/{email}', ['uses' => 'RegistrationController@updateUser']);
+//    $router->put('users/{id}', ['uses' => 'RegsitrationController@findUserById']);
+//    //$router->put('users/{email}', ['uses' => 'RegsitrationController@findByCredentials']);
+//    $router->put('users/{username}', ['uses' => 'RegsitrationController@findByUsername']);
+//    $router->post('activateuser', ['uses' => 'RegistrationController@activateUser']);
 
 
     $router->post('login', ['uses' => 'AuthenticationController@login']);

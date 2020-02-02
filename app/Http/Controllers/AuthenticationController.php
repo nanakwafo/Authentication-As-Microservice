@@ -9,32 +9,45 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use Illuminate\Support\Facades\Auth;
 use Cartalyst\Sentinel\Native\Facades\Sentinel;
-
+//definition of class
 class AuthenticationController extends Controller
 {
 
-    public function login(Request $request){
-        $this->validate($request,[
-            'email'=>'required|string',
-            'password'=>'required|string'
+
+    /**
+     * AuthenticationController constructor.
+     */
+    public function __construct()
+    {
+    }
+    public function login(Request $request)
+    {
+        //Validate request
+        $this->validate($request, [
+            'email' => 'required|string',
+            'password' => 'required|string'
         ]);
-
-
-        $credentials= $request->only(['email','password']);
-
-        if (Sentinel::authenticate($credentials)){
-            if (!$token =Auth::attempt($credentials)){
+        $credentials = $request->only(['email', 'password']);
+        if (Sentinel::authenticate($credentials)) { // Authenticate credentials using sentinel
+            if (!$token = Auth::attempt($credentials)) { //generate jwt token
                 return response()->json(['message' => 'Unauthorized'], parent::FORBIDEN_RESPONSE);
-
             }
-        }else{
-            return response()->json('Invalid Credentials',parent::FORBIDEN_RESPONSE);
+        } else {
+            return response()->json('Invalid Credentials', parent::FORBIDEN_RESPONSE);
         }
+        return $this->respondWithToken($token);  //return jwt tokem
+    }
+    /*
+     *
+     * */
+    public function logout()
+    {   // TODO Get the cuurent logged in user
+        // TODO Destroy the jwt token
+        $user = Sentinel::findUserById(1);
 
-        return $this->respondWithToken($token);
+        Sentinel::logout($user, true);
     }
 
 }
