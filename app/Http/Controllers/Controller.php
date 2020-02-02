@@ -10,6 +10,8 @@ class Controller extends BaseController
   const SUCCESSRESPONSE  = 200;
   const SUCCESSCREATION  = 201;
   const BAD_REQUEST=400;
+  const FORBIDEN_RESPONSE=403;
+
   
   protected static $requestType='application/json';
   

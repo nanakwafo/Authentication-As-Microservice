@@ -11,7 +11,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
-
+use Cartalyst\Sentinel\Native\Facades\Sentinel;
 
 class AuthenticationController extends Controller
 {
@@ -20,13 +20,20 @@ class AuthenticationController extends Controller
         $this->validate($request,[
             'email'=>'required|string',
             'password'=>'required|string'
-        ]); 
+        ]);
+
+
         $credentials= $request->only(['email','password']);
 
-        if (!$token =Auth::attempt($credentials)){
-            return response()->json(['message' => 'Unauthorized'], 401);
+        if (Sentinel::authenticate($credentials)){
+            if (!$token =Auth::attempt($credentials)){
+                return response()->json(['message' => 'Unauthorized'], parent::FORBIDEN_RESPONSE);
 
+            }
+        }else{
+            return response()->json('Invalid Credentials',parent::FORBIDEN_RESPONSE);
         }
+
         return $this->respondWithToken($token);
     }
 
