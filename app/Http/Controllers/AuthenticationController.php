@@ -11,6 +11,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Cartalyst\Sentinel\Native\Facades\Sentinel;
+
 //definition of class
 class AuthenticationController extends Controller
 {
@@ -22,6 +23,7 @@ class AuthenticationController extends Controller
     public function __construct()
     {
     }
+
     public function login(Request $request)
     {
         //Validate request
@@ -39,15 +41,15 @@ class AuthenticationController extends Controller
         }
         return $this->respondWithToken($token);  //return jwt tokem
     }
+
     /*
      *
      * */
     public function logout()
-    {   // TODO Get the cuurent logged in user
-        // TODO Destroy the jwt token
-        $user = Sentinel::findUserById(1);
-
-        Sentinel::logout($user, true);
+    {
+        //logout the corrent logedin user
+        $logout = Sentinel::logout();
+        return response()->json($logout);
     }
 
 }

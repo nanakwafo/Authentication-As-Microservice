@@ -97,15 +97,25 @@ class RegistrationController extends Controller
      * create a user for an application 
     */
 
-    public function deleteUser($id)
+    public function deleteUser(Request $request)
     {
-        // TODO check if user exit
-        $user = Sentinel::findById($id);
+        if ($this->validateJsonRequest($request) === true) {
+            $user = Sentinel::findByCredentials(['login'=>$request->email]);
+            if (empty((array)$user)) {
+                return response()->json('User does not exist', parent::SUCCESSRESPONSE)
+                    ->header('Content-Type', 'application/json');
+            } else {
+                $user->delete();
+                return response()
+                    ->json('User Deleted Successfully', parent::SUCCESSRESPONSE)
+                    ->header('Content-Type', 'application/json');
+            }
+        }else{
+            return response()
+                ->json('Invalid Request', parent::BAD_REQUEST)
+                ->header('Content-Type', parent::$requestType);
+        }
 
-        $user->delete();
-        return response()
-            ->json('User Deleted Successfully', parent::SUCCESSRESPONSE)
-            ->header('Content-Type', 'application/json');
     }
 
     /*
@@ -113,6 +123,7 @@ class RegistrationController extends Controller
     */
     public function showAllUsers()
     {
+
         return response()
             ->json(User::all(), parent::SUCCESSRESPONSE)
             ->header('Content-Type', 'application/json');
@@ -122,36 +133,20 @@ class RegistrationController extends Controller
      * Retrieve a user by an id  from your application
     */
 
-    public function findUserById($id)
+    public function findUserByEmail(Request $request)
     {
-        // TODO check if user exit
-        $user = Sentinel::findById($id);
-        return response()
-            ->json($user, parent::SUCCESSRESPONSE)
-            ->header('Content-Type', 'application/json');
-
+        if ($this->validateJsonRequest($request) === true) {
+            $user = Sentinel::findByCredentials(['login' => $request->email]);
+            return response()
+                ->json($user, parent::SUCCESSRESPONSE)
+                ->header('Content-Type', 'application/json');
+        }else{
+            return response()
+                ->json('Invalid Request', parent::BAD_REQUEST)
+                ->header('Content-Type', parent::$requestType);
+        }
     }
 
-    /*
-     * Retrieve a user by email from your application
-    */
-
-    public function findByCredentials($email)
-    {
-        // TODO check if user exit
-        $credentials = [
-            'login' => $email,
-        ];
-        $user = Sentinel::findByCredentials($credentials);
-        return response()
-            ->json($user, parent::SUCCESSRESPONSE)
-            ->header('Content-Type', 'application/json');
-    }
-
-    public function findByUsername($username)
-    {
-        //TODO retrieve all users by username
-    }
 
     public function activateUser(Request $email)
     {
