@@ -123,10 +123,11 @@ class RegistrationController extends Controller
     */
     public function showAllUsers (ResponseController $responseController, StatuscodeController $statuscodeController)
     {
+        $users = Sentinel::getUserRepository ()->get ();
 
         return response ()->json ($responseController->responseBody (
             'User list',
-            Sentinel::getUserRepository ()->get (),
+            $users,
             'success',
             $statuscodeController::getSUCCESSCREATION ()
         ));
