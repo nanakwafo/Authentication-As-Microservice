@@ -12,44 +12,45 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Cartalyst\Sentinel\Native\Facades\Sentinel;
 
-//definition of class
+
 class AuthenticationController extends Controller
 {
 
-
-    /**
-     * AuthenticationController constructor.
-     */
-    public function __construct()
+    
+    public function __construct ()
     {
     }
 
-    public function login(Request $request)
+    public function login (Request $request)
     {
         //Validate request
-        $this->validate($request, [
-            'email' => 'required|string',
+        $this->validate ($request, [
+            'email'    => 'required|string',
             'password' => 'required|string'
         ]);
-        $credentials = $request->only(['email', 'password']);
-        if (Sentinel::authenticate($credentials)) { // Authenticate credentials using sentinel
-            if (!$token = Auth::attempt($credentials)) { //generate jwt token
-                return response()->json(['message' => 'Unauthorized'], parent::FORBIDEN_RESPONSE);
+        $credentials = $request->only (['email', 'password']);
+        // Authenticate credentials using sentinel
+        if ( Sentinel::authenticate ($credentials) ) {
+            //generate jwt token
+            if ( !$token = Auth::attempt ($credentials) ) { 
+                return response ()->json (['message' => 'Unauthorized'], parent::FORBIDEN_RESPONSE);
             }
         } else {
-            return response()->json('Invalid Credentials', parent::FORBIDEN_RESPONSE);
+            return response ()->json ('Invalid Credentials', parent::FORBIDEN_RESPONSE);
         }
-        return $this->respondWithToken($token);  //return jwt tokem
+
+        return $this->respondWithToken ($token);  //return jwt tokem
     }
 
     /*
      *
      * */
-    public function logout()
+    public function logout ()
     {
         //logout the corrent logedin user
-        $logout = Sentinel::logout();
-        return response()->json($logout);
+        $logout = Sentinel::logout ();
+
+        return response ()->json ($logout);
     }
 
 }

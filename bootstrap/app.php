@@ -1,10 +1,10 @@
 <?php
 
-require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 (new Laravel\Lumen\Bootstrap\LoadEnvironmentVariables(
-    dirname(__DIR__)
-))->bootstrap();
+    dirname (__DIR__)
+))->bootstrap ();
 
 /*
 |--------------------------------------------------------------------------
@@ -18,14 +18,14 @@ require_once __DIR__.'/../vendor/autoload.php';
 */
 
 $app = new Laravel\Lumen\Application(
-    dirname(__DIR__)
+    dirname (__DIR__)
 );
 
- $app->withFacades();
+$app->withFacades ();
 
- $app->withEloquent();
- $app->configure('cartalyst.sentinel');
- $app->configure('session');
+$app->withEloquent ();
+$app->configure ('cartalyst.sentinel');
+$app->configure ('session');
 /*
 |--------------------------------------------------------------------------
 | Register Container Bindings
@@ -37,27 +37,27 @@ $app = new Laravel\Lumen\Application(
 |
 */
 
-$app->singleton(
+$app->singleton (
     Illuminate\Contracts\Debug\ExceptionHandler::class,
     App\Exceptions\Handler::class
 );
 
-$app->singleton(
+$app->singleton (
     Illuminate\Contracts\Console\Kernel::class,
     App\Console\Kernel::class
 );
-$app->singleton(Illuminate\Session\SessionManager::class, function () use ($app) {
- return $app->loadComponent('session', Illuminate\Session\SessionServiceProvider::class, 'session');
+$app->singleton (Illuminate\Session\SessionManager::class, function () use ($app) {
+    return $app->loadComponent ('session', Illuminate\Session\SessionServiceProvider::class, 'session');
 });
 
-$app->singleton('session.store', function () use ($app) {
- return $app->loadComponent('session', Illuminate\Session\SessionServiceProvider::class, 'session.store');
+$app->singleton ('session.store', function () use ($app) {
+    return $app->loadComponent ('session', Illuminate\Session\SessionServiceProvider::class, 'session.store');
 });
-$app->singleton('cookie', function () use ($app) {
- return $app->loadComponent('session', 'Illuminate\Cookie\CookieServiceProvider', 'cookie');
+$app->singleton ('cookie', function () use ($app) {
+    return $app->loadComponent ('session', 'Illuminate\Cookie\CookieServiceProvider', 'cookie');
 });
 
-$app->bind('Illuminate\Contracts\Cookie\QueueingFactory', 'cookie');
+$app->bind ('Illuminate\Contracts\Cookie\QueueingFactory', 'cookie');
 /*
 |--------------------------------------------------------------------------
 | Register Middleware
@@ -69,14 +69,15 @@ $app->bind('Illuminate\Contracts\Cookie\QueueingFactory', 'cookie');
 |
 */
 
- $app->middleware([
-     App\Http\Middleware\ExampleMiddleware::class,
-     \Illuminate\Session\Middleware\StartSession::class,
- ]);
+$app->middleware ([
+    // App\Http\Middleware\ExampleMiddleware::class,
+    \Illuminate\Session\Middleware\StartSession::class,
+    App\Http\Middleware\RequestMiddleware::class,
+]);
 
- $app->routeMiddleware([
-     'auth' => App\Http\Middleware\Authenticate::class,
- ]);
+$app->routeMiddleware ([
+    'auth' => App\Http\Middleware\Authenticate::class,
+]);
 
 /*
 |--------------------------------------------------------------------------
@@ -90,12 +91,12 @@ $app->bind('Illuminate\Contracts\Cookie\QueueingFactory', 'cookie');
 */
 
 // $app->register(App\Providers\AppServiceProvider::class);
-$app->register(App\Providers\AuthServiceProvider::class);
+$app->register (App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
-$app->register(Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class);
+$app->register (Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class);
 
 // Add this line
-$app->register(Tymon\JWTAuth\Providers\LumenServiceProvider::class);
+$app->register (Tymon\JWTAuth\Providers\LumenServiceProvider::class);
 /*
 |--------------------------------------------------------------------------
 | Load The Application Routes
@@ -108,11 +109,10 @@ $app->register(Tymon\JWTAuth\Providers\LumenServiceProvider::class);
 */
 
 
-
-$app->router->group([
+$app->router->group ([
     'namespace' => 'App\Http\Controllers',
 ], function ($router) {
-    require __DIR__.'/../routes/web.php';
+    require __DIR__ . '/../routes/web.php';
 });
 
 return $app;

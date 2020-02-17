@@ -12,7 +12,13 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+
+
+    //return $router->app->version();
+    return response()->json([
+        'Name:'=>'  Nana Kwafo Mensah',
+        'ProjectName'=>'Authentication As a Microservice'
+    ]);
 });
 
 
@@ -20,7 +26,7 @@ $router->group(['prefix' => 'api'], function () use ($router) {
 
     $router->get('users', ['uses' => 'RegistrationController@showAllUsers']);
 //    $router->get('users/{id}', ['uses' => 'RegistrationController@findById']);
-//    $router->post('users', ['uses' => 'RegistrationController@createUserWithActivation']);
+    $router->post('createuserwithactivation', ['uses' => 'RegistrationController@createUserWithActivation']);
 //    $router->post('users', ['uses' => 'RegistrationController@createUserWithOutActivation']);
     $router->post('deleteuser/', ['uses' => 'RegistrationController@deleteUser']);
     $router->put('users/{email}', ['uses' => 'RegistrationController@updateUser']);
