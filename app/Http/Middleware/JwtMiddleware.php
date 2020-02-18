@@ -8,43 +8,37 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Exception;
 use App\User;
+use Illuminate\Support\Facades\Log;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
-use Illuminate\Support\Facades\Auth;
 
 
 class JwtMiddleware
 {
     public function handle ($request, Closure $next)
     {
+        $token = JWTAuth::getToken ();
+        Log::info ('Token sent by Application User', ['token' => $token]);
+        try {
+            $credentials = JWTAuth::getPayload ($token)->toArray ();
+        } catch (\Tymon\JWTAuth\Exceptions\TokenExpiredException $e) {
 
-        $token = $request->get('token');
+            return response ()->json (['token_expired'], 500);
 
+        } catch (\Tymon\JWTAuth\Exceptions\TokenInvalidException $e) {
 
-        if(!$token) {
-            // Unauthorized response if token not there
-            return response()->json([
-                'error' => 'Token not provided.'
-            ], 401);
+            return response ()->json (['token_invalid'], 500);
+
+        } catch (\Tymon\JWTAuth\Exceptions\JWTException $e) {
+
+            return response ()->json (['token_absent' => $e->getMessage ()], 500);
+
         }
-
-//        try {
-//            $credentials = JWT::decode($token, env('JWT_SECRET'), ['HS256']);
-//        } catch(ExpiredException $e) {
-//            return response()->json([
-//                'error' => 'Provided token is expired.'
-//            ], 400);
-//        } catch(Exception $e) {
-//            return response()->json([
-//                'error' => 'An error while decoding token.'
-//            ], 400);
-//        }
-//
-//        $user = User::find($credentials->sub);
-//
-//        // Now let's put the user in the request class so that you can grab it from there
-//        $request->auth = $user;
+        Log::info ('Application user decoded token ', ['credentials' => $credentials]);
+        $user = User::find ($credentials->sub);
+        // Now let's put the user in the request class so that you can grab it from there
+        $request->auth = $user;
 
         return $next($request);
     }
