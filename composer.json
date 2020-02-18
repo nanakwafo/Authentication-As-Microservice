@@ -1,6 +1,6 @@
 {
     "name": "laravel/lumen",
-    "description": "The Laravel Lumen Framework.",
+    "description": "Authentication as a microservice",
     "keywords": ["framework", "laravel", "lumen"],
     "license": "MIT",
     "type": "project",
