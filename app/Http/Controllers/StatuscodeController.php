@@ -11,7 +11,7 @@ class StatuscodeController
 {
 
     private static $SUCCESS = 200;
-    private static $SUCCESSCREATION = 201;
+    private static $SUCCESS_CREATION = 201;
     private static $BAD_REQUEST = 400;
     private static $FORBIDEN_RESPONSE = 403;
 
@@ -28,7 +28,7 @@ class StatuscodeController
      */
     public static function getSUCCESSCREATION ()
     {
-        return self::$SUCCESSCREATION;
+        return self::$SUCCESS_CREATION;
     }
 
     /**

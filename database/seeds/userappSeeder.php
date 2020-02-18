@@ -7,7 +7,7 @@
  */
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
-class userSeeder extends Seeder
+class userappSeeder extends Seeder
 {
     public function run ()
     {

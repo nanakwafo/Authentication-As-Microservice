@@ -15,27 +15,42 @@ use Illuminate\Support\Facades\Auth;
 
 class JwtController extends Controller
 {
-
-     public function token (Request $request)
+    private function respondWithToken ($token, StatuscodeController $statuscodeController)
     {
-        //Validate request
+        return response ()->json ([
+            'token'      => $token,
+            'token_type' => 'bearer',
+            'expires_in' => 3600
+        ], $statuscodeController->getSUCCESS ());
+    }
+
+    public function tokenGenerate (Request $request, ResponseController $responseController, StatuscodeController $statuscodeController)
+    {
+
         $this->validate ($request, [
             'email'    => 'required|string',
             'password' => 'required|string'
         ]);
-        $credentials = $request->only (['email', 'password']);
-        // Authenticate credentials using sentinel
-//        if ( Sentinel::authenticate ($credentials) ) {
-        //generate jwt token
-        if ( !$token = Auth::attempt ($credentials) ) {
-            return response ()->json (['message' => 'Unauthorized']);
-        }
-//        }
-//        else {
-//            return response ()->json ('Invalid Credentials', parent::FORBIDEN_RESPONSE);
-//        }
 
-        return $this->respondWithToken ($token);  //return jwt tokem
+        $credentials = $request->only (['email', 'password']);
+
+        if ( !$token = Auth::attempt ($credentials) ) {
+            return response ()->json ($responseController->responseBody (
+                'Token generation was unsuccessful',
+                'Unauthorized',
+                'failure',
+                $statuscodeController->getBADREQUEST ()
+            ));
+        }
+
+        return response ()->json ($responseController->responseBody (
+            'Token generated successfully',
+            $this->respondWithToken ($token, $statuscodeController),
+            'success',
+            $statuscodeController->getSUCCESS ()
+        ));
+
     }
+
 
 }

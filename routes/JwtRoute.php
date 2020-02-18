@@ -7,7 +7,7 @@
  */
 $router->group (['prefix' => 'api'], function () use ($router) {
 
-    $router->post ('token', ['uses' => 'JwtController@token']);
+    $router->post ('token', ['uses' => 'JwtController@tokenGenerate']);
 
     
 
