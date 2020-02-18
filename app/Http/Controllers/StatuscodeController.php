@@ -10,7 +10,7 @@ namespace App\Http\Controllers;
 class StatuscodeController
 {
 
-    private static $SUCCESSRESPONSE = 200;
+    private static $SUCCESS = 200;
     private static $SUCCESSCREATION = 201;
     private static $BAD_REQUEST = 400;
     private static $FORBIDEN_RESPONSE = 403;
@@ -18,9 +18,9 @@ class StatuscodeController
     /**
      * @return int
      */
-    public static function getSUCCESSRESPONSE ()
+    public static function getSUCCESS ()
     {
-        return self::$SUCCESSRESPONSE;
+        return self::$SUCCESS;
     }
 
     /**

@@ -16,7 +16,7 @@ use Cartalyst\Sentinel\Native\Facades\Sentinel;
 class AuthenticationController extends Controller
 {
 
-    
+
     public function __construct ()
     {
     }
@@ -30,14 +30,15 @@ class AuthenticationController extends Controller
         ]);
         $credentials = $request->only (['email', 'password']);
         // Authenticate credentials using sentinel
-        if ( Sentinel::authenticate ($credentials) ) {
+//        if ( Sentinel::authenticate ($credentials) ) {
             //generate jwt token
-            if ( !$token = Auth::attempt ($credentials) ) { 
+            if ( !$token = Auth::attempt ($credentials) ) {
                 return response ()->json (['message' => 'Unauthorized'], parent::FORBIDEN_RESPONSE);
             }
-        } else {
-            return response ()->json ('Invalid Credentials', parent::FORBIDEN_RESPONSE);
-        }
+//        }
+//        else {
+//            return response ()->json ('Invalid Credentials', parent::FORBIDEN_RESPONSE);
+//        }
 
         return $this->respondWithToken ($token);  //return jwt tokem
     }
@@ -45,12 +46,12 @@ class AuthenticationController extends Controller
     /*
      *
      * */
-    public function logout ()
+    public function logout (Request $request, ResponseController $responseController, StatuscodeController $statuscodeController)
     {
-        //logout the corrent logedin user
+        $email = $request->email;
+
         $logout = Sentinel::logout ();
 
-        return response ()->json ($logout);
+        return response ()->json ($responseController->responseBody ('User successfully loggout', $email, 'success', $statuscodeController::getSUCCESS ()));
     }
-
 }

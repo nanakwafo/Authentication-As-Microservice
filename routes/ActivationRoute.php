@@ -7,15 +7,13 @@
  */
 
 $router->group (['prefix' => 'api'], function () use ($router) {
-    
+
     $router->post ('activateuser', ['uses' => 'ActivationControllerr@activateUser']);
-    
+
     $router->post ('activationexit', ['uses' => 'ActivationControllerr@activationExit']);
-    
+
     $router->post ('activationcompleted', ['uses' => 'ActivationControllerr@activationcompleted']);
-    
+
     $router->post ('deactivate', ['uses' => 'ActivationControllerr@deactivate']);
-    
-    
-    
+
 });

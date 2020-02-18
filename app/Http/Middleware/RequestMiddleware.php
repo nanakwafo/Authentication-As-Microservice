@@ -20,12 +20,15 @@ class RequestMiddleware
     {
         $responseController = new ResponseController();
         $statusCode = new StatuscodeController();
+     
+        if($request->isMethod('post')){
+            if ( $request->header ('Content-Type') != env ('APP_REQUEST_TYPE')) {
+                return response ()
+                    ->json ($responseController->responseBody ("Invalid Request", $request, "success", $statusCode::getBADREQUEST ()));
+            }
 
-        if ( $request->header ('Content-Type') != env ('APP_REQUEST_TYPE') ) {
-            return response ()
-                ->json ($responseController->responseBody ("Invalid Request", $request, "success", $statusCode::getBADREQUEST ()));
         }
-
+     
         return $next($request);
     }
 }

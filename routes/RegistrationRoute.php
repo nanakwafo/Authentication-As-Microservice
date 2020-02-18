@@ -15,7 +15,7 @@ $router->group (['prefix' => 'api'], function () use ($router) {
 
     $router->post ('createuserwithouactivation', ['uses' => 'RegistrationController@createUserWithOutActivation']);
 
-    $router->post ('deleteuser/', ['uses' => 'RegistrationController@deleteUser']);
+    $router->post ('deleteuser', ['uses' => 'RegistrationController@deleteUser']);
 
     $router->put ('users/{email}', ['uses' => 'RegistrationController@updateUser']);
 

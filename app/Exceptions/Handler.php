@@ -33,6 +33,9 @@ class Handler extends ExceptionHandler
      */
     public function report(Exception $exception)
     {
+//        if($exception instanceof AuthorizationException){
+//
+//        }
         parent::report($exception);
     }
 

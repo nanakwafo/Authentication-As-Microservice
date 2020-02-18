@@ -10,10 +10,11 @@ use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class User extends EloquentUser implements AuthenticatableContract, AuthorizableContract, JWTSubject
+class User extends Model implements AuthenticatableContract, AuthorizableContract, JWTSubject
 {
 
-
+    protected $table = 'userapps';
+    
     use Authenticatable, Authorizable;
 
 

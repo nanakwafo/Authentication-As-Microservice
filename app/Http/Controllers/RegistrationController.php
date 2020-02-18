@@ -12,7 +12,7 @@ class RegistrationController extends Controller
 
     public function __construct ()
     {
-        $this->middleware ('auth');
+        //$this->middleware ('auth');
 
     }
 
@@ -34,7 +34,7 @@ class RegistrationController extends Controller
         $user = Sentinel::register ($credentials);
 
         return response ()->json ($responseController->responseBody (
-            'User was successfully created and require activation',
+            'User was successfully created and require activation', 
             $user,
             'success',
             $statuscodeController::getSUCCESSCREATION ()
@@ -90,7 +90,7 @@ class RegistrationController extends Controller
             'User details successfully updated',
             $userdetails,
             'success',
-            $statuscodeController::getSUCCESSCREATION ()
+            $statuscodeController::getSUCCESS ()
 
         ));
 
@@ -112,7 +112,7 @@ class RegistrationController extends Controller
             'User successfully deleted',
             $user,
             'success',
-            $statuscodeController::getSUCCESSCREATION ()
+            $statuscodeController::getSUCCESS ()
         ));
 
 
@@ -129,7 +129,7 @@ class RegistrationController extends Controller
             'User list',
             $users,
             'success',
-            $statuscodeController::getSUCCESSCREATION ()
+            $statuscodeController::getSUCCESS()
         ));
 
     }
@@ -148,7 +148,7 @@ class RegistrationController extends Controller
             'User details',
             $user,
             'success',
-            $statuscodeController::getSUCCESSCREATION ()
+            $statuscodeController::getSUCCESS ()
         ));
     }
 
