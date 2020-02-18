@@ -12,10 +12,8 @@ class RegistrationController extends Controller
 
     public function __construct ()
     {
-        //$this->middleware ('auth');
         $this->middleware ('token');
-
-    }
+        }
 
     /*
      * create a user for an application without activation

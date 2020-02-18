@@ -2,10 +2,9 @@
 namespace App\Http\Controllers;
 
 
-use App\User;
+
 use Cartalyst\Sentinel\Laravel\Facades\Activation;
 use Illuminate\Http\Request;
-use Cartalyst\Sentinel\Users\EloquentUser;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 
 
@@ -14,10 +13,12 @@ class ActivationController extends Controller
 
     public function __construct ()
     {
-        $this->middleware ('auth');
+        $this->middleware ('token');
     }
 
-
+/*
+ * Activate a user
+ * */
     public function activateUser (Request $request, ResponseController $responseController, StatuscodeController $statuscodeController)
     {
 
@@ -33,7 +34,9 @@ class ActivationController extends Controller
         ));
 
     }
-
+/*
+ * Check if activation  of a user exit
+ * */
     public function activationExit (Request $request, ResponseController $responseController, StatuscodeController $statuscodeController)
     {
         $user = Sentinel::findByCredentials ($request->email);
@@ -48,7 +51,9 @@ class ActivationController extends Controller
 
         ));
     }
-
+/*
+ * Check if a user activation is completed
+ * */
     public function activationCompleted (Request $request, ResponseController $responseController, StatuscodeController $statuscodeController)
     {
         $user = Sentinel::findByEmail (['login' => $request->email]);
@@ -63,7 +68,9 @@ class ActivationController extends Controller
 
         ));
     }
-
+/*
+ * Deativate user from your system
+ * */
     public function deativate (Request $request, ResponseController $responseController, StatuscodeController $statuscodeController)
     {
         $user = Sentinel::findByEmail (['login' => $request->email]);

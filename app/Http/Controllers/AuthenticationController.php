@@ -9,7 +9,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Cartalyst\Sentinel\Native\Facades\Sentinel;
 
 
@@ -19,39 +18,49 @@ class AuthenticationController extends Controller
 
     public function __construct ()
     {
+        $this->middleware ('token');
     }
 
-    public function login (Request $request)
+    /*
+     * Log in user
+     * */
+    /**
+     * @param Request $request
+     * @param ResponseController $responseController
+     * @param StatuscodeController $statuscodeController
+     * @return mixed
+     */
+    public function login (Request $request,
+                           ResponseController $responseController, 
+                           StatuscodeController $statuscodeController)
     {
-        //Validate request
         $this->validate ($request, [
             'email'    => 'required|string',
             'password' => 'required|string'
         ]);
         $credentials = $request->only (['email', 'password']);
-        // Authenticate credentials using sentinel
-//        if ( Sentinel::authenticate ($credentials) ) {
-            //generate jwt token
-            if ( !$token = Auth::attempt ($credentials) ) {
-                return response ()->json (['message' => 'Unauthorized'], parent::FORBIDEN_RESPONSE);
-            }
-//        }
-//        else {
-//            return response ()->json ('Invalid Credentials', parent::FORBIDEN_RESPONSE);
-//        }
+        if ( Sentinel::authenticate ($credentials) ) {
 
-        return $this->respondWithToken ($token);  //return jwt tokem
+            $loggedInUser = Sentinel::getUser ();
+
+            return response ()->json ($responseController->responseBody ('User successfully logedin', $loggedInUser, 'success', $statuscodeController->getSUCCESS ()));
+
+        }
+
+        return response ()->json ('Invalid Credentials', parent::FORBIDEN_RESPONSE);
     }
 
     /*
-     *
+     * Logout user from your aapplication
      * */
-    public function logout (Request $request, ResponseController $responseController, StatuscodeController $statuscodeController)
+    public function logout (Request $request, 
+                            ResponseController $responseController, 
+                            StatuscodeController $statuscodeController)
     {
-        $email = $request->email;
 
-        $logout = Sentinel::logout ();
+        $user = Sentinel::findByCredentials (['login' => $request->email]);
+        $logout = Sentinel::logout ($user);
 
-        return response ()->json ($responseController->responseBody ('User successfully loggout', $email, 'success', $statuscodeController::getSUCCESS ()));
+        return response ()->json ($responseController->responseBody ('User successfully loggout', $logout, 'success', $statuscodeController::getSUCCESS ()));
     }
 }

@@ -76,8 +76,8 @@ $app->middleware ([
 ]);
 
 $app->routeMiddleware ([
-    'auth' => App\Http\Middleware\Authenticate::class,
-    'token'=>App\Http\Middleware\JwtMiddleware::class
+    'auth'  => App\Http\Middleware\Authenticate::class,
+    'token' => App\Http\Middleware\JwtMiddleware::class
 ]);
 
 /*
@@ -92,11 +92,9 @@ $app->routeMiddleware ([
 */
 
 // $app->register(App\Providers\AppServiceProvider::class);
-$app->register (App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
+$app->register (App\Providers\AuthServiceProvider::class);
 $app->register (Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class);
-
-// Add this line
 $app->register (Tymon\JWTAuth\Providers\LumenServiceProvider::class);
 /*
 |--------------------------------------------------------------------------
