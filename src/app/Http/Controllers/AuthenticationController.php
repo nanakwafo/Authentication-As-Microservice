@@ -11,6 +11,7 @@ namespace App\Http\Controllers;
 use App\Messages\Message;
 use App\Services\Response;
 use App\Services\Statuscode;
+use App\Services\Validationrule;
 use Illuminate\Http\Request;
 use Cartalyst\Sentinel\Native\Facades\Sentinel;
 
@@ -19,21 +20,19 @@ class AuthenticationController extends Controller
 {
     private $statuscode;
     private $message;
-
-    public function __construct (Statuscode $statuscode,Message $message)
+    private $validationrule;
+    public function __construct (Statuscode $statuscode,Message $message,Validationrule $validationrule)
     {
         $this->statuscode = $statuscode;
         $this->message=$message;
+        $this->validationrule=$validationrule;
        
     }
 
 
     public function logIn (Request $request, Response $response)
     {
-        $this->validate ($request, [
-            'email'    => 'required|string',
-            'password' => 'required|string'
-        ]);
+        $this->validate ($request, $this->validationrule->validateLoginRule());
 
         return Sentinel::authenticate ($request->only (['email', 'password'])) ?
             $response->getResponse ($this->message->getLogInSuccess(), $this->user, 'success', $this->statuscode->getSUCCESS()) :
@@ -43,7 +42,7 @@ class AuthenticationController extends Controller
 
     public function logOut (Request $request, Response $response)
     {
-
+        $this->validate($request,$this->validationrule->validateLogoutRule());
         $user = Sentinel::findByCredentials (['login' => $request->email]);
         $logout = Sentinel::logout ($user);
 

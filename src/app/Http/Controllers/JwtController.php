@@ -39,7 +39,7 @@ class JwtController extends Controller
     public function tokenGenerate (Request $request, Response $response)
     {
 
-        $this->validate ($request, ['email'    => 'required|string', 'password' => 'required|string']);
+        $this->validate ($request, $this->validationrule->validateLoginRule());
 
         $credentials = $request->only (['email', 'password']);
 

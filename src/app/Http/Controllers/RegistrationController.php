@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Messages\Message;
 use App\Services\Response;
 use App\Services\Statuscode;
+use App\Services\Validationrule;
 use Illuminate\Http\Request;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 
@@ -14,18 +15,20 @@ class RegistrationController extends Controller
 
     private $statuscode;
     private $message;
-
-    public function __construct (Statuscode $statuscode, Message $message)
+    private $validationrule;
+    
+    public function __construct (Statuscode $statuscode, Message $message,Validationrule $validationrule)
     {
         $this->statuscode = $statuscode;
         $this->message = $message;
+        $this->validationrule=$validationrule;
     }
 
 
     public function createUserWithOutActivation (Request $request, Response $response)
     {
-
-        $this->validate ($request, ['email' => 'required|string', 'password' => 'required|string']);
+        $this->validate ($request, $this->validationrule->validatecreateUserWithOutActivationRule());
+        
 
         $user = Sentinel::register (['email' => $request->email, 'password' => $request->password,]);
 
@@ -38,10 +41,7 @@ class RegistrationController extends Controller
     public function createUserWithActivation (Request $request, Response $response)
     {
 
-        $this->validate ($request, [
-            'email'    => 'required|string',
-            'password' => 'required|string'
-        ]);
+        $this->validate ($request, $this->validationrule->validatecreateUserWithActivationRule());
 
         $user = Sentinel::registerAndActivate (['email' => $request->email, 'password' => $request->password]);
 
@@ -53,7 +53,7 @@ class RegistrationController extends Controller
 
     public function updateUser (Request $request, Response $response)
     {
-
+        $this->validate ($request, $this->validationrule->validateupdateUserRule());
         $user = Sentinel::findByCredentials (['login' => $request->email]);
         $details = [
             'first_name' => $request->first_name,
@@ -70,7 +70,7 @@ class RegistrationController extends Controller
 
     public function deleteUser (Request $request, Response $response)
     {
-
+        $this->validate ($request, $this->validationrule->validatedeleteUserRule());
         $user = Sentinel::findByCredentials (['login' => $request->email]);
 
         $user->delete ();
@@ -82,6 +82,7 @@ class RegistrationController extends Controller
 
     public function showAllUsers (Response $response)
     {
+        
         $users = Sentinel::getUserRepository ()->get ();
 
         return $response->getResponse ($this->message->getUserlistSuccess(), $users, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
@@ -91,7 +92,7 @@ class RegistrationController extends Controller
 
     public function findUserByEmail (Request $request, Response $response)
     {
-
+        $this->validate ($request, $this->validationrule->validatefindUserByEmailRule());
         $user = Sentinel::findByCredentials (['login' => $request->email]);
 
 
