@@ -10,10 +10,11 @@ namespace App\Services;
 class Response
 {
 
-    private $message;
-    private $data;
-    private $status;
-    private $statusCode;
+    private $message='Message';
+    private $data='Data';
+    private $status ='status';
+    private $statusCode = 'Status Code';
+
 
     /**
      * @return mixed
@@ -79,37 +80,19 @@ class Response
         $this->statusCode = $statusCode;
     }
 
-    /**
-     * Response constructor.
-     * @param $message
-     * @param $data
-     * @param $status
-     * @param $statusCode
-     */
-    public function __construct ($message, $data, $status, $statusCode)
+
+
+    public function getResponse (string $message, string $data, string $status, int $statusCode)
     {
-        $this->message = $message;
-        $this->data = $data;
-        $this->status = $status;
-        $this->statusCode = $statusCode;
-    }
-
-
-    public function responseBody (string $message, string $data, string $status, int $statusCode):array
-    {
-
-        return [
+        $data = [
             $this->message    => $message,
             $this->data       => $data,
             $this->status     => $status,
             $this->statusCode => $statusCode
 
         ];
-    }
 
-    public function getResponse (string $message, string $data, string $status, int $statusCode)
-    {
-        return response ()->json ($this->responseBody ($message,$data,$status,$statusCode));
+        return response ()->json ($data);
     }
 
 

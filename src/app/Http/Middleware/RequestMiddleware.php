@@ -8,6 +8,8 @@
  */
 namespace App\Http\Middleware;
 
+use App\Services\Response;
+use App\Services\Statuscode;
 use Closure;
 use App\Http\Controllers\ResponseController;
 use App\Http\Controllers\StatuscodeController;
@@ -16,15 +18,17 @@ class RequestMiddleware
 {
 
 
+
+
     public function handle ($request, Closure $next)
     {
-        $responseController = new ResponseController();
-        $statusCode = new StatuscodeController();
-     
+        $statusCode= new Statuscode();
+        $response = new Response();
         if($request->isMethod('post')){
             if ( $request->header ('Content-Type') != env ('APP_REQUEST_TYPE')) {
-                return response ()
-                    ->json ($responseController->responseBody ("Invalid Request", $request, "success", $statusCode::getBADREQUEST ()));
+
+                return $response->getResponse("Invalid Request", $request, "success",$statusCode->getINVALIDREQUEST());
+
             }
 
         }
