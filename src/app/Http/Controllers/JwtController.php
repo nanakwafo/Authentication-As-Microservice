@@ -9,6 +9,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Messages\Message;
 use App\Services\Statuscode;
 use App\Services\Response;
 use Illuminate\Http\Request;
@@ -18,10 +19,12 @@ use Illuminate\Support\Facades\Auth;
 class JwtController extends Controller
 {
     private $statuscode;
+    private $message;
 
-    public function __construct (Statuscode $statuscode)
+    public function __construct (Statuscode $statuscode,Message $message)
     {
         $this->statuscode = $statuscode;
+        $this->message = $message;
     }
 
     private function respondWithToken ($token)
@@ -36,23 +39,22 @@ class JwtController extends Controller
     public function tokenGenerate (Request $request, Response $response)
     {
 
-        $this->validate ($request, [
-            'email'    => 'required|string',
-            'password' => 'required|string'
-        ]);
+        $this->validate ($request, ['email'    => 'required|string', 'password' => 'required|string']);
 
         $credentials = $request->only (['email', 'password']);
 
         if ( !$token = Auth::attempt ($credentials) ) {
-            return $response->getResponse('Token generation was unsuccessful',
+            return $response->getResponse(
+                $this->message->getTokenGenerationFailure(),
                 'Unauthorized',
-                'failure',
-                $this->statuscode->getSUCCESS());
+                parent::$statusFailure,
+                $this->statuscode->getUNAUTHORIZED());
         }
 
-        return $response->getResponse( 'Token generated successfully',
+        return $response->getResponse( 
+            $this->message->getTokenGenerationSuccess(),
             $this->respondWithToken ($token),
-            'success',
+            parent::$statusSuccess,
             $this->statuscode->getSUCCESS ());
 
     }

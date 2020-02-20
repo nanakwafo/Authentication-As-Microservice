@@ -5,20 +5,15 @@
  * Date: 20/02/2020
  * Time: 01:01
  */
-namespace  App\Services;
-class Statuscode{
-    
-    private static $SUCCESS = 200;
-    private static $SUCCESS_CREATION = 201;
-    private static $BAD_REQUEST = 400;
-    private static $FORBIDEN_RESPONSE = 403;
+namespace App\Services;
+class Statuscode
+{
 
-    /**
-     * Statuscode constructor.
-     */
-    public function __construct ()
-    {
-    }
+    private static $SUCCESS = 200;
+    private static $INVALID_REQUEST = 400;
+    private static $UNAUTHORIZED = 401;
+    private static $FORBIDEN_RESPONSE = 403;
+    private static $SERVER_ERROR = 500;
 
     /**
      * @return int
@@ -31,17 +26,17 @@ class Statuscode{
     /**
      * @return int
      */
-    public static function getSUCCESSCREATION ()
+    public static function getINVALIDREQUEST ()
     {
-        return self::$SUCCESS_CREATION;
+        return self::$INVALID_REQUEST;
     }
 
     /**
      * @return int
      */
-    public static function getBADREQUEST ()
+    public static function getUNAUTHORIZED ()
     {
-        return self::$BAD_REQUEST;
+        return self::$UNAUTHORIZED;
     }
 
     /**
@@ -52,7 +47,14 @@ class Statuscode{
         return self::$FORBIDEN_RESPONSE;
     }
 
-  
+    /**
+     * @return int
+     */
+    public static function getSERVERERROR ()
+    {
+        return self::$SERVER_ERROR;
+    }
 
+    
 
 }

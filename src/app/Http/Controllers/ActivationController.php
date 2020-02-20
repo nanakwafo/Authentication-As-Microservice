@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Messages\Message;
 use App\Services\Statuscode;
 use App\Services\Response;
 use Cartalyst\Sentinel\Laravel\Facades\Activation;
@@ -12,10 +13,12 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 class ActivationController extends Controller
 {
     private $statuscode;
+    private $message;
 
-    public function __construct (Statuscode $statuscode)
+    public function __construct (Statuscode $statuscode,Message $message)
     {
         $this->statuscode = $statuscode;
+        $this->message= $message;
     }
 
 
@@ -25,7 +28,7 @@ class ActivationController extends Controller
         $user = Sentinel::findByCredentials (['login' => $request->email]);
         $activation = Activation::create ($user);
 
-        return $response->getResponse('User was successfully activated',$activation,'success', $this->statuscode->getSUCCESS());
+        return $response->getResponse($this->message->getActivateUser(),$activation,parent::$statusSuccess, $this->statuscode->getSUCCESS());
 
     }
 
@@ -35,7 +38,7 @@ class ActivationController extends Controller
 
         $activationExit = Activation::exists ($user);
 
-        return $response->getResponse(  'User was successfully activated', $activationExit,'success', $this->statuscode->getSUCCESS());
+        return $response->getResponse(  $this->message->getActivateExit(), $activationExit,parent::$statusSuccess, $this->statuscode->getSUCCESS());
     }
 
     public function activationCompleted (Request $request, Response $response)
@@ -44,7 +47,7 @@ class ActivationController extends Controller
 
         $activation = Activation::completed ($user);
 
-        return $response->getResponse( 'User activation is activated',$activation,'success',$this->statuscode->getSUCCESS());
+        return $response->getResponse( $this->message->getActivateCompleted(),$activation,parent::$statusSuccess,$this->statuscode->getSUCCESS());
     }
 
     public function deativate (Request $request, Response $response)
@@ -53,7 +56,7 @@ class ActivationController extends Controller
 
         $activation = Activation::remove ($user);
 
-        return $response->getResponse('User was successfully deactivated',$activation,  'success',$this->statuscode->getSUCCESS());
+        return $response->getResponse($this->message->getDeactivate(),$activation,parent::$statusSuccess,$this->statuscode->getSUCCESS());
 
     }
 

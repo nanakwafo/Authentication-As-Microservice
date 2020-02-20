@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Messages\Message;
 use App\Services\Response;
 use App\Services\Statuscode;
 use Illuminate\Http\Request;
@@ -10,12 +11,14 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 
 class RegistrationController extends Controller
 {
-   
-    private $statuscode;
 
-    public function __construct (Statuscode $statuscode)
+    private $statuscode;
+    private $message;
+
+    public function __construct (Statuscode $statuscode, Message $message)
     {
         $this->statuscode = $statuscode;
+        $this->message = $message;
     }
 
 
@@ -26,7 +29,7 @@ class RegistrationController extends Controller
 
         $user = Sentinel::register (['email' => $request->email, 'password' => $request->password,]);
 
-        return $response->getResponse ('User was successfully created and require activation',$user,'success', $this->statuscode->getSUCCESSCREATION ());
+        return $response->getResponse ($this->message->getUserCreationSuccessNoActivation(), $user, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
 
 
     }
@@ -40,14 +43,14 @@ class RegistrationController extends Controller
             'password' => 'required|string'
         ]);
 
-        $user = Sentinel::registerAndActivate (['email'    => $request->email,'password' => $request->password]);
+        $user = Sentinel::registerAndActivate (['email' => $request->email, 'password' => $request->password]);
 
-        return $response->getResponse('User was successfully created and require activation',$user,'success',$this->statuscode->getSUCCESSCREATION());
+        return $response->getResponse ($this->message->getUserCreationSuccessActivation(), $user, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
 
 
     }
 
- 
+
     public function updateUser (Request $request, Response $response)
     {
 
@@ -59,12 +62,11 @@ class RegistrationController extends Controller
 
         $userdetails = Sentinel::update ($user, $details);
 
-        return $response->getResponse('User details successfully updated',$userdetails, 'success', $this->statuscode->getSUCCESS ());
+        return $response->getResponse ($this->message->getUpdateUserSuccess(), $userdetails, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
 
 
     }
 
-   
 
     public function deleteUser (Request $request, Response $response)
     {
@@ -73,7 +75,7 @@ class RegistrationController extends Controller
 
         $user->delete ();
 
-        return $response->getResponse( 'User successfully deleted',$user,'success', $this->statuscode->getSUCCESS());
+        return $response->getResponse ($this->message->getDeleteUserSuccess(), $user, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
 
 
     }
@@ -82,7 +84,7 @@ class RegistrationController extends Controller
     {
         $users = Sentinel::getUserRepository ()->get ();
 
-        return $response->getResponse( 'User list', $users,'success',$this->statuscode->getSUCCESS ());
+        return $response->getResponse ($this->message->getUserlistSuccess(), $users, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
 
     }
 
@@ -93,7 +95,7 @@ class RegistrationController extends Controller
         $user = Sentinel::findByCredentials (['login' => $request->email]);
 
 
-        return $response->getResponse('User details', $user, 'success', $this->statuscode->getSUCCESS ());
+        return $response->getResponse ($this->message->getFinduserSuccess(), $user, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
     }
 
 
