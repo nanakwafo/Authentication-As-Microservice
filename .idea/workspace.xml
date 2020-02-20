@@ -23,181 +23,18 @@
     <favorites_list name="authmicroservice" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.58987343">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="JwtMiddleware.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/Http/Middleware/JwtMiddleware.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/readme.md">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="273">
-                  <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/readme.md">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="169">
-                  <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="icon1.png" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/images/icon1.png">
-              <provider selected="true" editor-type-id="images">
-                <state />
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Response.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/Services/Response.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="39">
-                  <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-                  <folding>
-                    <element signature="e#308#380#0#PHP" expanded="true" />
-                    <element signature="e#431#515#0#PHP" expanded="true" />
-                    <element signature="e#558#624#0#PHP" expanded="true" />
-                    <element signature="e#672#744#0#PHP" expanded="true" />
-                    <element signature="e#787#857#0#PHP" expanded="true" />
-                    <element signature="e#907#987#0#PHP" expanded="true" />
-                    <element signature="e#1030#1108#0#PHP" expanded="true" />
-                    <element signature="e#1162#1258#0#PHP" expanded="true" />
-                    <element signature="e#1266#1613#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ActivationController.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ActivationController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="481">
-                  <caret line="37" column="73" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="73" />
-                  <folding>
-                    <element signature="e#40#65#0#PHP" expanded="true" />
-                    <element signature="e#415#654#0#PHP" expanded="true" />
-                    <element signature="e#661#1105#0#PHP" expanded="true" />
-                    <element signature="e#1111#1564#0#PHP" expanded="true" />
-                    <element signature="e#1570#2027#0#PHP" expanded="true" />
-                    <element signature="e#2033#2462#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Statuscode.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/Services/Statuscode.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="91">
-                  <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Validation.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/Services/Validation.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-                  <folding>
-                    <element signature="e#6#91#0#PHP" expanded="true" />
-                    <element signature="e#242#400#0#PHP" expanded="true" />
-                    <element signature="e#525#646#0#PHP" expanded="true" />
-                    <element signature="e#652#773#0#PHP" expanded="true" />
-                    <element signature="e#779#905#0#PHP" expanded="true" />
-                    <element signature="e#911#1028#0#PHP" expanded="true" />
-                    <element signature="e#1035#1215#0#PHP" expanded="true" />
-                    <element signature="e#1221#1398#0#PHP" expanded="true" />
-                    <element signature="e#1404#1521#0#PHP" expanded="true" />
-                    <element signature="e#1527#1644#0#PHP" expanded="true" />
-                    <element signature="e#1650#1772#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="JwtController.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/JwtController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="429">
-                  <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
-                  <folding>
-                    <element signature="e#127#152#0#PHP" expanded="true" />
-                    <element signature="e#432#671#0#PHP" expanded="true" />
-                    <element signature="e#926#1567#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Message.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/Messages/Message.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="789">
-                  <caret line="150" column="4" selection-start-line="150" selection-start-column="4" selection-end-line="150" selection-end-column="4" />
-                  <folding>
-                    <element signature="e#7#92#0#PHP" expanded="true" />
-                    <element signature="e#1226#1315#0#PHP" expanded="true" />
-                    <element signature="e#1359#1448#0#PHP" expanded="true" />
-                    <element signature="e#1492#1583#0#PHP" expanded="true" />
-                    <element signature="e#1627#1736#0#PHP" expanded="true" />
-                    <element signature="e#1780#1889#0#PHP" expanded="true" />
-                    <element signature="e#1933#2060#0#PHP" expanded="true" />
-                    <element signature="e#2104#2227#0#PHP" expanded="true" />
-                    <element signature="e#2271#2370#0#PHP" expanded="true" />
-                    <element signature="e#2414#2513#0#PHP" expanded="true" />
-                    <element signature="e#2557#2652#0#PHP" expanded="true" />
-                    <element signature="e#2696#2791#0#PHP" expanded="true" />
-                    <element signature="e#2835#2924#0#PHP" expanded="true" />
-                    <element signature="e#2968#3057#0#PHP" expanded="true" />
-                    <element signature="e#3101#3200#0#PHP" expanded="true" />
-                    <element signature="e#3244#3329#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="RegistrationController.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/RegistrationController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="715">
-                  <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
-                  <folding>
-                    <element signature="e#40#65#0#PHP" expanded="true" />
-                    <element signature="e#371#607#0#PHP" expanded="true" />
-                    <element signature="e#614#1084#0#PHP" expanded="true" />
-                    <element signature="e#1091#1555#0#PHP" expanded="true" />
-                    <element signature="e#2132#2545#0#PHP" expanded="true" />
-                    <element signature="e#2551#2824#0#PHP" expanded="true" />
-                    <element signature="e#2831#3224#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -330,6 +167,38 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authmicroservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authmicroservice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authmicroservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authmicroservice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="images" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -427,15 +296,15 @@
       <workItem from="1581966833651" duration="4807000" />
       <workItem from="1581971673198" duration="34556000" />
       <workItem from="1582059826008" duration="26561000" />
-      <workItem from="1582152498504" duration="29206000" />
+      <workItem from="1582152498504" duration="29660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202060000" />
+    <option name="totallyTimeSpent" value="202514000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="1358" y="-8" width="1936" height="1066" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17552084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -923,8 +792,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
