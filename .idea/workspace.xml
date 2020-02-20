@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57f5f80e-589c-48ab-be34-2f07da32eac8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
     </list>
     <ignored path="authmicroservice.iws" />
@@ -50,8 +49,8 @@
           <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/readme.md">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="312">
-                  <caret line="24" column="86" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="86" />
+                <state relative-caret-position="169">
+                  <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
                   <folding />
                 </state>
               </provider>
@@ -428,12 +427,12 @@
       <workItem from="1581966833651" duration="4807000" />
       <workItem from="1581971673198" duration="34556000" />
       <workItem from="1582059826008" duration="26561000" />
-      <workItem from="1582152498504" duration="29113000" />
+      <workItem from="1582152498504" duration="29206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201967000" />
+    <option name="totallyTimeSpent" value="202060000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1066" extended-state="6" />
@@ -924,8 +923,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="24" column="86" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="86" />
+        <state relative-caret-position="169">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
           <folding />
         </state>
       </provider>
