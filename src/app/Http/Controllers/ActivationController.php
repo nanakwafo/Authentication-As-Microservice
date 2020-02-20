@@ -2,7 +2,8 @@
 namespace App\Http\Controllers;
 
 
-
+use App\Services\Statuscode;
+use App\Services\Response;
 use Cartalyst\Sentinel\Laravel\Facades\Activation;
 use Illuminate\Http\Request;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
@@ -10,80 +11,49 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 
 class ActivationController extends Controller
 {
+    private $statuscode;
 
-    public function __construct ()
+    public function __construct (Statuscode $statuscode)
     {
-        $this->middleware ('token');
+        $this->statuscode = $statuscode;
     }
 
-/*
- * Activate a user
- * */
-    public function activateUser (Request $request, ResponseController $responseController, StatuscodeController $statuscodeController)
+
+    public function activateUser (Request $request, Response $response)
     {
 
         $user = Sentinel::findByCredentials (['login' => $request->email]);
         $activation = Activation::create ($user);
 
-        return response ()->json ($responseController->responseBody (
-            'User was successfully activated',
-            $activation,
-            'success',
-            $statuscodeController::getSUCCESSCREATION ()
-
-        ));
+        return $response->getResponse('User was successfully activated',$activation,'success', $this->statuscode->getSUCCESS());
 
     }
-/*
- * Check if activation  of a user exit
- * */
-    public function activationExit (Request $request, ResponseController $responseController, StatuscodeController $statuscodeController)
+
+    public function activationExit (Request $request, Response $response)
     {
-        $user = Sentinel::findByCredentials ($request->email);
+        $user = Sentinel::findByCredentials (['login' => $request->email]);
 
         $activationExit = Activation::exists ($user);
 
-        return response ()->json ($responseController->responseBody (
-            'User was successfully activated',
-            $activationExit,
-            'success',
-            $statuscodeController::getSUCCESSCREATION ()
-
-        ));
+        return $response->getResponse(  'User was successfully activated', $activationExit,'success', $this->statuscode->getSUCCESS());
     }
-/*
- * Check if a user activation is completed
- * */
-    public function activationCompleted (Request $request, ResponseController $responseController, StatuscodeController $statuscodeController)
+
+    public function activationCompleted (Request $request, Response $response)
     {
         $user = Sentinel::findByEmail (['login' => $request->email]);
 
         $activation = Activation::completed ($user);
 
-        return response ()->json ($responseController->responseBody (
-            'User activation is activated',
-            $activation,
-            'success',
-            $statuscodeController::getSUCCESSCREATION ()
-
-        ));
+        return $response->getResponse( 'User activation is activated',$activation,'success',$this->statuscode->getSUCCESS());
     }
-/*
- * Deativate user from your system
- * */
-    public function deativate (Request $request, ResponseController $responseController, StatuscodeController $statuscodeController)
+
+    public function deativate (Request $request, Response $response)
     {
         $user = Sentinel::findByEmail (['login' => $request->email]);
 
         $activation = Activation::remove ($user);
 
-        return response ()->json ($responseController->responseBody (
-            'User was successfully deactivated',
-            $activation,
-            'success',
-            $statuscodeController::getSUCCESSCREATION ()
-
-        ));
+        return $response->getResponse('User was successfully deactivated',$activation,  'success',$this->statuscode->getSUCCESS());
 
     }
 

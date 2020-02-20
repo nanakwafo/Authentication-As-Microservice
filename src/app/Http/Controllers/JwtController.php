@@ -9,22 +9,31 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\Statuscode;
+use App\Services\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 
 class JwtController extends Controller
 {
-    private function respondWithToken ($token, StatuscodeController $statuscodeController)
+    private $statuscode;
+
+    public function __construct (Statuscode $statuscode)
+    {
+        $this->statuscode = $statuscode;
+    }
+
+    private function respondWithToken ($token)
     {
         return response ()->json ([
             'token'      => $token,
             'token_type' => 'bearer',
             'expires_in' => 3600
-        ], $statuscodeController->getSUCCESS ());
+        ], $this->statuscode->getSUCCESS());
     }
 
-    public function tokenGenerate (Request $request, ResponseController $responseController, StatuscodeController $statuscodeController)
+    public function tokenGenerate (Request $request, Response $response)
     {
 
         $this->validate ($request, [
@@ -35,20 +44,16 @@ class JwtController extends Controller
         $credentials = $request->only (['email', 'password']);
 
         if ( !$token = Auth::attempt ($credentials) ) {
-            return response ()->json ($responseController->responseBody (
-                'Token generation was unsuccessful',
+            return $response->getResponse('Token generation was unsuccessful',
                 'Unauthorized',
                 'failure',
-                $statuscodeController->getBADREQUEST ()
-            ));
+                $this->statuscode->getSUCCESS());
         }
 
-        return response ()->json ($responseController->responseBody (
-            'Token generated successfully',
-            $this->respondWithToken ($token, $statuscodeController),
+        return $response->getResponse( 'Token generated successfully',
+            $this->respondWithToken ($token),
             'success',
-            $statuscodeController->getSUCCESS ()
-        ));
+            $this->statuscode->getSUCCESS ());
 
     }
 

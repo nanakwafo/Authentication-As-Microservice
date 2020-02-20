@@ -83,11 +83,11 @@ $app->routeMiddleware ([
 
 /*
 |--------------------------------------------------------------------------
-| Register Service Providers
+| Register Services Providers
 |--------------------------------------------------------------------------
 |
 | Here we will register all of the application's service providers which
-| are used to bind services into the container. Service providers are
+| are used to bind services into the container. Services providers are
 | totally optional, so you are not required to uncomment this line.
 |
 */

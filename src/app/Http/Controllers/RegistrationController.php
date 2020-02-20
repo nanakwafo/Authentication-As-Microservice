@@ -2,51 +2,37 @@
 namespace App\Http\Controllers;
 
 
+use App\Services\Response;
+use App\Services\Statuscode;
 use Illuminate\Http\Request;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 
 
 class RegistrationController extends Controller
 {
+   
+    private $statuscode;
 
-
-    public function __construct ()
+    public function __construct (Statuscode $statuscode)
     {
-        $this->middleware ('token');
-        }
+        $this->statuscode = $statuscode;
+    }
 
-    /*
-     * create a user for an application without activation
-    */
-    public function createUserWithOutActivation (Request $request, ResponseController $responseController, StatuscodeController $statuscodeController)
+
+    public function createUserWithOutActivation (Request $request, Response $response)
     {
 
-        $this->validate ($request, [  //Validate request parameters
-                                      'email'    => 'required|string',
-                                      'password' => 'required|string'
-        ]);
+        $this->validate ($request, ['email' => 'required|string', 'password' => 'required|string']);
 
-        $credentials = [
-            'email'    => $request->email,
-            'password' => $request->password,
-        ];
-        $user = Sentinel::register ($credentials);
+        $user = Sentinel::register (['email' => $request->email, 'password' => $request->password,]);
 
-        return response ()->json ($responseController->responseBody (
-            'User was successfully created and require activation', 
-            $user,
-            'success',
-            $statuscodeController::getSUCCESSCREATION ()
-
-        ));
+        return $response->getResponse ('User was successfully created and require activation',$user,'success', $this->statuscode->getSUCCESSCREATION ());
 
 
     }
 
-    /*
-     * create a user for an application with activation if the application involves activation of a user
-    */
-    public function createUserWithActivation (Request $request, ResponseController $responseController, StatuscodeController $statuscodeController)
+
+    public function createUserWithActivation (Request $request, Response $response)
     {
 
         $this->validate ($request, [
@@ -54,101 +40,60 @@ class RegistrationController extends Controller
             'password' => 'required|string'
         ]);
 
-        $credentials = [
-            'email'    => $request->email,
-            'password' => $request->password,
-        ];
-        $user = Sentinel::registerAndActivate ($credentials);
+        $user = Sentinel::registerAndActivate (['email'    => $request->email,'password' => $request->password]);
 
-        return response ()->json ($responseController->responseBody (
-            'User was successfully created and require activation',
-            $user,
-            'success',
-            $statuscodeController::getSUCCESSCREATION ()
-
-        ));
+        return $response->getResponse('User was successfully created and require activation',$user,'success',$this->statuscode->getSUCCESSCREATION());
 
 
     }
 
-    /*
-     * update a user information for an application
-     * 
-    */
-    public function updateUser (Request $request, ResponseController $responseController, StatuscodeController $statuscodeController)
+ 
+    public function updateUser (Request $request, Response $response)
     {
 
         $user = Sentinel::findByCredentials (['login' => $request->email]);
         $details = [
             'first_name' => $request->first_name,
+            //other details
         ];
 
         $userdetails = Sentinel::update ($user, $details);
 
-        return response ()->json ($responseController->responseBody (
-            'User details successfully updated',
-            $userdetails,
-            'success',
-            $statuscodeController::getSUCCESS ()
-
-        ));
+        return $response->getResponse('User details successfully updated',$userdetails, 'success', $this->statuscode->getSUCCESS ());
 
 
     }
 
-    /*
-     * create a user for an application 
-    */
+   
 
-    public function deleteUser (Request $request, ResponseController $responseController, StatuscodeController $statuscodeController)
+    public function deleteUser (Request $request, Response $response)
     {
 
         $user = Sentinel::findByCredentials (['login' => $request->email]);
 
         $user->delete ();
 
-        return response ()->json ($responseController->responseBody (
-            'User successfully deleted',
-            $user,
-            'success',
-            $statuscodeController::getSUCCESS ()
-        ));
+        return $response->getResponse( 'User successfully deleted',$user,'success', $this->statuscode->getSUCCESS());
 
 
     }
 
-    /*
-     * Retrieve all user information for an application
-    */
-    public function showAllUsers (ResponseController $responseController, StatuscodeController $statuscodeController)
+    public function showAllUsers (Response $response)
     {
         $users = Sentinel::getUserRepository ()->get ();
 
-        return response ()->json ($responseController->responseBody (
-            'User list',
-            $users,
-            'success',
-            $statuscodeController::getSUCCESS()
-        ));
+        return $response->getResponse( 'User list', $users,'success',$this->statuscode->getSUCCESS ());
 
     }
 
-    /*
-     * Retrieve a user by an id  from your application
-    */
 
-    public function findUserByEmail (Request $request, ResponseController $responseController, StatuscodeController $statuscodeController)
+    public function findUserByEmail (Request $request, Response $response)
     {
 
         $user = Sentinel::findByCredentials (['login' => $request->email]);
 
 
-        return response ()->json ($responseController->responseBody (
-            'User details',
-            $user,
-            'success',
-            $statuscodeController::getSUCCESS ()
-        ));
+        return $response->getResponse('User details', $user, 'success', $this->statuscode->getSUCCESS ());
     }
 
 
