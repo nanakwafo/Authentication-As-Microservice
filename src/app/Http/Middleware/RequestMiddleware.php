@@ -8,31 +8,27 @@
  */
 namespace App\Http\Middleware;
 
-use App\Services\Response;
-use App\Services\Statuscode;
+
 use Closure;
 use App\Http\Controllers\ResponseController;
 use App\Http\Controllers\StatuscodeController;
 
-class RequestMiddleware
+class RequestMiddleware extends Middleware
 {
-
-
 
 
     public function handle ($request, Closure $next)
     {
-        $statusCode= new Statuscode();
-        $response = new Response();
-        if($request->isMethod('post')){
-            if ( $request->header ('Content-Type') != env ('APP_REQUEST_TYPE')) {
 
-                return $response->getResponse("Invalid Request", $request, "success",$statusCode->getINVALIDREQUEST());
+        if ( $request->isMethod ('post') ) {
+            if ( $request->header ('Content-Type') != env ('APP_REQUEST_TYPE') ) {
+
+                return $this->response->getResponse ($this->message->getInvalidrequest (), '', parent::$statusFailure, $this->statusCode->getINVALIDREQUEST ());
 
             }
 
         }
-     
+
         return $next($request);
     }
 }

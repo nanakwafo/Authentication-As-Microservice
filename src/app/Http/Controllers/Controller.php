@@ -8,7 +8,9 @@ use Illuminate\Support\Facades\Auth;
 
 class Controller extends BaseController
 {
-    
+    protected $statuscode;
+    protected $message;
+    protected $validationrule;
     protected static $statusSuccess = 'success';
     protected static $statusFailure = 'failure';
 

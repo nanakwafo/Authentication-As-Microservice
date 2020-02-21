@@ -14,8 +14,9 @@ use Tymon\JWTAuth\Facades\JWTAuth;
 
 
 
-class JwtMiddleware
+class JwtMiddleware extends Middleware
 {
+    
     public function handle ($request, Closure $next)
     {
         $token = JWTAuth::getToken ();
@@ -24,15 +25,15 @@ class JwtMiddleware
             $credentials = JWTAuth::getPayload ($token)->toArray ();
         } catch (\Tymon\JWTAuth\Exceptions\TokenExpiredException $e) {
 
-            return response ()->json (['token_expired'], 500);
+            return response ()->json (['token_expired'], $this->statusCode->getSERVERERROR());
 
         } catch (\Tymon\JWTAuth\Exceptions\TokenInvalidException $e) {
 
-            return response ()->json (['token_invalid'], 500);
+            return response ()->json (['token_invalid'], $this->statusCode->getSERVERERROR());
 
         } catch (\Tymon\JWTAuth\Exceptions\JWTException $e) {
 
-            return response ()->json (['token_absent' => $e->getMessage ()], 500);
+            return response ()->json (['token_absent' => $e->getMessage ()], $this->statusCode->getSERVERERROR());
 
         }
         Log::info ('Application user decoded token ', ['credentials' => $credentials]);

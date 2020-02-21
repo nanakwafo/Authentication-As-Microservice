@@ -25,7 +25,7 @@ class Message
     private static $activateExit='User is activated';
     private static $activateCompleted='User activation is completed';
     private static $deactivate='User was successfully deactivated';
-
+   private static $invalidrequest='Request must be json';
 
 
     /**
@@ -146,6 +146,14 @@ class Message
     public static function getDeactivate ()
     {
         return self::$deactivate;
+    }
+
+    /**
+     * @return string
+     */
+    public static function getInvalidrequest ()
+    {
+        return self::$invalidrequest;
     }
 
     

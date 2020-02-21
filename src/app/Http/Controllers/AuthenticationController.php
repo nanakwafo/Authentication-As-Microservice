@@ -18,9 +18,7 @@ use Cartalyst\Sentinel\Native\Facades\Sentinel;
 
 class AuthenticationController extends Controller
 {
-    private $statuscode;
-    private $message;
-    private $validationrule;
+    
     public function __construct (Statuscode $statuscode,Message $message,Validationrule $validationrule)
     {
         $this->statuscode = $statuscode;

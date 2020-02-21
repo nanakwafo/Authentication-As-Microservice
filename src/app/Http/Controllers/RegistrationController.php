@@ -13,9 +13,7 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 class RegistrationController extends Controller
 {
 
-    private $statuscode;
-    private $message;
-    private $validationrule;
+ 
     
     public function __construct (Statuscode $statuscode, Message $message,Validationrule $validationrule)
     {

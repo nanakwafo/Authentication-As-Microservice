@@ -19,9 +19,7 @@ use Illuminate\Support\Facades\Auth;
 
 class JwtController extends Controller
 {
-    private $statuscode;
-    private $message;
-    private $validationrule;
+    
 
     public function __construct (Statuscode $statuscode, Message $message, Validationrule $validationrule)
     {
