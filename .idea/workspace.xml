@@ -2,99 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57f5f80e-589c-48ab-be34-2f07da32eac8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/TokenTest.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/0naJq8Cp1dytfPQ0jX44XVSz3gXk1erW2eYOLXHz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/3YazmypP2ZDPxPf2vMnfy5lQ9JlJ9rQLa2SuyhPU" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/4Oq2l6wF4P8tkRSBSVV5VrHSewIrChU5fv0Pa8jx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/4grJN7ufLdCraFkFAtHdIDxMehaTMBERQ3eXGZ0y" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/4qPySjPjxZb3em9LFpTaQUbEkZQpAJq3GTWH7KbC" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/5g4p3MTGqKo1amhsD7kqEMEyYC0rxA1Ww9RHAFv9" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/5kZkwbTpwfTABDKLksg6lHjte4o2dn6Kyly4IuqA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/5oI8a6NUnLLHArxBoGPR4ObM5rnXRbcczx5HwBoe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/7Hxlk48G5gheV8jszm91alXD6tOhKiuw3qnohc1j" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/82TaUZM2Fpg1Vz7XiIpDB7uWJQ6Iblo7nMWVkDZP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/8HXXvbXIsDv2WyWGMwoKv3zZAIDq7z5HERrBfHys" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/8hQxJhENj4NSitP8eCLgUJAcoCk1h4LySbNBUd19" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/8ud3vxLAmIH2sks1M1wtXT1IhdAgzPiPZCxzfYPF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/8utDxmHyb2IJ4J1xIBP0MESACPDNUPUd6WMOGeKN" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/9SdRboas8jBvQxrKAONCPyetoRFdgu1IPcy583Le" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/9T1KZ3akaU6mj37RYgYLaOxNeuMFxVyLDcSDXk4z" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/9sB7nHoI63sHJQmHLX3qkg0QQezIk0CDzsPJqlnB" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/A3VhH3An59AxM1qEBkpmxgOUC13KQ0GFOmCbaXFx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/Aelfc3j3Dk3piDFi4xtgL1xZTECoRFQa9846hAXm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/Aug4pWjXix6Bt2DVLlpD6e2emlGxiN80DhQbP52W" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/BFAgIrzXUnqBVaSX9wB2D669UV0HbVM9Aj5Rn2BW" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/BIpQr0T33a6QawZSTaXA7QgRjgOWETdgpo8HzXlr" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/CEzSehr6Si3jzCZahFeOy91vtCcsum86BzV4ss8r" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/Cxadp4RpGN52mrJhy3vn5bR7tYNvr6MTuOekrHR9" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/EDbqqAzBidktIR5cJJoMnDF0U6nUWo1pG15hkn1q" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/FDR25aestbhQZnO90M0YvGK4ECaXRkpxUOHTd5B6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/Fdj0AByVN1dg8xFgUPF3wc71aR54yoCfa5557Gmz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/Gs08y2n1i7WlfByHsk6yGZ1KDwG5lZvstWM1Zl8N" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/H5HeMP9ZLCO53Rt7c0LkWh3fkO35dhK1aqPGVtLo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/HcERsYwfSM02jYmouLHgVLLyGJtgG0T4Ft3lM7YC" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/HclA7qqCPJpjuIhcfH5AZ4sv1Og4O3LIAgqIPBgH" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/J6VxKdQLQ74zX6rbF6aVXOZZuPUQMLDXTCY5SHlI" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/W990AyHrJDZNgb73ibBl4Pqiu0zOynKiTDfjS2dI" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/WAGmWERGNUhYm9UMTPYsRkd63DuOmOIgRBdXa6qw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/ZTgSgBFu1XH2UP4C2wKSGAcrVcPjv2R3jAp12yfU" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/aFm3bALguEaiQ8QIz04kp0OnkbXfxlX99UbNimvY" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/aXaxlAKn7BKFFuKNmXReN3pcZfZ8a5A2sugo2ieA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/b7NcTB2FbIFFsWv12HzuljtCeHBDdS2ZQAQAEo2S" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/cNfse0jaR18ijuhx23kYPpW6xcpRDeEkVi1mpxXS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/cc8BDwqTd1hOZkBJAsDUMsvdG5JN2n6i5rpAJ3pX" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/ceFvgqw2Yb7ug3TAMkW2GXB6boy66twdFLr0IvHB" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/dNaRWzMIdlcgZ349V3KnOcOuuwaSPTRN2TBOEKgK" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/dUXHsmoj2CcOPtMF4EwX4AuCs9RH8W7j6xN2EfUX" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/dxbe3CdiGhCZdMmVY9bBowvyjrax8OygKfqztEWS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/elrSGTYOXYivJeRUotF79P3bb89bB5zF9XtcQg8E" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/fH43eA8ehVslSdVmHxTnaeTN7SZZWpfqQyJG92ED" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/gqZsKbdOgZ6kPq56y1VEyahWVfEtB2ZCdPOKCv11" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/haVPQWoYVLUJeKYaqjLBO65vUVAhHFr1mCKIqmgP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/hidCz7Y5Wy3FteokunlP89vg7D6KNoyZVkn035qM" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/hvIftgPCgDTxgRjSj90lpTt4iynf34rMc3CuX8tF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/i6vLAzO65iaTLmnrVFK4tGWLmAeR1Zs7MoWQrgXs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/j2vPtysvK92N0AKup6ZNCDt4FpgdafDeUm7O9cso" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/jDYiM3CmKuenJFrysL32cT8eJ3By3aEyfc5RyA8J" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/k3PlsMUfYnOUQNFi0SjL69gW2CBNhJ34SXTKJbme" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/wjacjWs17CU4nvfiue4PXaxPIfkNKBlhWLMc4IoK" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/xHd0jDHWZ04hKQKBOzgI2s7pmhSdUCuHJHe72kWp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/xla4D9FuaI04YtNsPwdDNpNKvXsufVzBnKnGnp79" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/zDfVY6OrZQQPhyNNPJykEvvOAXLFfjXju5wwqyTR" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/zjZxhL0NXrwp80oe9ePs4NG0iW9bu1LLpmDumtPV" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ExampleTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/RegistrationTest.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/authdb/activations.ibd" afterPath="$PROJECT_DIR$/mysql/authdb/activations.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/authdb/migrations.ibd" afterPath="$PROJECT_DIR$/mysql/authdb/migrations.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/authdb/persistences.ibd" afterPath="$PROJECT_DIR$/mysql/authdb/persistences.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/authdb/reminders.ibd" afterPath="$PROJECT_DIR$/mysql/authdb/reminders.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/authdb/role_users.ibd" afterPath="$PROJECT_DIR$/mysql/authdb/role_users.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/authdb/roles.ibd" afterPath="$PROJECT_DIR$/mysql/authdb/roles.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/authdb/throttle.ibd" afterPath="$PROJECT_DIR$/mysql/authdb/throttle.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/authdb/userapps.ibd" afterPath="$PROJECT_DIR$/mysql/authdb/userapps.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/authdb/users.ibd" afterPath="$PROJECT_DIR$/mysql/authdb/users.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/ib_logfile0" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/ibdata1" afterPath="$PROJECT_DIR$/mysql/ibdata1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/ibtmp1" afterPath="$PROJECT_DIR$/mysql/ibtmp1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/innodb_index_stats.ibd" afterPath="$PROJECT_DIR$/mysql/mysql/innodb_index_stats.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/innodb_table_stats.ibd" afterPath="$PROJECT_DIR$/mysql/mysql/innodb_table_stats.ibd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/ib_buffer_pool" afterPath="$PROJECT_DIR$/mysql/ib_buffer_pool" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Exceptions/Handler.php" afterPath="$PROJECT_DIR$/src/app/Exceptions/Handler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Http/Controllers/ActivationController.php" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/ActivationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Http/Controllers/AuthenticationController.php" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/AuthenticationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Http/Controllers/Controller.php" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Http/Controllers/JwtController.php" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/JwtController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Http/Controllers/RegistrationController.php" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/RegistrationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Http/Middleware/Authenticate.php" afterPath="$PROJECT_DIR$/src/app/Http/Middleware/Authenticate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Http/Middleware/JwtMiddleware.php" afterPath="$PROJECT_DIR$/src/app/Http/Middleware/JwtMiddleware.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Http/Middleware/Middleware.php" afterPath="$PROJECT_DIR$/src/app/Http/Middleware/Middleware.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Messages/Message.php" afterPath="$PROJECT_DIR$/src/app/Messages/Message.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Services/Response.php" afterPath="$PROJECT_DIR$/src/app/Services/Response.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Services/Statuscode.php" afterPath="$PROJECT_DIR$/src/app/Services/Statuscode.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/composer.json" afterPath="$PROJECT_DIR$/src/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/migrations/2014_07_02_230147_create_userapps_table.php" afterPath="$PROJECT_DIR$/src/database/migrations/2014_07_02_230147_create_userapps_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/RegistrationRoute.php" afterPath="$PROJECT_DIR$/src/routes/RegistrationRoute.php" />
     </list>
     <ignored path="authmicroservice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -166,19 +76,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JwtMiddleware.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/Http/Middleware/JwtMiddleware.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <element signature="e#124#136#0#PHP" expanded="true" />
-                <element signature="e#270#1347#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ActivationController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ActivationController.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -189,11 +86,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/Controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+            <state relative-caret-position="195">
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -270,7 +177,6 @@
         <option value="$PROJECT_DIR$/src/app/Services/Message.php" />
         <option value="$PROJECT_DIR$/src/app/Services/Validation.php" />
         <option value="$PROJECT_DIR$/src/database/seeds/userappSeeder.php" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/src/app/User.php" />
         <option value="$PROJECT_DIR$/src/app/Http/Middleware/ExampleMiddleware.php" />
         <option value="$PROJECT_DIR$/src/app/Providers/AppServiceProvider.php" />
@@ -285,7 +191,6 @@
         <option value="$PROJECT_DIR$/src/composer.json" />
         <option value="$PROJECT_DIR$/src/tests/TokenTest.php" />
         <option value="$PROJECT_DIR$/src/tests/UserTest.php" />
-        <option value="$PROJECT_DIR$/src/app/Http/Controllers/Controller.php" />
         <option value="$PROJECT_DIR$/src/database/migrations/2014_07_02_230147_create_userapps_table.php" />
         <option value="$PROJECT_DIR$/src/storage/logs/lumen-2020-02-22.log" />
         <option value="$PROJECT_DIR$/src/app/Http/Middleware/JwtMiddleware.php" />
@@ -296,6 +201,8 @@
         <option value="$PROJECT_DIR$/src/app/Services/Response.php" />
         <option value="$PROJECT_DIR$/src/routes/RegistrationRoute.php" />
         <option value="$PROJECT_DIR$/src/app/Http/Controllers/RegistrationController.php" />
+        <option value="$PROJECT_DIR$/src/app/Http/Controllers/Controller.php" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -370,237 +277,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Services" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Middleware" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Exceptions" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -699,12 +376,12 @@
       <workItem from="1581971673198" duration="34556000" />
       <workItem from="1582059826008" duration="26561000" />
       <workItem from="1582152498504" duration="57773000" />
-      <workItem from="1582373036116" duration="19109000" />
+      <workItem from="1582373036116" duration="20319000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249736000" />
+    <option name="totallyTimeSpent" value="250946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1066" extended-state="6" />
@@ -762,14 +439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1139,8 +808,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="195">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
           <folding />
         </state>
       </provider>
