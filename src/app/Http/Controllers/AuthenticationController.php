@@ -24,17 +24,17 @@ class AuthenticationController extends Controller
         $this->statuscode = $statuscode;
         $this->message = $message;
         $this->validationrule = $validationrule;
-
+        $this->middleware ('token');
     }
 
 
     public function logIn (Request $request, Response $response)
     {
-        $this->validate ($request, $this->validationrule->validateLoginRule ());
+       $this->validate ($request, $this->validationrule->validateLoginRule ());
 
         return Sentinel::authenticate ($request->only (['email', 'password']))
             ?
-            $response->getResponse ($this->message->getLogInSuccess (), $this->user, 'success', $this->statuscode->getSUCCESS ())
+            $response->getResponse ($this->message->getLogInSuccess (),Sentinel::getUser(), 'success', $this->statuscode->getSUCCESS ())
             :
             $response->getResponse ($this->message->getLogInFailure (), '', '', $this->statuscode->getUNAUTHORIZED ());
     }
@@ -44,6 +44,9 @@ class AuthenticationController extends Controller
     {
         $this->validate ($request, $this->validationrule->validateLogoutRule ());
         $user = Sentinel::findByCredentials (['login' => $request->email]);
+        if ( !$user instanceof EloquentUser ) {
+            return $response->getResponse ($this->message->getUsernotfound (), $user, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
+        }
         $logout = Sentinel::logout ($user);
 
         return response ()->json ($response->responseBody ($this->message->getLogOutsuccess (), $logout, 'success', $this->statuscode->getSUCCESS ()));
