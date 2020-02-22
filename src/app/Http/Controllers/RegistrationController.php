@@ -68,7 +68,7 @@ class RegistrationController extends Controller
     {
         $this->validate ($request, $this->validationrule->validateupdateUserRule ());
         $user = Sentinel::findByCredentials (['login' => $request->email]);
-        if ( is_null($user)) {
+        if ( is_null ($user) ) {
             return $response->getResponse ($this->message->getUsernotfound (), $user, parent::$statusFailure, $this->statuscode->getSUCCESS ());
         }
         try {
@@ -94,7 +94,7 @@ class RegistrationController extends Controller
         $this->validate ($request, $this->validationrule->validatedeleteUserRule ());
         $user = Sentinel::findByCredentials (['login' => $request->email]);
 
-        if ( is_null($user)) {
+        if ( is_null ($user) ) {
             return $response->getResponse ($this->message->getUsernotfound (), $user, parent::$statusFailure, $this->statuscode->getSUCCESS ());
         }
 

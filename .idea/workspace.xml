@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57f5f80e-589c-48ab-be34-2f07da32eac8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/authdb/activations.ibd" afterPath="$PROJECT_DIR$/mysql/authdb/activations.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/authdb/persistences.ibd" afterPath="$PROJECT_DIR$/mysql/authdb/persistences.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/authdb/users.ibd" afterPath="$PROJECT_DIR$/mysql/authdb/users.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/ib_logfile0" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/ibdata1" afterPath="$PROJECT_DIR$/mysql/ibdata1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/innodb_index_stats.ibd" afterPath="$PROJECT_DIR$/mysql/mysql/innodb_index_stats.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/innodb_table_stats.ibd" afterPath="$PROJECT_DIR$/mysql/mysql/innodb_table_stats.ibd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Http/Controllers/ActivationController.php" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/ActivationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Http/Controllers/AuthenticationController.php" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/AuthenticationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Http/Controllers/RegistrationController.php" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/RegistrationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/ActivationRoute.php" afterPath="$PROJECT_DIR$/src/routes/ActivationRoute.php" />
     </list>
     <ignored path="authmicroservice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,17 +25,25 @@
     <favorites_list name="authmicroservice" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5073295">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="ActivationRoute.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/routes/ActivationRoute.php">
+          <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/readme.md">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="169">
-                  <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-                  <folding>
-                    <element signature="e#130#562#1#PHP" expanded="true" />
-                  </folding>
+                <state relative-caret-position="117">
+                  <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/readme.md">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="273">
+                  <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -52,64 +52,12 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="ActivationController.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ActivationController.php">
+          <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/readme.md">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="624">
-                  <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#340#616#0#PHP" expanded="true" />
-                    <element signature="e#623#1253#0#PHP" expanded="true" />
-                    <element signature="e#1259#1900#0#PHP" expanded="true" />
-                    <element signature="e#1906#2555#0#PHP" expanded="true" />
-                    <element signature="e#3190#3265#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AuthenticationController.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/AuthenticationController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="585">
-                  <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
-                  <folding>
-                    <element signature="e#126#151#0#PHP" expanded="true" />
-                    <element signature="e#377#653#0#PHP" expanded="true" />
-                    <element signature="e#660#1177#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="JwtController.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/JwtController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="533">
-                  <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#127#152#0#PHP" expanded="true" />
-                    <element signature="e#357#597#0#PHP" expanded="true" />
-                    <element signature="e#603#846#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RegistrationController.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/RegistrationController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="529">
-                  <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
-                  <folding>
-                    <element signature="e#40#85#0#PHP" expanded="true" />
-                    <element signature="e#458#734#0#PHP" expanded="true" />
-                    <element signature="e#741#1411#0#PHP" expanded="true" />
-                    <element signature="e#1418#2091#0#PHP" expanded="true" />
-                    <element signature="e#2098#2982#0#PHP" expanded="true" />
-                    <element signature="e#2989#3591#0#PHP" expanded="true" />
-                    <element signature="e#3986#4498#0#PHP" expanded="true" />
-                  </folding>
+                <state relative-caret-position="156">
+                  <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="67" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -170,11 +118,11 @@
         <option value="$PROJECT_DIR$/src/app/Services/Response.php" />
         <option value="$PROJECT_DIR$/src/routes/RegistrationRoute.php" />
         <option value="$PROJECT_DIR$/src/app/Http/Controllers/Controller.php" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/src/app/Http/Controllers/AuthenticationController.php" />
         <option value="$PROJECT_DIR$/src/routes/ActivationRoute.php" />
         <option value="$PROJECT_DIR$/src/app/Http/Controllers/ActivationController.php" />
         <option value="$PROJECT_DIR$/src/app/Http/Controllers/RegistrationController.php" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -286,6 +234,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authmicroservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authmicroservice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Services" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -436,18 +406,18 @@
       <workItem from="1581971673198" duration="34556000" />
       <workItem from="1582059826008" duration="26561000" />
       <workItem from="1582152498504" duration="57773000" />
-      <workItem from="1582373036116" duration="29753000" />
+      <workItem from="1582373036116" duration="30698000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260380000" />
+    <option name="totallyTimeSpent" value="261325000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1828125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.118229166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="1458" y="92" width="1736" height="866" />
@@ -490,14 +460,6 @@
     <entry file="file://$PROJECT_DIR$/images/icon1.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Http/Middleware/ExampleMiddleware.php" />
@@ -767,14 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/MainRoute.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -859,16 +813,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ActivationController.php">
+    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/JwtController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        <state relative-caret-position="533">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
-            <element signature="e#340#616#0#PHP" expanded="true" />
-            <element signature="e#623#1253#0#PHP" expanded="true" />
-            <element signature="e#1259#1900#0#PHP" expanded="true" />
-            <element signature="e#1906#2555#0#PHP" expanded="true" />
-            <element signature="e#3190#3265#0#PHP" expanded="true" />
+            <element signature="e#127#152#0#PHP" expanded="true" />
+            <element signature="e#357#597#0#PHP" expanded="true" />
+            <element signature="e#603#846#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -885,6 +837,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ActivationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#340#616#0#PHP" expanded="true" />
+            <element signature="e#623#1253#0#PHP" expanded="true" />
+            <element signature="e#1259#1900#0#PHP" expanded="true" />
+            <element signature="e#1906#2555#0#PHP" expanded="true" />
+            <element signature="e#2561#3184#0#PHP" expanded="true" />
+            <element signature="e#3190#3265#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/ActivationRoute.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -895,31 +862,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/JwtController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="e#127#152#0#PHP" expanded="true" />
-            <element signature="e#357#597#0#PHP" expanded="true" />
-            <element signature="e#603#846#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/RegistrationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
+        <state relative-caret-position="273">
+          <caret line="81" column="45" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
           <folding>
             <element signature="e#40#85#0#PHP" expanded="true" />
             <element signature="e#458#734#0#PHP" expanded="true" />
             <element signature="e#741#1411#0#PHP" expanded="true" />
             <element signature="e#1418#2091#0#PHP" expanded="true" />
-            <element signature="e#2098#2982#0#PHP" expanded="true" />
-            <element signature="e#2989#3591#0#PHP" expanded="true" />
-            <element signature="e#3986#4498#0#PHP" expanded="true" />
+            <element signature="e#2991#3595#0#PHP" expanded="true" />
+            <element signature="e#3601#3983#0#PHP" expanded="true" />
+            <element signature="e#3990#4502#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
