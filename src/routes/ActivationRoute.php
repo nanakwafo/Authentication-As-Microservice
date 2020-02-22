@@ -8,12 +8,12 @@
 
 $router->group (['prefix' => 'api'], function () use ($router) {
 
-    $router->post ('activateuser', ['uses' => 'ActivationControllerr@activateUser']);
+    $router->post ('Activation/activateuser', ['uses' => 'ActivationController@activateUser']);
 
-    $router->post ('activationexit', ['uses' => 'ActivationControllerr@activationExit']);
+    $router->post ('Activation/activationexit', ['uses' => 'ActivationController@activationExit']);
 
-    $router->post ('activationcompleted', ['uses' => 'ActivationControllerr@activationcompleted']);
+    $router->post ('Activation/activationcompleted', ['uses' => 'ActivationController@activationcompleted']);
 
-    $router->post ('deactivate', ['uses' => 'ActivationControllerr@deactivate']);
+    $router->post ('Activation/deactivate', ['uses' => 'ActivationController@deactivate']);
 
 });

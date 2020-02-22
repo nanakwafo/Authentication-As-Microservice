@@ -44,11 +44,12 @@ class AuthenticationController extends Controller
     {
         $this->validate ($request, $this->validationrule->validateLogoutRule ());
         $user = Sentinel::findByCredentials (['login' => $request->email]);
-        if ( !$user instanceof EloquentUser ) {
-            return $response->getResponse ($this->message->getUsernotfound (), $user, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
+        if ( is_null($user)) {
+            
+            return $response->getResponse ($this->message->getUsernotfound (), $user, parent::$statusFailure, $this->statuscode->getSUCCESS ());
         }
-        $logout = Sentinel::logout ($user);
+        $user = Sentinel::logout ($user);
 
-        return response ()->json ($response->responseBody ($this->message->getLogOutsuccess (), $logout, 'success', $this->statuscode->getSUCCESS ()));
+        return $response->getResponse ($this->message->getLogOutsuccess(), $user, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
     }
 }

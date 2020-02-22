@@ -20,6 +20,7 @@ class ActivationController extends Controller
         $this->statuscode = $statuscode;
         $this->message = $message;
         $this->validationrule = $validationrule;
+        $this->middleware ('token');
     }
 
 
@@ -27,6 +28,9 @@ class ActivationController extends Controller
     {
         $this->validate ($request, $this->validationrule->validateActivationUserRule ());
         $user = Sentinel::findByCredentials (['login' => $request->email]);
+        if ( is_null($user)) {
+            return $response->getResponse ($this->message->getUsernotfound (), $user, parent::$statusFailure, $this->statuscode->getSUCCESS ());
+        }
         $activation = Activation::create ($user);
 
         return $response->getResponse ($this->message->getActivateUser (), $activation, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
@@ -36,7 +40,11 @@ class ActivationController extends Controller
     public function activationExit (Request $request, Response $response)
     {
         $this->validate ($request, $this->validationrule->validateActivationExitRule ());
+
         $user = Sentinel::findByCredentials (['login' => $request->email]);
+        if ( is_null($user)) {
+            return $response->getResponse ($this->message->getUsernotfound (), $user, parent::$statusFailure, $this->statuscode->getSUCCESS ());
+        }
 
         $activationExit = Activation::exists ($user);
 
@@ -46,22 +54,30 @@ class ActivationController extends Controller
     public function activationCompleted (Request $request, Response $response)
     {
         $this->validate ($request, $this->validationrule->validateActivationCompletedRule ());
-        $user = Sentinel::findByEmail (['login' => $request->email]);
-
+        $user = Sentinel::findByCredentials (['login' => $request->email]);
+        if ( is_null($user)) {
+            return $response->getResponse ($this->message->getUsernotfound (), $user, parent::$statusFailure, $this->statuscode->getSUCCESS ());
+        }
         $activation = Activation::completed ($user);
 
         return $response->getResponse ($this->message->getActivateCompleted (), $activation, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
     }
 
-    public function deativate (Request $request, Response $response)
+    public function deactivate (Request $request, Response $response)
     {
         $this->validate ($request, $this->validationrule->validateDeactivateRule ());
-        $user = Sentinel::findByEmail (['login' => $request->email]);
-
+        $user = Sentinel::findByCredentials (['login' => $request->email]);
+        if ( is_null($user) ) {
+            return $response->getResponse ($this->message->getUsernotfound (), $user, parent::$statusFailure, $this->statuscode->getSUCCESS ());
+        }
         $activation = Activation::remove ($user);
 
         return $response->getResponse ($this->message->getDeactivate (), $activation, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
 
+    }
+
+    public function completeActivation(){
+        //TODO: implementation 
     }
 
 }
