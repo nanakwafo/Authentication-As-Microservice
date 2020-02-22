@@ -17,10 +17,10 @@ class Authenticate extends Middleware
     /**
      * Create a new middleware instance.
      *
-     * @param  \Illuminate\Contracts\Auth\Factory  $auth
+     * @param  \Illuminate\Contracts\Auth\Factory $auth
      * @return void
      */
-    public function __construct(Auth $auth)
+    public function __construct (Auth $auth)
     {
         $this->auth = $auth;
     }
@@ -28,15 +28,15 @@ class Authenticate extends Middleware
     /**
      * Handle an incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
-     * @param  string|null  $guard
+     * @param  \Illuminate\Http\Request $request
+     * @param  \Closure $next
+     * @param  string|null $guard
      * @return mixed
      */
-    public function handle($request, Closure $next, $guard = null)
+    public function handle ($request, Closure $next, $guard = null)
     {
-        if ($this->auth->guard($guard)->guest()) {
-            return response('Unauthorized.', 401);
+        if ( $this->auth->guard ($guard)->guest () ) {
+            return response ('Unauthorized.', 401);
         }
 
         return $next($request);

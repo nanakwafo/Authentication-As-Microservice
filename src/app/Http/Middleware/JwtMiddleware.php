@@ -13,10 +13,9 @@ use Illuminate\Support\Facades\Log;
 use Tymon\JWTAuth\Facades\JWTAuth;
 
 
-
 class JwtMiddleware extends Middleware
 {
-    
+
     public function handle ($request, Closure $next)
     {
         $token = JWTAuth::getToken ();
@@ -25,19 +24,19 @@ class JwtMiddleware extends Middleware
             $credentials = JWTAuth::getPayload ($token)->toArray ();
         } catch (\Tymon\JWTAuth\Exceptions\TokenExpiredException $e) {
 
-            return response ()->json (['token_expired'], $this->statusCode->getSERVERERROR());
+            return response ()->json (['token_expired'], $this->statusCode->getSERVERERROR ());
 
         } catch (\Tymon\JWTAuth\Exceptions\TokenInvalidException $e) {
 
-            return response ()->json (['token_invalid'], $this->statusCode->getSERVERERROR());
+            return response ()->json (['token_invalid'], $this->statusCode->getSERVERERROR ());
 
         } catch (\Tymon\JWTAuth\Exceptions\JWTException $e) {
 
-            return response ()->json (['token_absent' => $e->getMessage ()], $this->statusCode->getSERVERERROR());
+            return response ()->json (['token_absent' => $e->getMessage ()], $this->statusCode->getSERVERERROR ());
 
         }
         Log::info ('Application user decoded token ', ['credentials' => $credentials]);
-        $user = User::find ($credentials->sub);
+        $user = User::find($credentials['sub']);
         // Now let's put the user in the request class so that you can grab it from there
         $request->auth = $user;
 

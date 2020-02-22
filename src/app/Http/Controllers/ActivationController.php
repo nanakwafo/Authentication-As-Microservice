@@ -13,7 +13,7 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 
 class ActivationController extends Controller
 {
-   
+
 
     public function __construct (Statuscode $statuscode, Message $message, Validationrule $validationrule)
     {
@@ -35,7 +35,7 @@ class ActivationController extends Controller
 
     public function activationExit (Request $request, Response $response)
     {
-        $this->validate ($request, $this->validationrule->validateActivationExitRule());
+        $this->validate ($request, $this->validationrule->validateActivationExitRule ());
         $user = Sentinel::findByCredentials (['login' => $request->email]);
 
         $activationExit = Activation::exists ($user);
@@ -45,7 +45,7 @@ class ActivationController extends Controller
 
     public function activationCompleted (Request $request, Response $response)
     {
-        $this->validate ($request, $this->validationrule->validateActivationCompletedRule());
+        $this->validate ($request, $this->validationrule->validateActivationCompletedRule ());
         $user = Sentinel::findByEmail (['login' => $request->email]);
 
         $activation = Activation::completed ($user);
@@ -55,7 +55,7 @@ class ActivationController extends Controller
 
     public function deativate (Request $request, Response $response)
     {
-        $this->validate ($request, $this->validationrule->validateDeactivateRule());
+        $this->validate ($request, $this->validationrule->validateDeactivateRule ());
         $user = Sentinel::findByEmail (['login' => $request->email]);
 
         $activation = Activation::remove ($user);

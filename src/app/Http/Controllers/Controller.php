@@ -17,8 +17,5 @@ class Controller extends BaseController
     /**
      * Controller constructor.
      */
-    public function __construct ()
-    {
-        $this->middleware ('token');
-    }
+  
 }

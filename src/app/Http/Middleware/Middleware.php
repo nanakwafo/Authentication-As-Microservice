@@ -6,11 +6,13 @@
  * Time: 00:25
  */
 namespace App\Http\Middleware;
+
 use App\Services\Statuscode;
 use App\Services\Response;
 use App\Messages\Message;
 
-class Middleware {
+class Middleware
+{
     protected $statusCode;
     protected $response;
     protected $message;

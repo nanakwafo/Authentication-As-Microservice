@@ -10,22 +10,23 @@ namespace App\Messages;
 
 class Message
 {
-    private static $logInSuccess ='User successfully logedin';
-    private static $logInFailure ='User logedin was Unsuccessful';
-    private static $logOutsuccess ='User succcessfully Logout';
-    private static $tokenGenerationFailure ='Token generation was unsuccessful';
-    private static $tokenGenerationSuccess ='Token generated successfully';
-    private static $userCreationSuccessNoActivation ='User was successfully created and require activation';
-    private static $userCreationSuccessActivation ='User was successfully created';
-    private static $updateUserSuccess='User details successfully updated';
-    private static $deleteUserSuccess='User successfully deleted';
-    private static $userlistSuccess='User list';
-    private static $finduserSuccess='User details';
-    private static $activateUser='User was successfully activated';
-    private static $activateExit='User is activated';
-    private static $activateCompleted='User activation is completed';
-    private static $deactivate='User was successfully deactivated';
-   private static $invalidrequest='Request must be json';
+    private static $logInSuccess = 'User successfully logedin';
+    private static $logInFailure = 'User logedin was Unsuccessful';
+    private static $logOutsuccess = 'User succcessfully Logout';
+    private static $tokenGenerationFailure = 'Token generation was unsuccessful';
+    private static $tokenGenerationSuccess = 'Token generated successfully';
+    private static $userCreationSuccessNoActivation = 'User was successfully created and require activation';
+    private static $userCreationSuccessActivation = 'User was successfully created';
+    private static $updateUserSuccess = 'User details successfully updated';
+    private static $deleteUserSuccess = 'User successfully deleted';
+    private static $userlistSuccess = 'User list';
+    private static $finduserSuccess = 'User details';
+    private static $activateUser = 'User was successfully activated';
+    private static $activateExit = 'User is activated';
+    private static $activateCompleted = 'User activation is completed';
+    private static $deactivate = 'User was successfully deactivated';
+    private static $invalidrequest = 'Request must be json';
+    private static $usernotfound = 'User can not be found';
 
 
     /**
@@ -156,7 +157,13 @@ class Message
         return self::$invalidrequest;
     }
 
-    
-    
-    
+    /**
+     * @return string
+     */
+    public static function getUsernotfound ()
+    {
+        return self::$usernotfound;
+    }
+
+
 }

@@ -5,21 +5,23 @@
  * Date: 17/02/2020
  * Time: 12:02
  */
-$router->group (['prefix' => 'api'], function () use ($router) {
-
-    $router->get ('users', ['uses' => 'RegistrationController@showAllUsers']);
-
-    $router->get ('users/{id}', ['uses' => 'RegistrationController@findById']);
-
-    $router->post ('createuserwithactivation', ['uses' => 'RegistrationController@createUserWithActivation']);
-
-    $router->post ('createuserwithouactivation', ['uses' => 'RegistrationController@createUserWithOutActivation']);
-
-    $router->post ('deleteuser', ['uses' => 'RegistrationController@deleteUser']);
-
-    $router->put ('users/{email}', ['uses' => 'RegistrationController@updateUser']);
-
-    $router->post ('userdetails', ['uses' => 'RegistrationController@findUserByEmail']);
 
 
-});
+    $router->group (['prefix' => 'api'], function () use ($router) {
+
+        $router->get ('User', ['uses' => 'RegistrationController@showAllUsers']);
+
+        $router->post ('User/createwithactivation', ['uses' => 'RegistrationController@createUserWithActivation']);
+
+        $router->post ('User/createwithoutactivation', ['uses' => 'RegistrationController@createUserWithOutActivation']);
+
+        $router->post ('User/delete', ['uses' => 'RegistrationController@deleteUser']);
+
+        $router->post ('User/update', ['uses' => 'RegistrationController@updateUser']);
+
+        $router->post ('User/finduser', ['uses' => 'RegistrationController@findUserByEmail']);
+
+
+    });
+
+

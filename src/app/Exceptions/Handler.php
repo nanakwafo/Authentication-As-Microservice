@@ -11,6 +11,7 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class Handler extends ExceptionHandler
 {
+
     /**
      * A list of the exception types that should not be reported.
      *
@@ -33,9 +34,6 @@ class Handler extends ExceptionHandler
      */
     public function report(Exception $exception)
     {
-//        if($exception instanceof AuthorizationException){
-//
-//        }
         parent::report($exception);
     }
 

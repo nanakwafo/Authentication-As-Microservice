@@ -18,32 +18,34 @@ use Cartalyst\Sentinel\Native\Facades\Sentinel;
 
 class AuthenticationController extends Controller
 {
-    
-    public function __construct (Statuscode $statuscode,Message $message,Validationrule $validationrule)
+
+    public function __construct (Statuscode $statuscode, Message $message, Validationrule $validationrule)
     {
         $this->statuscode = $statuscode;
-        $this->message=$message;
-        $this->validationrule=$validationrule;
-       
+        $this->message = $message;
+        $this->validationrule = $validationrule;
+
     }
 
 
     public function logIn (Request $request, Response $response)
     {
-        $this->validate ($request, $this->validationrule->validateLoginRule());
+        $this->validate ($request, $this->validationrule->validateLoginRule ());
 
-        return Sentinel::authenticate ($request->only (['email', 'password'])) ?
-            $response->getResponse ($this->message->getLogInSuccess(), $this->user, 'success', $this->statuscode->getSUCCESS()) :
-            $response->getResponse ($this->message->getLogInFailure(), '', '', $this->statuscode->getUNAUTHORIZED());
+        return Sentinel::authenticate ($request->only (['email', 'password']))
+            ?
+            $response->getResponse ($this->message->getLogInSuccess (), $this->user, 'success', $this->statuscode->getSUCCESS ())
+            :
+            $response->getResponse ($this->message->getLogInFailure (), '', '', $this->statuscode->getUNAUTHORIZED ());
     }
 
 
     public function logOut (Request $request, Response $response)
     {
-        $this->validate($request,$this->validationrule->validateLogoutRule());
+        $this->validate ($request, $this->validationrule->validateLogoutRule ());
         $user = Sentinel::findByCredentials (['login' => $request->email]);
         $logout = Sentinel::logout ($user);
 
-        return response ()->json ($response->responseBody ($this->message->getLogOutsuccess(), $logout, 'success', $this->statuscode->getSUCCESS ()));
+        return response ()->json ($response->responseBody ($this->message->getLogOutsuccess (), $logout, 'success', $this->statuscode->getSUCCESS ()));
     }
 }

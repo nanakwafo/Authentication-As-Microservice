@@ -10,10 +10,10 @@ namespace App\Services;
 class Response
 {
 
-    private $message='Message';
-    private $data='Data';
-    private $status ='status';
-    private $statusCode = 'Status Code';
+    private $message = 'Message';
+    private $data = 'Data';
+    private $status = 'status';
+    private $statusCode = 'StatusCode';
 
 
     /**
@@ -81,8 +81,7 @@ class Response
     }
 
 
-
-    public function getResponse (string $message, string $data, string $status, int $statusCode)
+    public function getResponse (string $message, $data, string $status, int $statusCode)
     {
         $data = [
             $this->message    => $message,
