@@ -2,7 +2,7 @@
 # Architectural Diagrams
 
 ![alt text](https://github.com/nanakwafo/authmicroservice/blob/master/images/icon1.png "Logo Title Text 1")
-![alt text](https://github.com/nanakwafo/authmicroservice/blob/master/images/icon2.png "Logo Title Text 1")
+
 
 ## Api Ducumentation
 Documentation for the framework can be found on the [Auth as a microservice](https://documenter.getpostman.com/view/1213803/SzKPWhH9?version=latest)
@@ -15,4 +15,4 @@ Documentation for the framework can be found on the [Auth as a microservice](htt
 1. execute this on the terminal
   ` docker-compose build && docker-compose up -d`
 
-######NB.This will spin up 3 containers
+>NB.This will spin up 3 containers
