@@ -2,13 +2,323 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57f5f80e-589c-48ab-be34-2f07da32eac8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/ReminderController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/RoleController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/ib_logfile0" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/ibdata1" afterPath="$PROJECT_DIR$/mysql/ibdata1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/ibtmp1" afterPath="$PROJECT_DIR$/mysql/ibtmp1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/CredentialController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/credentialRoute.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/activations.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/activations.ibd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/db.opt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/migrations.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/migrations.ibd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/persistences.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/persistences.ibd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/reminders.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/reminders.ibd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/role_users.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/role_users.ibd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/roles.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/roles.ibd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/throttle.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/throttle.ibd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/userapps.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/userapps.ibd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/users.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/authdb/users.ibd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/auto.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/ca-key.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/ca.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/client-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/client-key.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/ib_buffer_pool" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/ib_logfile0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/ib_logfile1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/ibdata1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/ibtmp1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/accounts.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/cond_instances.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/db.opt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_stages_current.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_stages_history.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_stages_history_long.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_stages_summary_by_account_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_stages_summary_by_host_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_stages_summary_by_thread_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_stages_summary_by_user_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_stages_summary_global_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statements_current.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statements_history.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statements_history_long.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statements_summary_by_account_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statements_summary_by_digest.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statements_summary_by_host_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statements_summary_by_program.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statements_summary_by_thread_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statements_summary_by_user_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_statements_summary_global_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_transactions_current.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_transactions_history.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_transactions_history_long.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_transactions_summary_by_account_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_transactions_summary_by_host_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_transactions_summary_by_thread_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_transactions_summary_by_user_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_transactions_summary_global_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_waits_current.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_waits_history.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_waits_history_long.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_waits_summary_by_account_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_waits_summary_by_host_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_waits_summary_by_instance.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_waits_summary_by_thread_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_waits_summary_by_user_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/events_waits_summary_global_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/file_instances.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/file_summary_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/file_summary_by_instance.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/global_status.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/global_variables.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/host_cache.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/hosts.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/memory_summary_by_account_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/memory_summary_by_host_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/memory_summary_by_thread_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/memory_summary_by_user_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/memory_summary_global_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/metadata_locks.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/mutex_instances.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/objects_summary_global_by_type.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/performance_timers.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/prepared_statements_instances.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_applier_configuration.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_applier_status.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_applier_status_by_coordinator.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_applier_status_by_worker.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_connection_configuration.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_connection_status.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_group_member_stats.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/replication_group_members.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/rwlock_instances.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/session_account_connect_attrs.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/session_connect_attrs.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/session_status.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/session_variables.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/setup_actors.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/setup_consumers.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/setup_instruments.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/setup_objects.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/setup_timers.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/socket_instances.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/socket_summary_by_event_name.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/socket_summary_by_instance.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/status_by_account.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/status_by_host.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/status_by_thread.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/status_by_user.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/table_handles.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/table_io_waits_summary_by_index_usage.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/table_io_waits_summary_by_table.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/table_lock_waits_summary_by_table.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/threads.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/user_variables_by_thread.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/users.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/performance_schema/variables_by_thread.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/private_key.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/public_key.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/server-cert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/server-key.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/db.opt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/host_summary.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/host_summary_by_file_io.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/host_summary_by_file_io_type.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/host_summary_by_stages.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/host_summary_by_statement_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/host_summary_by_statement_type.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/innodb_buffer_stats_by_schema.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/innodb_buffer_stats_by_table.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/innodb_lock_waits.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/io_by_thread_by_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/io_global_by_file_by_bytes.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/io_global_by_file_by_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/io_global_by_wait_by_bytes.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/io_global_by_wait_by_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/latest_file_io.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/memory_by_host_by_current_bytes.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/memory_by_thread_by_current_bytes.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/memory_by_user_by_current_bytes.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/memory_global_by_current_bytes.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/memory_global_total.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/metrics.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/processlist.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/ps_check_lost_instrumentation.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/schema_auto_increment_columns.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/schema_index_statistics.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/schema_object_overview.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/schema_redundant_indexes.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/schema_table_lock_waits.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/schema_table_statistics.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/schema_table_statistics_with_buffer.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/schema_tables_with_full_table_scans.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/schema_unused_indexes.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/session.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/session_ssl_status.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/statement_analysis.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/statements_with_errors_or_warnings.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/statements_with_full_table_scans.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/statements_with_runtimes_in_95th_percentile.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/statements_with_sorting.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/statements_with_temp_tables.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/sys_config.TRG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/sys_config.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/sys_config.ibd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/sys_config_insert_set_user.TRN" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/sys_config_update_set_user.TRN" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/user_summary.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/user_summary_by_file_io.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/user_summary_by_file_io_type.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/user_summary_by_stages.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/user_summary_by_statement_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/user_summary_by_statement_type.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/version.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/wait_classes_global_by_avg_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/wait_classes_global_by_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/waits_by_host_by_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/waits_by_user_by_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/waits_global_by_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024host_summary.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024host_summary_by_file_io.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024host_summary_by_file_io_type.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024host_summary_by_stages.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024host_summary_by_statement_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024host_summary_by_statement_type.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024innodb_buffer_stats_by_schema.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024innodb_buffer_stats_by_table.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024innodb_lock_waits.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024io_by_thread_by_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024io_global_by_file_by_bytes.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024io_global_by_file_by_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024io_global_by_wait_by_bytes.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024io_global_by_wait_by_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024latest_file_io.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024memory_by_host_by_current_bytes.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024memory_by_thread_by_current_bytes.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024memory_by_user_by_current_bytes.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024memory_global_by_current_bytes.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024memory_global_total.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024processlist.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024ps_digest_95th_percentile_by_avg_us.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024ps_digest_avg_latency_distribution.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024ps_schema_table_statistics_io.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024schema_flattened_keys.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024schema_index_statistics.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024schema_table_lock_waits.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024schema_table_statistics.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024schema_table_statistics_with_buffer.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024schema_tables_with_full_table_scans.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024session.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024statement_analysis.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024statements_with_errors_or_warnings.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024statements_with_full_table_scans.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024statements_with_runtimes_in_95th_percentile.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024statements_with_sorting.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024statements_with_temp_tables.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024user_summary.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024user_summary_by_file_io.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024user_summary_by_file_io_type.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024user_summary_by_stages.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024user_summary_by_statement_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024user_summary_by_statement_type.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024wait_classes_global_by_avg_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024wait_classes_global_by_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024waits_by_host_by_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024waits_by_user_by_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mysql/sys/x@0024waits_global_by_latency.frm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/0PDZjwtOWDaza0zGLsoXvHIXDnI72Wrtdza8LEbh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/3BwTw3a7VgpZXxCMAmdW6v8rHbjuw22bkj8MHSVA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/3UzuHFIsaO1DHmiCIjEg7tIcSlrY5mMQF3e051Bv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/5JuI28zUNUMkx5uqzax3wEJvzxtQI3bShX98Psf2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/5YTcnskZq7FzXsKPuM2Jl464T7fGAgzEdyK6bOQT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/5efn6fHWXJZ0aCQPoH1b8ptMgMCkdBoJHxLWupAx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/5uQ1AXrJ9XwsRKZkrwkjuMr3OKUAXGGWFlTpgt8q" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/6ooNE1GmLhLd7OfWpBD5ucWPOKHWY7OHojWRMlKV" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/6rOQ9ao9bOB1OwXCRsv4AttL0FnCOuXTnuW76m2R" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/7nPyLkrMdtETpdHHsMbiL2G9Au9pIjFcUCi8wAds" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/AJC6XqGQStaNDp2VQrjrvjysuc5z39TVgzyTejTK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/AZHiuXHQaMG1G4p6lEUhgVGfz1ZktrTJL2CZXugl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/CYkw3qjv5FXThFwq4W2OJaX791OTW5d9UA8daQfl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/CaXTji9TYwWd7OJTWnXa2ZBidrR3Nzd97DuAe61g" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/DLUn94O7fWiHmYliwt6eeWgYtYpWBrwUHiUr51Bc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/FCfyAfXN1wJ73MpM0D8pg5LEB080soGAKPg94QqM" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/MqItvjJBksoZ0ZasiPGk5VNqhgCsxEZGP4JTaxbP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/OX8bZ20z7Ngsrf0ihOSSkfXH26KhzfggRwjKIbg8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/Ovthnh0rdimNhUh2w9gvjemYDjohxx2VDLZ9o3Lm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/OyNgcUvQOdWkQBwT09Gl94KxC1YIUxnGQlwIryI7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/PEMK0vNIYrRS4OSjsO9MqMYIYagp65wXNjeNA4Yh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/PPSUQljrTna2TF9bVyO8dx8lWaR6gjUUibgr0l9i" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/RrZue8DGAmQw39lXYPQsjB1w6RkUMUIpg3zElAP3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/SnodUXQJpypO3UAEXsnZDHVOugusEHfAmKpd9fme" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/SrZhxBU0hQRLYwEanx08F3XOuZovjRz4FFQdyeNh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/T6DKOHDXzj2li4W1HOqRa05ZcLx2QcOzi0DSseoX" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/T6hKIPZgUksIxcXdgqE6DF4TzOdIESmNtrcW94JA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/T7RKDmjvsFQYXS3hOMaPks0tQip9WuYWDq1Hddwf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/TIPJUK2Cbkq6HTRdjQtOf4lI1OugDEAYKjZtt0po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/TN0vTd2458sGLDWrGYU1j6bZKUJZGKz6XtUteNw8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/ToNDwB1ixinblgorVdt0HllGecLwOWlf5ZN8hUUX" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/TpMCq4q1dimV3yviHuhy9CKN8oAQ9ou7OTcgFKVj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/TpU3ZJkOWyauYHkr1pD3TV8UxZgcnpwW9XgVlB5n" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/arlt0R3K0gSTB38IViNClOedv7u63FlNGvbjSYmH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/auYlsVXjBVQArqh1rfPNp3OM6sqMwgb5sMGdQCnD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/cxTI2HKad349Um5A2XYDMRrxmV9IMAhxDCJ5SjmD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/dck4R4CPFv8vvCIrOhC10SX2uiBWopIN5wcjWsrH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/e4gR0CUd1rDkf8bIeRsFu9J0a07ElO39nH2rpH0p" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/eBnwGRIyfHBacjXQ1rf2G1bLhifCv7dGlzlqL7KL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/nD1f7h0oUcK6JsIKPGtEDx5eKs9fq8pjZV4gh8X2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/nzfAEyz5zZjavO1kLIZTuVxgBEVI1tpUx84Xq7QF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/oD2ftPp0Phtu9KI8EsM3uBUmVnxfZTw1A1c3p0IY" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/ozpqpoOipeLwZJGcNQSQBGstwWweCT6FVlvhXmkn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/pbYbBoPLWUMd4x6v0FcGPqRtSWGQLVju0xshqnUc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/pbpg2jW6QbTVwrxNDB0HOu2RIEJOGB5ThaUuRdVq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/pzLOe35L8IksuhWTjYMoa00cfU1WRmQjatO9U525" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/qW8q8BVpA31puVyevZxCXFLVMU0eRIhNUWShAVow" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/s9VbExLl4SD9vexNSKDghks4qYChzD0HZDSE4Gn1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/sNIHw4TUk2T7O2acJmohT2yqeuzAFg1jyhrjbfBO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/sQR6dk3GpKoKdPnRekTP7sBiPiyrrgnKMdM3IQTi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/sexTL3ZWqq1wqxahcnfdY7G1Y69lgdxHJZ6xl33A" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/tr2LOP858LoLefUtr1lERaeTmitplSoOcHDK5GEw" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/columns_priv.MYI" afterPath="$PROJECT_DIR$/mysql/mysql/columns_priv.MYI" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/db.MYI" afterPath="$PROJECT_DIR$/mysql/mysql/db.MYI" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/engine_cost.ibd" afterPath="$PROJECT_DIR$/mysql/mysql/engine_cost.ibd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/event.MYI" afterPath="$PROJECT_DIR$/mysql/mysql/event.MYI" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/func.MYI" afterPath="$PROJECT_DIR$/mysql/mysql/func.MYI" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/help_category.ibd" afterPath="$PROJECT_DIR$/mysql/mysql/help_category.ibd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/help_keyword.ibd" afterPath="$PROJECT_DIR$/mysql/mysql/help_keyword.ibd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/help_relation.ibd" afterPath="$PROJECT_DIR$/mysql/mysql/help_relation.ibd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/help_topic.ibd" afterPath="$PROJECT_DIR$/mysql/mysql/help_topic.ibd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/innodb_index_stats.ibd" afterPath="$PROJECT_DIR$/mysql/mysql/innodb_index_stats.ibd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/innodb_table_stats.ibd" afterPath="$PROJECT_DIR$/mysql/mysql/innodb_table_stats.ibd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/ndb_binlog_index.MYI" afterPath="$PROJECT_DIR$/mysql/mysql/ndb_binlog_index.MYI" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/proc.MYD" afterPath="$PROJECT_DIR$/mysql/mysql/proc.MYD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/proc.MYI" afterPath="$PROJECT_DIR$/mysql/mysql/proc.MYI" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/procs_priv.MYI" afterPath="$PROJECT_DIR$/mysql/mysql/procs_priv.MYI" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/proxies_priv.MYI" afterPath="$PROJECT_DIR$/mysql/mysql/proxies_priv.MYI" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/server_cost.ibd" afterPath="$PROJECT_DIR$/mysql/mysql/server_cost.ibd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/tables_priv.MYD" afterPath="$PROJECT_DIR$/mysql/mysql/tables_priv.MYD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/tables_priv.MYI" afterPath="$PROJECT_DIR$/mysql/mysql/tables_priv.MYI" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/time_zone.ibd" afterPath="$PROJECT_DIR$/mysql/mysql/time_zone.ibd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/time_zone_name.ibd" afterPath="$PROJECT_DIR$/mysql/mysql/time_zone_name.ibd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/time_zone_transition.ibd" afterPath="$PROJECT_DIR$/mysql/mysql/time_zone_transition.ibd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/time_zone_transition_type.ibd" afterPath="$PROJECT_DIR$/mysql/mysql/time_zone_transition_type.ibd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/user.MYD" afterPath="$PROJECT_DIR$/mysql/mysql/user.MYD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql/mysql/user.MYI" afterPath="$PROJECT_DIR$/mysql/mysql/user.MYI" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-compose.yml" afterPath="$PROJECT_DIR$/docker-compose.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Messages/Message.php" afterPath="$PROJECT_DIR$/src/app/Messages/Message.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/User.php" afterPath="$PROJECT_DIR$/src/app/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/src/database/seeds/DatabaseSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/seeds/userappSeeder.php" afterPath="$PROJECT_DIR$/src/database/seeds/userappSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/AuthenticationRoute.php" afterPath="$PROJECT_DIR$/src/routes/AuthenticationRoute.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/JwtRoute.php" afterPath="$PROJECT_DIR$/src/routes/JwtRoute.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/MainRoute.php" afterPath="$PROJECT_DIR$/src/routes/MainRoute.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/RegistrationRoute.php" afterPath="$PROJECT_DIR$/src/routes/RegistrationRoute.php" />
     </list>
     <ignored path="authmicroservice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,70 +340,93 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/readme.md">
+      <file leaf-file-name="MainRoute.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/routes/MainRoute.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
-              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistrationController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/RegistrationController.php">
+      <file leaf-file-name="JwtRoute.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/routes/JwtRoute.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="91">
+              <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
               <folding>
-                <element signature="e#2098#2984#0#PHP" expanded="true" />
-                <element signature="e#2528#2821#0#PHP" expanded="false" />
+                <element signature="e#132#241#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoleController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/RoleController.php">
+      <file leaf-file-name="JwtController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/JwtController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
               <folding>
-                <element signature="n#getRoleBySlug#0;n#RoleController#0;n#!!top" expanded="true" />
-                <element signature="n#getRoleByName#0;n#RoleController#0;n#!!top" expanded="true" />
-                <element signature="n#assignUserToRole#0;n#RoleController#0;n#!!top" expanded="true" />
-                <element signature="n#removeUserFromRole#0;n#RoleController#0;n#!!top" expanded="true" />
+                <element signature="e#852#1494#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReminderController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ReminderController.php">
+      <file leaf-file-name="AuthenticationRoute.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/routes/AuthenticationRoute.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            <state relative-caret-position="39">
+              <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+              <folding>
+                <element signature="e#133#324#1#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistrationRoute.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/routes/RegistrationRoute.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+              <folding>
+                <element signature="e#138#770#1#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActivationController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ActivationController.php">
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="143">
+              <caret line="11" column="11" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthenticationController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/AuthenticationController.php">
+      <file leaf-file-name="credentialRoute.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/routes/credentialRoute.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
-              <folding />
+            <state relative-caret-position="104">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="36" />
+              <folding>
+                <element signature="e#6#91#0#PHP" expanded="true" />
+                <element signature="e#133#262#1#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,29 +439,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/JwtMiddleware.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ActivationController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AuthenticationController.php" />
         <option value="$PROJECT_DIR$/bootstrap/app.php" />
         <option value="$PROJECT_DIR$/storage/logs/lumen-2020-02-18.log" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/routes/MainRoute.php" />
         <option value="$PROJECT_DIR$/Dockerfile" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/src/artisan" />
         <option value="$PROJECT_DIR$/src/config/database.php" />
         <option value="$PROJECT_DIR$/src/.env" />
-        <option value="$PROJECT_DIR$/src/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/src/app/Http/Service/ResponseService.php" />
         <option value="$PROJECT_DIR$/src/bootstrap/app.php" />
         <option value="$PROJECT_DIR$/src/app/Service/Statuscode.php" />
         <option value="$PROJECT_DIR$/src/app/Service/Response.php" />
         <option value="$PROJECT_DIR$/src/app/Services/Message.php" />
         <option value="$PROJECT_DIR$/src/app/Services/Validation.php" />
-        <option value="$PROJECT_DIR$/src/database/seeds/userappSeeder.php" />
-        <option value="$PROJECT_DIR$/src/app/User.php" />
         <option value="$PROJECT_DIR$/src/app/Http/Middleware/ExampleMiddleware.php" />
         <option value="$PROJECT_DIR$/src/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/src/app/Http/Middleware/RequestMiddleware.php" />
@@ -146,17 +470,26 @@
         <option value="$PROJECT_DIR$/src/app/Exceptions/EmailduplicationException.php" />
         <option value="$PROJECT_DIR$/src/app/Exceptions/Handler.php" />
         <option value="$PROJECT_DIR$/src/app/Http/Controllers/JwtController.php" />
-        <option value="$PROJECT_DIR$/src/app/Messages/Message.php" />
         <option value="$PROJECT_DIR$/src/app/Services/Response.php" />
-        <option value="$PROJECT_DIR$/src/routes/RegistrationRoute.php" />
         <option value="$PROJECT_DIR$/src/app/Http/Controllers/Controller.php" />
         <option value="$PROJECT_DIR$/src/app/Http/Controllers/AuthenticationController.php" />
         <option value="$PROJECT_DIR$/src/routes/ActivationRoute.php" />
-        <option value="$PROJECT_DIR$/src/app/Http/Controllers/ActivationController.php" />
         <option value="$PROJECT_DIR$/src/app/Http/Controllers/RegistrationController.php" />
         <option value="$PROJECT_DIR$/src/app/Http/Controllers/RoleController.php" />
         <option value="$PROJECT_DIR$/src/app/Http/Controllers/ReminderController.php" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/src/routes/MainRoute.php" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/src/routes/credentialRoute.php" />
+        <option value="$PROJECT_DIR$/src/database/seeds/userappSeeder.php" />
+        <option value="$PROJECT_DIR$/src/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/src/app/User.php" />
+        <option value="$PROJECT_DIR$/src/app/Http/Controllers/ActivationController.php" />
+        <option value="$PROJECT_DIR$/src/app/Messages/Message.php" />
+        <option value="$PROJECT_DIR$/src/app/Http/Controllers/CredentialController.php" />
+        <option value="$PROJECT_DIR$/src/routes/JwtRoute.php" />
+        <option value="$PROJECT_DIR$/src/routes/AuthenticationRoute.php" />
+        <option value="$PROJECT_DIR$/src/routes/RegistrationRoute.php" />
       </list>
     </option>
   </component>
@@ -249,7 +582,47 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authmicroservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authmicroservice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authmicroservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authmicroservice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seeds" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -272,6 +645,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="migrations" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authmicroservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authmicroservice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="factories" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -359,14 +754,28 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authmicroservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authmicroservice" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nginx" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../invent" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="SearchEverywhereHistoryKey" value="EloquentU&#9;null&#9;null&#10;Database&#9;null&#9;null&#10;Eloquent&#9;FILE&#9;file://C:/xampp/htdocs/authmicroservice/vendor/cartalyst/sentinel/src/Users/EloquentUser.php&#10;xde&#9;null&#9;null&#10;eloque&#9;FILE&#9;file://C:/xampp/htdocs/authmicroservice/vendor/cartalyst/sentinel/src/Users/EloquentUser.php&#10;EloquentUser&#9;null&#9;null" />
@@ -456,18 +865,19 @@
       <workItem from="1582152498504" duration="57773000" />
       <workItem from="1582373036116" duration="32106000" />
       <workItem from="1582538989388" duration="1219000" />
-      <workItem from="1582743502111" duration="4274000" />
+      <workItem from="1582743502111" duration="5245000" />
+      <workItem from="1582885718283" duration="7996000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="268226000" />
+    <option name="totallyTimeSpent" value="277193000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11770833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -487,6 +897,27 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39906833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="1458" y="92" width="1736" height="866" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.374477" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11770833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32763976" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39906833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -501,48 +932,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="30" />
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/Http/Middleware/ExampleMiddleware.php" />
-    <entry file="file://$PROJECT_DIR$/src/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Services/Statuscode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Jobs/ExampleJob.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/ExampleTest.php" />
-    <entry file="file://$PROJECT_DIR$/src/vendor/phpunit/phpunit/src/Framework/Test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/vendor/phpunit/phpunit/src/Framework/SelfDescribing.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -607,13 +1001,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/JwtRoute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Http/Middleware/Middleware.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -626,13 +1013,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/migrations/2014_07_02_230147_create_userapps_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -658,20 +1038,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/seeds/userappSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Http/Middleware/Authenticate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -690,27 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/RegistrationRoute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/MainRoute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Messages/Message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1456">
-          <caret line="162" column="27" selection-start-line="162" selection-start-column="27" selection-end-line="162" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -735,13 +1080,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/AuthenticationRoute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -763,20 +1101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/JwtController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/ActivationRoute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/readme.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -784,50 +1108,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ActivationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/AuthenticationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/migrations/2014_07_02_230147_migration_cartalyst_sentinel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="81" column="38" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/RegistrationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="e#2098#2984#0#PHP" expanded="true" />
-            <element signature="e#2528#2821#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/RoleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
+        <state relative-caret-position="195">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
-            <element signature="n#getRoleBySlug#0;n#RoleController#0;n#!!top" expanded="true" />
-            <element signature="n#getRoleByName#0;n#RoleController#0;n#!!top" expanded="true" />
-            <element signature="n#assignUserToRole#0;n#RoleController#0;n#!!top" expanded="true" />
-            <element signature="n#removeUserFromRole#0;n#RoleController#0;n#!!top" expanded="true" />
+            <element signature="n#getRoleBySlug#0;n#RoleController#0;n#!!top" expanded="false" />
+            <element signature="n#getRoleByName#0;n#RoleController#0;n#!!top" expanded="false" />
+            <element signature="n#assignUserToRole#0;n#RoleController#0;n#!!top" expanded="false" />
+            <element signature="n#removeUserFromRole#0;n#RoleController#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -842,8 +1138,207 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/RegistrationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding>
+            <element signature="e#2098#2984#0#PHP" expanded="false" />
+            <element signature="e#2528#2821#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/ActivationRoute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding>
+            <element signature="e#130#562#1#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/default.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/AuthenticationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="e#126#151#0#PHP" expanded="false" />
+            <element signature="e#1184#1798#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/seeds/userappSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="e#92#123#0#PHP" expanded="false" />
+            <element signature="n#run#0;n#userappSeeder#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="n#run#0;n#DatabaseSeeder#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/factories/ModelFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#427#550#1#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/migrations/2014_07_02_230147_create_userapps_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="n#up#0;n#CreateUserappsTable#0;n#!!top" expanded="false" />
+            <element signature="e#333#597#1#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+          <folding>
+            <element signature="e#23#59#0#PHP" expanded="true" />
+            <element signature="e#1034#1315#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/CredentialController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="false" />
+            <element signature="e#126#139#0#PHP" expanded="false" />
+            <element signature="e#345#505#0#PHP" expanded="false" />
+            <element signature="e#512#1297#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Messages/Message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="170" column="41" selection-start-line="170" selection-start-column="41" selection-end-line="170" selection-end-column="41" />
+          <folding>
+            <element signature="e#3741#3830#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ActivationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/MainRoute.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/credentialRoute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="true" />
+            <element signature="e#133#262#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/JwtRoute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
+          <folding>
+            <element signature="e#132#241#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/JwtController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+          <folding>
+            <element signature="e#852#1494#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/AuthenticationRoute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+          <folding>
+            <element signature="e#133#324#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/RegistrationRoute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding>
+            <element signature="e#138#770#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>

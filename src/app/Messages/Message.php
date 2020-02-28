@@ -27,6 +27,7 @@ class Message
     private static $deactivate = 'User was successfully deactivated';
     private static $invalidrequest = 'Request must be json';
     private static $usernotfound = 'User can not be found';
+    private static $credentialsCreated = 'Credentials has been generated successfully';
 
 
     /**
@@ -163,6 +164,11 @@ class Message
     public static function getUsernotfound ()
     {
         return self::$usernotfound;
+    }
+
+    public function getCredentailCreated ()
+    {
+        return self::$credentialsCreated;
     }
 
 

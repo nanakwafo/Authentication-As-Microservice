@@ -8,12 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 use Tymon\JWTAuth\Contracts\JWTSubject;
+use Faker\Generator as Faker;
+use Illuminate\Support\Facades\Hash;
 
 class User extends Model implements AuthenticatableContract, AuthorizableContract, JWTSubject
 {
 
     protected $table = 'userapps';
-    
+    protected $fillable = ['email', 'password'];
     use Authenticatable, Authorizable;
 
 
@@ -22,9 +24,9 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
      *
      * @return mixed
      */
-    public function getJWTIdentifier()
+    public function getJWTIdentifier ()
     {
-        return $this->getKey();
+        return $this->getKey ();
     }
 
     /**
@@ -32,9 +34,24 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
      *
      * @return array
      */
-    public function getJWTCustomClaims()
+    public function getJWTCustomClaims ()
     {
         return [];
+    }
+
+
+    public static function Credential (Faker $faker)
+    {
+
+        $password = $faker->password ();
+
+        return [
+
+            'email'           => $faker->email,
+            'password'        => $password,
+            'password_hashed' => Hash::make ($password)
+        ];
+
     }
 
 }

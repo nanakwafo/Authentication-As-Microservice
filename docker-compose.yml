@@ -7,7 +7,7 @@ networks:
 services:
   nginx:
     image: nginx:stable-alpine
-    container_name: nginx
+    container_name: authmicoservice-nginx
     ports:
       - "8088:80"
     volumes:
@@ -22,7 +22,7 @@ services:
 
   mysql:
     image: mysql:5.7.22
-    container_name: mysql
+    container_name: authmicoservice-mysql
     restart: unless-stopped
     tty: true
     ports:
@@ -42,7 +42,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: php
+    container_name: authmicoservice-php
     volumes:
       - ./src:/var/www/html
     ports:

@@ -14,5 +14,6 @@ include_once "RegistrationRoute.php";
 include_once "AuthenticationRoute.php";
 include_once "ActivationRoute.php";
 include_once "JwtRoute.php";
+include_once "credentialRoute.php";
 
 

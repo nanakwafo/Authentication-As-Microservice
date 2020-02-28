@@ -6,7 +6,7 @@
  * Time: 19:30
  */
 
-$router->group (['prefix' => 'api'], function () use ($router) {
+$router->group (['prefix' => 'api/v1'], function () use ($router) {
     
     $router->post ('login', ['uses' => 'AuthenticationController@login']);
     

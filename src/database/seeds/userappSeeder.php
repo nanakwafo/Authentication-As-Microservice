@@ -11,10 +11,12 @@ class userappSeeder extends Seeder
 {
     public function run ()
     {
-        DB::table ('userapps')->insert ([
-
-            'email'    => 'nanamensah1140@gmail.com',
-            'password' => Hash::make ('password'),
-        ]);
+//        DB::table ('userapps')->insert ([
+//
+//            'email'    => 'nanamensah1140@gmail.com',
+//            'password' => Hash::make ('password'),
+//        ]);
+        //
+       
     }
 }
