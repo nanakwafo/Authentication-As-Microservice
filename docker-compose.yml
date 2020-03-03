@@ -26,7 +26,7 @@ services:
     restart: unless-stopped
     tty: true
     ports:
-      - "4306:3306"
+      - "4307:3306"
     volumes:
       - ./mysql:/var/lib/mysql
     environment:
@@ -46,6 +46,6 @@ services:
     volumes:
       - ./src:/var/www/html
     ports:
-      - "9000:9000"
+      - "9001:9000"
     networks:
       - authmicroservice
