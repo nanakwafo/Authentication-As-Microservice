@@ -28,8 +28,12 @@ class Message
     private static $invalidrequest = 'Request must be json';
     private static $usernotfound = 'User can not be found';
     private static $credentialsCreated = 'Credentials has been generated successfully';
-
-
+    private static $rolefound="Role Found";
+    private static $rolecreated="Role created successfully";
+    private static $userassignedtorole ="User assigned to role successfully";
+    private static $userremovedfromrole="User removed from roles successfully";
+    private static $remindercreated="Reminder Created successfully";
+    private static $reminderremoved="Reminder Removed  successfully";
     /**
      * @return string
      */
@@ -169,6 +173,46 @@ class Message
     public function getCredentailCreated ()
     {
         return self::$credentialsCreated;
+    }
+
+    public function getRoleFound ()
+    {
+        return self::$rolefound;
+    }
+
+    public function getRoleCreated ()
+    {
+        return self::$rolecreated;
+    }
+
+    public function getUserAssignedToRole ()
+    {
+        return self::$userassignedtorole;
+    }
+
+    public function getUserRemovedFromRole ()
+    {
+        return self::$userremovedfromrole;
+    }
+
+    public function getReminderCreated ()
+    {
+        return self::$remindercreated;
+    }
+
+    public function getCompletePasswordReset ()
+    {
+        return self::$completepasswordreset;
+    }
+
+    public function getUnconpletedPasswordReset ()
+    {
+        return self::$uncompletepasswordreset;
+    }
+
+    public function getRemindersRemoved ()
+    {
+        return self::$reminderremoved;
     }
 
 

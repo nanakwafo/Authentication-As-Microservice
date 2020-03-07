@@ -19,7 +19,8 @@ class DefaultController extends Controller
            "Author:"=>"Kwafo Nana Mensah",
            "Developer:"=>"Kwafo Nana Mensah",
            "Project Title:"=>" Authentication as a Microservice",
-           "Info"=>"visit the Api to test Endpoint.Use PostMan to test endpoint"
+           "Info"=>"visit the Api to test Endpoint.Use PostMan to test endpoint",
+           "version"=>"1"
        ]);
    }
 }

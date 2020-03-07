@@ -34,7 +34,7 @@ class JwtController extends Controller
         return response ()->json ([
             'token'      => $token,
             'token_type' => 'bearer',
-            'expires_in' => 3600
+            'expires_in' => 3600 //'',
         ], $this->statuscode->getSUCCESS ());
     }
 

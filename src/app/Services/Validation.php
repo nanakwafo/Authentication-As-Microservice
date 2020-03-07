@@ -10,6 +10,10 @@ class Validationrule
 {
     private static $email = 'required|string';
     private static $password = 'required|string';
+    private static $name = 'required|string';
+    private static $slug = 'required|string';
+    private static $remindercode ='required|string';
+    private static $newpassword ='required|string';
 
 
     public function validateLoginRule ()
@@ -90,6 +94,62 @@ class Validationrule
     {
         return [
             'email' => self::$email
+        ];
+    }
+
+    public function validateCreateRole ()
+    {
+        return [
+            'name' => self::$name,
+            'slug' => self::$slug
+        ];
+    }
+
+    public function validateRemoveUserFromRole ()
+    {
+        return [
+            'email' => self::$email,
+            'rolename' => self::$rolename
+        ];
+    }
+
+    public function validateAssignUsertoRole ()
+    {
+        return [
+            'email' => self::$email,
+            'rolename' => self::$rolename
+        ];
+    }
+
+    public function validateRoleBySlug ()
+    {
+        return [
+
+            'rolename' => self::$rolename
+        ];
+    }
+
+    public function validatecreateUserReminder ()
+    {
+        return [
+            'email' => self::$email
+        ];
+    }
+
+    public function checkIfReminderForIfUserExit ()
+    {
+        return [
+            'email' => self::$email
+        ];
+    }
+
+    public function checkreminderComplete ()
+    {
+        return [
+            'email' => self::$email,
+            'remindercode'=>self::$remindercode,
+            'newpassword'=> self::$newpassword
+         
         ];
     }
 
