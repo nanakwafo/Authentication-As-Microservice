@@ -6,4 +6,7 @@ RUN docker-php-ext-install pdo_mysql
 RUN rm -rf /var/cache/apk/* && \
     rm -rf /tmp/*
 
+
+RUN  apt-get install -y git
+
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
