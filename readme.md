@@ -19,3 +19,11 @@ Documentation for this can be found on the [Auth as a microservice](https://docu
   ` docker-compose build && docker-compose up -d`
 
 NB.This will spin up 3 containers
+
+
+
+#Run the app using docker compose
+` docker-compose build && docker-compose up -d`
+#Run the app using docker stack
+`docker stack deploy -c docker-stack.yml authservice`
+`docker stack ls`
