@@ -1,0 +1,5 @@
+# Create a pod containing the PHP-FPM application (my-php-app)
+# and nginx, each mounting the `shared-files` volume to their
+# respective /var/www/html directories.
+
+kind: Deployment

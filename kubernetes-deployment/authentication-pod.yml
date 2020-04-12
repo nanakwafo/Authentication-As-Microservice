@@ -1,0 +1,75 @@
+# Create a pod containing the PHP-FPM application (my-php-app)
+# and nginx, each mounting the `shared-files` volume to their
+# respective /var/www/html directories.
+
+kind: Pod
+apiVersion: v1
+metadata:
+  name: phpfpm-nginx-example
+  labels:
+      environment: production
+      app: phpfpm-nginx-example
+spec:
+  volumes:
+    # Create the shared files volume to be used in both pods
+    - name: shared-files
+      emptyDir: {}
+
+    # Add the configMap we declared above as a volume for the pod
+    - name: nginx-config-volume
+      configMap:
+        name: nginx-config
+
+  containers:
+    # Our PHP-FPM application
+    - image: kwafo1/my-php-app:1.0.2
+      name: app
+      ports:
+          - containerPort: 9000
+      volumeMounts:
+        - name: shared-files
+          mountPath: /var/www/html
+      # Important! After this container has started, the PHP files
+      # in our Docker image aren't in the shared volume. We need to
+      # get them into the shared volume. If we tried to write directly
+      # to this volume from our Docker image the files wouldn't appear
+      # in the nginx container.
+      #
+      # So, after the container has started, copy the PHP files from this
+      # container's local filesystem (/app -- added via the Docker image)
+      # to the shared volume, which is mounted at /var/www/html.
+      # and give the neccessary permission
+      lifecycle:
+        postStart:
+          exec:
+            command: ["/bin/sh", "-c", "cp -r /app/. /var/www/html && chmod -R 777 /var/www/html/"]
+
+    # Our nginx container, which uses the configuration declared above,
+    # along with the files shared with the PHP-FPM app.
+    - image: nginx:1.7.9
+      name: nginx
+      ports:
+          - containerPort: 80
+      volumeMounts:
+        - name: shared-files
+          mountPath: /var/www/html
+        - name: nginx-config-volume
+          mountPath: /etc/nginx/nginx.conf
+          subPath: nginx.conf
+
+
+    # Our nginx container, which uses the configuration declared above,
+    # along with the files shared with the PHP-FPM app.
+    - image: mysql:5.7.22
+      name: mysql
+      ports:
+          - containerPort: 3306
+      env:
+        - name: "MYSQL_USER"
+          value: "kwafodev"
+        - name: "MYSQL_PASSWORD"
+          value: "secret"
+        - name: "MYSQL_DATABASE"
+          value: "authdb"
+        - name: "MYSQL_ROOT_PASSWORD"
+          value: "secret"
