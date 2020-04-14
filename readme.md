@@ -13,12 +13,12 @@ Documentation for this can be found on the [Auth as a microservice](https://docu
 ## Setup Instruction
 
 #Run the app using docker compose
-` docker-compose build && docker-compose up -d`
+` docker-compose build && docker-compose up -d`&
 #Run the app using docker stack
-`docker stack deploy -c docker-stack.yml authservice`
-`docker stack ls`
+`docker stack deploy -c docker-stack.yml authservice`&
+`docker stack ls`&
 #Run the app using kubernetes
-`Copy the current src content into the src folder in the kubernetes-deployment directory`
-`kubectl apply -f authentication-configmap.yml `
-`kubectl apply -f authentication-pod.yml `
-`kubectl apply -f authentication-service.yml `
+`Copy the current src content into the src folder in the kubernetes-deployment directory`&
+`kubectl apply -f authentication-configmap.yml `&
+`kubectl apply -f authentication-pod.yml `&
+`kubectl apply -f authentication-service.yml `&
