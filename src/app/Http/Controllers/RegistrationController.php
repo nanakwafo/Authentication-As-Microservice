@@ -2,16 +2,19 @@
 namespace App\Http\Controllers;
 
 
+use App\Accountverification;
 use App\Exceptions\EmailduplicationException;
 use App\Messages\Message;
 use App\Services\Response;
 use App\Services\Statuscode;
 use App\Services\Validationrule;
+
 use Cartalyst\Sentinel\Users\EloquentUser;
 use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 use Mockery\CountValidator\Exception;
+use Verificationcode;
 
 
 class RegistrationController extends Controller
@@ -27,13 +30,16 @@ class RegistrationController extends Controller
    
     }
 
-//with email
+    //with email
     public function createUserWithOutActivation (Request $request, Response $response)
     {
         $this->validate ($request, $this->validationrule->validatecreateUserWithOutActivationRule ());
 
         try {
             $user = Sentinel::register (['email' => $request->email, 'password' => $request->password,]);
+            Accountverification::create(['account'=>$request->email, 'code'=>Verificationcode::getcode(), 'expiry'=>Verificationcode::getexpiry(), 'verified'=>'0']);
+            //send email with verification code
+
         } catch (Exception $exception) {
             return $exception->getMessage ();
         } catch (QueryException $exception) {
@@ -44,7 +50,7 @@ class RegistrationController extends Controller
 
 
     }
-//with mobile
+    //with mobile
     public function createUserWithOutActivationmobile (Request $request, Response $response)
     {
         //validate mobile number instead
@@ -52,6 +58,8 @@ class RegistrationController extends Controller
 
         try {
             $user = Sentinel::register (['mobile' => $request->mobile, 'password' => $request->password,]);
+            Accountverification::create(['account'=>$request->mobile, 'code'=>Verificationcode::getcode(), 'expiry'=>Verificationcode::getexpiry(), 'verified'=>'0']);
+            //send text mesage with verification code
         } catch (Exception $exception) {
             return $exception->getMessage ();
         } catch (QueryException $exception) {
