@@ -24,6 +24,7 @@ class RegistrationController extends Controller
         $this->message = $message;
         $this->validationrule = $validationrule;
         $this->middleware ('token');
+   
     }
 
 

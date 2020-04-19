@@ -30,5 +30,7 @@ class RequestMiddleware extends Middleware
         }
 
         return $next($request);
+            
+
     }
 }

@@ -74,11 +74,13 @@ $app->middleware ([
     // App\Http\Middleware\ExampleMiddleware::class,
     \Illuminate\Session\Middleware\StartSession::class,
     App\Http\Middleware\RequestMiddleware::class,
+    App\Http\Middleware\CorsMiddleware::class,
 ]);
 
 $app->routeMiddleware ([
     'auth'  => App\Http\Middleware\Authenticate::class,
-    'token' => App\Http\Middleware\JwtMiddleware::class
+    'token' => App\Http\Middleware\JwtMiddleware::class,
+   
 ]);
 
 /*

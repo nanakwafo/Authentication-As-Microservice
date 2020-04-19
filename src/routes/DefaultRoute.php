@@ -8,5 +8,5 @@
 
 
 
-$router->get ('', ['uses' => 'DefaultController@index']);
+$router->get ('/details', ['uses' => 'DefaultController@index']);
 

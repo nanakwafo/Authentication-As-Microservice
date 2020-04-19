@@ -13,7 +13,7 @@
 
         $router->post ('User/createwithactivation', ['uses' => 'RegistrationController@createUserWithActivation']);
 
-        $router->post ('User/createwithoutactivation', ['uses' => 'RegistrationController@createUserWithOutActivation']);
+        $router->post ('User/createwithoutactivation', [ 'uses' => 'RegistrationController@createUserWithOutActivation']);
 
         $router->post ('User/delete', ['uses' => 'RegistrationController@deleteUser']);
 
