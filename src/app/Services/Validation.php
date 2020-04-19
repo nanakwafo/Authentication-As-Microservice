@@ -9,6 +9,8 @@ namespace App\Services;
 class Validationrule
 {
     private static $email = 'required|string';
+    private static $account = 'required|string';
+    private static $code = 'required|string';
     private static $mobile = 'required|string';
     private static $password = 'required|string';
     private static $name = 'required|string';
@@ -167,6 +169,13 @@ class Validationrule
         return [
             'mobile'   => self::$mobile,
             'password' => self::$password
+        ];
+    }
+    
+    public function validateverifycode(){
+        return [
+            'account'   => self::$account,
+            'code' => self::$code
         ];
     }
 }

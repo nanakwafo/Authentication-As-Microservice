@@ -28,12 +28,15 @@ class Message
     private static $invalidrequest = 'Request must be json';
     private static $usernotfound = 'User can not be found';
     private static $credentialsCreated = 'Credentials has been generated successfully';
-    private static $rolefound="Role Found";
-    private static $rolecreated="Role created successfully";
-    private static $userassignedtorole ="User assigned to role successfully";
-    private static $userremovedfromrole="User removed from roles successfully";
-    private static $remindercreated="Reminder Created successfully";
-    private static $reminderremoved="Reminder Removed  successfully";
+    private static $rolefound = "Role Found";
+    private static $rolecreated = "Role created successfully";
+    private static $userassignedtorole = "User assigned to role successfully";
+    private static $userremovedfromrole = "User removed from roles successfully";
+    private static $remindercreated = "Reminder Created successfully";
+    private static $reminderremoved = "Reminder Removed  successfully";
+    private static $accountVerified = "User Account Verified";
+    public static $accountNotVerified = "Verification Code do not match";
+
     /**
      * @return string
      */
@@ -213,6 +216,17 @@ class Message
     public function getRemindersRemoved ()
     {
         return self::$reminderremoved;
+    }
+
+
+    public function getUserVerification ()
+    {
+        return self::$accountVerified;
+    }
+
+    public function getUserVerificationFail ()
+    {
+        return self::$accountNotVerified;
     }
 
 

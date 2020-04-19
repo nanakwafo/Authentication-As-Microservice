@@ -14,7 +14,7 @@ use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 use Mockery\CountValidator\Exception;
-use Verificationcode;
+use App\Services\Verificationcode;
 
 
 class RegistrationController extends Controller
@@ -27,7 +27,7 @@ class RegistrationController extends Controller
         $this->message = $message;
         $this->validationrule = $validationrule;
         $this->middleware ('token');
-   
+
     }
 
     //with email
@@ -37,7 +37,7 @@ class RegistrationController extends Controller
 
         try {
             $user = Sentinel::register (['email' => $request->email, 'password' => $request->password,]);
-            Accountverification::create(['account'=>$request->email, 'code'=>Verificationcode::getcode(), 'expiry'=>Verificationcode::getexpiry(), 'verified'=>'0']);
+            Accountverification::create (['account' => $request->email, 'code' => '123', 'expiry' => '4', 'verified' => '0']);
             //send email with verification code
 
         } catch (Exception $exception) {
@@ -50,6 +50,7 @@ class RegistrationController extends Controller
 
 
     }
+
     //with mobile
     public function createUserWithOutActivationmobile (Request $request, Response $response)
     {
@@ -58,7 +59,7 @@ class RegistrationController extends Controller
 
         try {
             $user = Sentinel::register (['mobile' => $request->mobile, 'password' => $request->password,]);
-            Accountverification::create(['account'=>$request->mobile, 'code'=>Verificationcode::getcode(), 'expiry'=>Verificationcode::getexpiry(), 'verified'=>'0']);
+            Accountverification::create (['account' => $request->mobile, 'code' => '123', 'expiry' => '4', 'verified' => '0']);
             //send text mesage with verification code
         } catch (Exception $exception) {
             return $exception->getMessage ();

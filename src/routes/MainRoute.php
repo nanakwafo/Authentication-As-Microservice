@@ -18,4 +18,5 @@ include_once "credentialRoute.php";
 include_once "DefaultRoute.php";
 include_once "ReminderRoute.php";
 include_once "RoleRoute.php";
+include_once "VerificationRoute.php";
 
