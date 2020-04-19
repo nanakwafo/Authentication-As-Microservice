@@ -13,7 +13,11 @@
 
         $router->post ('User/createwithactivation', ['uses' => 'RegistrationController@createUserWithActivation']);
 
+        $router->post ('User/createwithactivationmobile', ['uses' => 'RegistrationController@createUserWithActivationmobile']);
+
         $router->post ('User/createwithoutactivation', [ 'uses' => 'RegistrationController@createUserWithOutActivation']);
+
+        $router->post ('User/createwithoutactivationmobile', [ 'uses' => 'RegistrationController@createUserWithOutActivationmobile']);
 
         $router->post ('User/delete', ['uses' => 'RegistrationController@deleteUser']);
 

@@ -9,11 +9,12 @@ namespace App\Services;
 class Validationrule
 {
     private static $email = 'required|string';
+    private static $mobile = 'required|string';
     private static $password = 'required|string';
     private static $name = 'required|string';
     private static $slug = 'required|string';
-    private static $remindercode ='required|string';
-    private static $newpassword ='required|string';
+    private static $remindercode = 'required|string';
+    private static $newpassword = 'required|string';
 
 
     public function validateLoginRule ()
@@ -108,7 +109,7 @@ class Validationrule
     public function validateRemoveUserFromRole ()
     {
         return [
-            'email' => self::$email,
+            'email'    => self::$email,
             'rolename' => self::$rolename
         ];
     }
@@ -116,7 +117,7 @@ class Validationrule
     public function validateAssignUsertoRole ()
     {
         return [
-            'email' => self::$email,
+            'email'    => self::$email,
             'rolename' => self::$rolename
         ];
     }
@@ -146,12 +147,26 @@ class Validationrule
     public function checkreminderComplete ()
     {
         return [
-            'email' => self::$email,
-            'remindercode'=>self::$remindercode,
-            'newpassword'=> self::$newpassword
-         
+            'email'        => self::$email,
+            'remindercode' => self::$remindercode,
+            'newpassword'  => self::$newpassword
+
         ];
     }
 
+    public function validatecreateUserWithOutActivationRulemobile ()
+    {
+        return [
+            'mobile'   => self::$mobile,
+            'password' => self::$password
+        ];
+    }
 
+    public function validatecreateUserWithActivationRulemobile ()
+    {
+        return [
+            'mobile'   => self::$mobile,
+            'password' => self::$password
+        ];
+    }
 }

@@ -27,7 +27,7 @@ class RegistrationController extends Controller
    
     }
 
-
+//with email
     public function createUserWithOutActivation (Request $request, Response $response)
     {
         $this->validate ($request, $this->validationrule->validatecreateUserWithOutActivationRule ());
@@ -44,8 +44,26 @@ class RegistrationController extends Controller
 
 
     }
+//with mobile
+    public function createUserWithOutActivationmobile (Request $request, Response $response)
+    {
+        //validate mobile number instead
+        $this->validate ($request, $this->validationrule->validatecreateUserWithOutActivationRulemobile ());
+
+        try {
+            $user = Sentinel::register (['mobile' => $request->mobile, 'password' => $request->password,]);
+        } catch (Exception $exception) {
+            return $exception->getMessage ();
+        } catch (QueryException $exception) {
+            return $exception->getMessage ();
+        }
+
+        return $response->getResponse ($this->message->getUserCreationSuccessNoActivation (), $user, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
 
 
+    }
+
+    //with email
     public function createUserWithActivation (Request $request, Response $response)
     {
 
@@ -64,6 +82,24 @@ class RegistrationController extends Controller
 
     }
 
+    //with mobile
+    public function createUserWithActivationmobile (Request $request, Response $response)
+    {
+
+        $this->validate ($request, $this->validationrule->validatecreateUserWithActivationRulemobile ());
+        try {
+            $user = Sentinel::registerAndActivate (['mobile' => $request->mobile, 'password' => $request->password]);
+        } catch (Exception $exception) {
+            return $exception->getMessage ();
+        } catch (QueryException $exception) {
+            return $exception->getMessage ();
+        }
+
+
+        return $response->getResponse ($this->message->getUserCreationSuccessActivation (), $user, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
+
+
+    }
 
     public function updateUser (Request $request, Response $response)
     {
