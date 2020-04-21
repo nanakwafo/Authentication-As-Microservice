@@ -178,4 +178,11 @@ class Validationrule
             'code' => self::$code
         ];
     }
+
+    public function validatechangepasswordUserRule(){
+        return [
+            'account'   => self::$account,
+            'password' => self::$password
+        ];
+    }
 }

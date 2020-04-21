@@ -36,6 +36,7 @@ class Message
     private static $reminderremoved = "Reminder Removed  successfully";
     private static $accountVerified = "User Account Verified";
     public static $accountNotVerified = "Verification Code do not match";
+    public static $forgotpasswordmailSuccess = "Mail Sent";
 
     /**
      * @return string
@@ -227,6 +228,11 @@ class Message
     public function getUserVerificationFail ()
     {
         return self::$accountNotVerified;
+    }
+    
+    
+    public function getForgotpasswordUser(){
+        return self::$forgotpasswordmailSuccess;
     }
 
 
