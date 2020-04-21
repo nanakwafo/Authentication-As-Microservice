@@ -11,6 +11,7 @@ class Controller extends BaseController
     protected $statuscode;
     protected $message;
     protected $validationrule;
+    protected $verificationcode;
     protected static $statusSuccess = 'success';
     protected static $statusFailure = 'failure';
 

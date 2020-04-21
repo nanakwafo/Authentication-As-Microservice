@@ -8,14 +8,14 @@ use App\Messages\Message;
 use App\Services\Response;
 use App\Services\Statuscode;
 use App\Services\Validationrule;
-
+use App\Services\Verificationcode;
+use Cartalyst\Sentinel\Laravel\Facades\Activation;
 use Cartalyst\Sentinel\Users\EloquentUser;
 use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 use Mockery\CountValidator\Exception;
-use App\Services\Verificationcode;
-
+use Cartalyst\Sentinel\Activations;
 
 class RegistrationController extends Controller
 {
@@ -36,9 +36,14 @@ class RegistrationController extends Controller
         $this->validate ($request, $this->validationrule->validatecreateUserWithOutActivationRule ());
 
         try {
+            $code = $this->getCode ();
+            $expiry = $this->getexpiry ();
+
             $user = Sentinel::register (['email' => $request->email, 'password' => $request->password,]);
-            Accountverification::create (['account' => $request->email, 'code' => '123', 'expiry' => '4', 'verified' => '0']);
-            //send email with verification code
+            $activation = Activation::create ($user);
+            Accountverification::create (['account' => $request->email, 'code' => $code, 'expiry' => $expiry, 'verified' => '0']);
+            $json = json_decode (file_get_contents ('http://3.91.94.89:8083/notification/' . urlencode($request->email) . '/' .urlencode( $code)), true);
+
 
         } catch (Exception $exception) {
             return $exception->getMessage ();
@@ -58,8 +63,11 @@ class RegistrationController extends Controller
         $this->validate ($request, $this->validationrule->validatecreateUserWithOutActivationRulemobile ());
 
         try {
+            $code = $this->getCode ();
+            $expiry = $this->getexpiry ();
             $user = Sentinel::register (['mobile' => $request->mobile, 'password' => $request->password,]);
-            Accountverification::create (['account' => $request->mobile, 'code' => '123', 'expiry' => '4', 'verified' => '0']);
+            $activation = Activation::create ($user);
+            Accountverification::create (['account' => $request->mobile, 'code' => $code, 'expiry' => $expiry, 'verified' => '0']);
             //send text mesage with verification code
         } catch (Exception $exception) {
             return $exception->getMessage ();
@@ -179,5 +187,23 @@ class RegistrationController extends Controller
         return $response->getResponse ($this->message->getFinduserSuccess (), $user, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
     }
 
+    /**
+     * @return array
+     */
+    private function getCode ()
+    {
+        $verificationCode = new Verificationcode();
+        $code = $verificationCode->getcode ();
+
+        return $code;
+    }
+
+    private function getexpiry ()
+    {
+        $verificationCode = new Verificationcode();
+        $expiry = $verificationCode->getexpiry ();
+
+        return $expiry;
+    }
 
 }

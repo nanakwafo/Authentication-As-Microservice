@@ -8,7 +8,9 @@
 
 $router->group (['prefix' => 'api/v1'], function () use ($router) {
     
-    $router->post ('login', ['uses' => 'AuthenticationController@login']);
     
+    
+    $router->post ('loginemail', ['uses' => 'AuthenticationController@loginemail']);
+    $router->post ('loginmobile', ['uses' => 'AuthenticationController@loginmobile']);
     $router->post ('logout', ['uses' => 'AuthenticationController@logout']);
 });

@@ -38,8 +38,13 @@ class VerificationController extends Controller
         $validcode = $this->getAccountCode ($request);
         try {
             if ( $request->code == $validcode ) {
+
                 $user = Sentinel::findByCredentials (['login' => $request->account]);
-                $activation = Activation::create ($user);
+                $activationcode= Activation::where('user_id',$user->id)->pluck('code')->first();
+                $activation=Activation::complete($user, $activationcode);
+
+                
+               
 
                 return $response->getResponse ($this->message->getUserVerification (), $activation, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
             }

@@ -12,7 +12,10 @@
         "laravel/lumen-framework": "^6.0",
         "laravelista/lumen-vendor-publish": "6.0",
         "tymon/jwt-auth": "^1.0.0-beta.3@dev",
-        "laravel/framework": "5.4.*"
+        "laravel/framework": "5.4.*",
+        "guzzlehttp/guzzle": "~6.0"
+
+
     },
     "require-dev": {
         "fzaninotto/faker": "^1.4",
@@ -49,6 +52,7 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true
+
     },
     "minimum-stability": "dev",
     "prefer-stable": true

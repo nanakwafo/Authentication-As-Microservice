@@ -76,8 +76,20 @@ class ActivationController extends Controller
 
     }
 
-    public function completeActivation(){
-        //TODO: implementation 
+    public function completeActivation(Request $request, Response $response){
+
+
+//        $this->validate ($request, $this->validationrule->validateDeactivateRule ());
+//        $user = Sentinel::findById(1);
+//
+//        if (Activation::complete($user, 'activation_code_here'))
+//        {
+//            // Activation was successfull
+//        }
+//        else
+//        {
+//            // Activation not found or not completed.
+//        }
     }
 
 }

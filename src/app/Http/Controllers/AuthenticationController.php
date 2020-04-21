@@ -9,11 +9,13 @@
 namespace App\Http\Controllers;
 
 use App\Messages\Message;
+use App\SentinelUser;
 use App\Services\Response;
 use App\Services\Statuscode;
 use App\Services\Validationrule;
 use Illuminate\Http\Request;
 use Cartalyst\Sentinel\Native\Facades\Sentinel;
+
 
 
 class AuthenticationController extends Controller
@@ -28,11 +30,22 @@ class AuthenticationController extends Controller
     }
 
 
-    public function logIn (Request $request, Response $response)
+    public function loginemail (Request $request, Response $response)
     {
-       $this->validate ($request, $this->validationrule->validateLoginRule ());
+      // $this->validate ($request, $this->validationrule->validateLoginRule ());
 
-        return Sentinel::authenticate ($request->only (['email', 'password']))
+        return Sentinel::authenticate ($request->only (['login', 'password']))
+            ?
+            $response->getResponse ($this->message->getLogInSuccess (),Sentinel::getUser(), 'success', $this->statuscode->getSUCCESS ())
+            :
+            $response->getResponse ($this->message->getLogInFailure (), '', '', $this->statuscode->getUNAUTHORIZED ());
+    }
+
+    public function loginmobile (Request $request, Response $response)
+    {
+      //  $this->validate ($request, $this->validationrule->validateLoginRule ());
+
+        return Sentinel::authenticate ($request->only (['login', 'password']))
             ?
             $response->getResponse ($this->message->getLogInSuccess (),Sentinel::getUser(), 'success', $this->statuscode->getSUCCESS ())
             :
@@ -40,7 +53,7 @@ class AuthenticationController extends Controller
     }
 
 
-    public function logOut (Request $request, Response $response)
+    public function logout (Request $request, Response $response)
     {
         $this->validate ($request, $this->validationrule->validateLogoutRule ());
         $user = Sentinel::findByCredentials (['login' => $request->email]);
