@@ -2,14 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57f5f80e-589c-48ab-be34-2f07da32eac8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/ChangepasswordController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/ChangepasswordRoute.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/ForgotpasswordRoute.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/0HE9uJYn1v8DCKvGNRaT9YcD4VKaNZNmsnVgQHgg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/1AbEhzznGtuNgZAiRRBs0Zr1JsRjthALesNZ2wds" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/1ODRFxuN430oKQ5550KX5fIuXEFKVUt2Akm3GwLM" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/2OEGfEvydc0Ngin5TeipRgSbSUPzqh7Qe3Kb2Py0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/5zf5jqQLZUmpbMkErwS7rBjfWLv0VsPpgoYMqjmy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/6eUKmH1BU18uU1tcmS0frsipbq9LNePnYaCPZKff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/6vACPTEtTwRVuKF8n18nVNyFonu49zoF7lAmDOOt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/7IwIKxfzTOcGdGJ7uNTsMeUV6YMCBzzk529VtHCP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/89XwvgfIeX30ASwJq5GPUuRskIJ6tRKK4pOr8tdX" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/8FhUmrNGcFeFBVW1PLIXNmfxkh0QnZjhuZFwdPaI" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/9sxOoN0NIEzcEudv8BdoWjjFanAjdiSqSfq3yNAr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/AcMZPSKEVwVZBc5VFa7vbh2Iv6orG0y0KsIlafTr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/B1QSLBE2Ypo7O6zEQWUYGUXEYq49Ehj31dUpy2vs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/CCinP0rhXVK7cd5TrSMJqNUYuShExuKiljvqVMCH" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/E1ugGmBv14dU2Uik00YN0FRoyJI1SWw0m1eY8ZAY" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/EwPwD4wa4cBNsvicnQFQyYMZ0cVyHwFBUhagfFff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/Fi6JX6wEgv5ZBhNmKLheY0roXfoeotU4VzxxnZqP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/FjbuQGt2TbogyS6UCruGx4TuJpqILJdAXmeM8enL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/G9cPsBsHBoPirqdMw0fWR7O7OnlSYhAqsC4GuqS3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/GLg3mYm6Qzk0Ff8FlEoks6BtyOnwxfnc0VVLYBzf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/H1QEYBbEFm80w1OqxJPiYjI41WXgAysq0n1N8aBN" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/HAN56Nsxo7kiCQWBwY4XT3EuP8RhWpomrzZYU6MM" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/JHe4KVjyPsPLGFNfYjrFCUSIIQovDiqQiqVXnrLu" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/KpjlPYPm9S4Wih1Znsa5uusycMoVKMspVC7HONhv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/Lcg24Elz0z7WSJJEapKjarGzWQ8anDQCUy45GMDf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/M7xYQYbHZKXzZYo8jrttFLqVf2wxyD73IIiya20u" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/MYCwKmN76TXCo0MmOnHKB3bI5HpjlMYJAk6mqrgq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/OgOSHGYZI3546rYGpX7zJbeoH2HUIKSTjrUxRqT8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/PIq5B0t6mv5KXzWDegrWDcgAfovBZBGW0STtAS0D" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/RGwDJ5KHUyXUW8szZMxdO5tDQHhj3I1sXnjfXgYz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/S7mLxAEr7j7g49CZAns6kVIzhrkMwrlr4yrtkiW6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/Tb5XPHUl9AIVVOI4tYDCuedjLEY2rJCH97mMBfT9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/UJWRc5dGQef0kPfqqSLus36IMHeX3woghTnxFYYh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/UhdtDEvg20MxNl5HkNfmRpTUMYW0vgV84DwFsMIX" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/UqfyjIrqncwwdmseoRya8yZyUIqNGtOR4CzUwKB2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/UwCt3GeIvyyPLigPcnMoPZy0eG7Ut1LBfGZaQL7o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/WXMDVNGlFfDWg6HUdbHJcl8LPacHxkLlEqHRAoPZ" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/Zk9fJWukfiGmvuFoqTrYXUy5P75ncGhaG5kUeypz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/a98Ogx00ruGMdkfRc3zX8UaUpYdMjA87Wi2mtHv8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/akgK5y4ddUiSo5UojYaOde2JHawzPILJ3zrXLXrv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/apLTQbZ0guhDjtXFQtBzCcvLtJRYMotgDHoQtZmP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/bXS7Fxk5yOJSX3Vn9Z35RYbUlqCpOWBDZEhOrmOr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/cEbUNvTxgAAfeol0apQIb1msE4n6KCnaIExL1tEt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/cglyrE8Gc4M1fAOYVqjhMyOYdhGH6wzhrxOpXM8I" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/cxRXC3cvBBE9kQVDNYpbbvl4gqy2hvkULHDSWblS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/czfutvRhSKomEvyPB3rWWmOXqtdwlSfd8Ltu3lXM" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/do47nUtAPYdbDlme2rrF17lqSqVec2qPdeCJVoIW" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/dzGEGcSukXTVGwzOmgyo4fxkfsFa4peLnEBHrUap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/e8sVTw4eg1eO7mswQWNrK08EAEEw0iCzGAVyBP9k" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/f53o215UweNvW7huOZHbIYAfOp8kjjbYIWv1UOHa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/gZXCezItsRH2ZuGZho2rc6RE7WPMKfJVFbXMfOuh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/h5AgiCg7TH5KoNdO3MnQWwbeKHMbgzdRvgAKxHFt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/hdftipC20r8bhbYJ7S8sj9aWYNPPIfgGyzfbG1Du" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/ikGjBVAaww6vZeF0pZ9BJJIOvKx4YjvcRfLa3CxU" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/iwyasCsH1oso9sL6az1XhEzceI4EXZQqHSqw3gIR" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/jaPv44S6E5e6Kk1YI5WWo2tKxEz2jLxJvRK4JwE9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/mejGXK2vgyd1fxnNH0Z9IT79ClbBUwGckDdxwNjS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/nY0gK0BxFzayTVSZeMVjvag37rILzDWlYT5nOXWa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/o2s2lwCd8vKmqSfhVoS6tFsRcSdldzkP2qciFMNl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/oTSbfs3nrnv37bBqTL6UlyxJReKS5T0BnxVquBRS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/pJkPzQMrIxvWTVlEaN0ieiloBIsO3f4G4r4xKJcx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/qM8YQXvLmgZzLLRxaCL2n6rS9Ch0GZBFS0ZB3P7g" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/qZs6kunDPhoDhYOu2Aglh5MeyKVFhafY2mGXPH42" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/qvRuQv7uYi5UVv18EQFIlLduEnpYj33o5Xx9Z1Kv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/qydyA1a9PQ1RXsDp6juzIyC60u2AodKJDpXTQ4FI" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/sFxWzIRhLRCDCu7CBhwiJquezl4BlIvUZtLu50kC" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/tJiLJSgraZt8alqpNAO4lyhh3uXAoVKR8gbzexvL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/uBGMFaJGzfxtQVHEPWfxD3cN5dVzdC20Fc5SNhAN" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/ubVR49EAApdVCGHWCUQI6i9EdPG9pQiPWUKjMBXl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/vgcOG5OufLamQjPSxPXUXCf5G8Zk639DuPwEfU8M" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/framework/sessions/xwS4sPdaIl7Z7wWgvkWwUxstMZ9qtL5szU3F5urD" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-compose-deployment/mysql/authdb/activations.ibd" afterPath="$PROJECT_DIR$/docker-compose-deployment/mysql/authdb/activations.ibd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-compose-deployment/mysql/authdb/persistences.ibd" afterPath="$PROJECT_DIR$/docker-compose-deployment/mysql/authdb/persistences.ibd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-compose-deployment/mysql/authdb/users.ibd" afterPath="$PROJECT_DIR$/docker-compose-deployment/mysql/authdb/users.ibd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-compose-deployment/mysql/ib_logfile0" afterPath="$PROJECT_DIR$/docker-compose-deployment/mysql/ib_logfile0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-compose-deployment/mysql/ibdata1" afterPath="$PROJECT_DIR$/docker-compose-deployment/mysql/ibdata1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-compose-deployment/mysql/ibtmp1" afterPath="$PROJECT_DIR$/docker-compose-deployment/mysql/ibtmp1" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Http/Controllers/ForgotpasswordController.php" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/ForgotpasswordController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Http/Controllers/ChangepasswordController.php" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/ChangepasswordController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Messages/Message.php" afterPath="$PROJECT_DIR$/src/app/Messages/Message.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Services/Validation.php" afterPath="$PROJECT_DIR$/src/app/Services/Validation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/MainRoute.php" afterPath="$PROJECT_DIR$/src/routes/MainRoute.php" />
     </list>
     <ignored path="authmicroservice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,7 +106,7 @@
       <file leaf-file-name="ForgotpasswordController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ForgotpasswordController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="143">
               <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#6#91#0#PHP" expanded="true" />
@@ -49,11 +121,24 @@
       <file leaf-file-name="ChangepasswordController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ChangepasswordController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="455">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="e#40#65#0#PHP" expanded="true" />
-                <element signature="e#627#1434#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Message.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/Messages/Message.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <folding>
+                <element signature="e#5492#5588#0#PHP" expanded="true" />
+                <element signature="e#5595#5696#0#PHP" expanded="true" />
+                <element signature="e#5702#5799#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,8 +147,8 @@
       <file leaf-file-name="ChangepasswordRoute.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/routes/ChangepasswordRoute.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="195">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="e#6#91#0#PHP" expanded="true" />
                 <element signature="e#134#272#1#PHP" expanded="true" />
@@ -75,7 +160,7 @@
       <file leaf-file-name="ForgotpasswordRoute.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/routes/ForgotpasswordRoute.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
+            <state relative-caret-position="52">
               <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="e#6#91#0#PHP" expanded="true" />
@@ -95,11 +180,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainRoute.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainRoute.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/routes/MainRoute.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -108,25 +193,10 @@
       <file leaf-file-name="VerificationRoute.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/routes/VerificationRoute.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
+            <state relative-caret-position="65">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="e#133#249#1#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivationController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ActivationController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-              <folding>
-                <element signature="e#623#1253#0#PHP" expanded="true" />
-                <element signature="e#1906#2555#0#PHP" expanded="true" />
-                <element signature="e#2561#3184#0#PHP" expanded="true" />
-                <element signature="e#3190#3633#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -208,13 +278,13 @@
         <option value="$PROJECT_DIR$/src/config/cartalyst.sentinel.php" />
         <option value="$PROJECT_DIR$/src/vendor/cartalyst/sentinel/src/config/config.php" />
         <option value="$PROJECT_DIR$/src/app/Http/Controllers/AuthenticationController.php" />
-        <option value="$PROJECT_DIR$/src/app/Messages/Message.php" />
         <option value="$PROJECT_DIR$/src/app/Http/Controllers/ForgotpasswordController.php" />
-        <option value="$PROJECT_DIR$/src/app/Http/Controllers/ChangepasswordController.php" />
         <option value="$PROJECT_DIR$/src/app/Services/Validation.php" />
         <option value="$PROJECT_DIR$/src/routes/ChangepasswordRoute.php" />
         <option value="$PROJECT_DIR$/src/routes/ForgotpasswordRoute.php" />
         <option value="$PROJECT_DIR$/src/routes/MainRoute.php" />
+        <option value="$PROJECT_DIR$/src/app/Http/Controllers/ChangepasswordController.php" />
+        <option value="$PROJECT_DIR$/src/app/Messages/Message.php" />
       </list>
     </option>
   </component>
@@ -261,8 +331,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -309,229 +377,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cartalyst" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cartalyst" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sentinel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cartalyst" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sentinel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cartalyst" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sentinel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Users" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cartalyst" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sentinel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Services" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -567,60 +413,14 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authmicroservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docker-compose-deployment" />
+              <option name="myItemId" value="kubernetes-deployment" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -742,12 +542,13 @@
       <workItem from="1587343919993" duration="3372000" />
       <workItem from="1587381698282" duration="1011000" />
       <workItem from="1587384688341" duration="7952000" />
-      <workItem from="1587435098144" duration="16886000" />
+      <workItem from="1587435098144" duration="16977000" />
+      <workItem from="1587507535791" duration="745000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="406716000" />
+    <option name="totallyTimeSpent" value="407552000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -784,11 +585,11 @@
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.374477" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11770833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.88098496" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19253294" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32763976" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32643312" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -831,9 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
           <caret line="166" column="20" selection-start-line="166" selection-start-column="20" selection-end-line="166" selection-end-column="20" />
-          <folding>
-            <element signature="e#4302#5036#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -923,9 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding>
-            <element signature="e#6#91#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -961,7 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -969,7 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -977,7 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -985,11 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding>
-            <element signature="e#202#320#0#PHP" expanded="false" />
-            <element signature="e#326#415#0#PHP" expanded="false" />
-            <element signature="e#421#481#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -997,7 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1005,7 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1013,7 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1021,7 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="13" column="82" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1029,7 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1037,7 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1045,7 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,9 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#138#1036#1#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1063,7 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="45" column="65" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,7 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="125" column="9" selection-start-line="125" selection-start-column="9" selection-end-line="125" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1079,10 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="e#683#1207#0#PHP" expanded="true" />
-            <element signature="e#1213#1739#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1090,9 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1100,31 +868,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-            <element signature="e#608#885#0#PHP" expanded="true" />
-            <element signature="e#2026#3073#0#PHP" expanded="true" />
-            <element signature="e#3793#4480#0#PHP" expanded="true" />
-            <element signature="e#6933#7094#0#PHP" expanded="true" />
-            <element signature="e#7100#7269#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Messages/Message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="35" column="71" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="71" />
-          <folding>
-            <element signature="e#5416#5512#0#PHP" expanded="true" />
-            <element signature="e#5527#5622#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ActivationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
+        <state relative-caret-position="221">
           <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
             <element signature="e#623#1253#0#PHP" expanded="true" />
@@ -1155,20 +904,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ChangepasswordController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="e#40#65#0#PHP" expanded="true" />
-            <element signature="e#627#1434#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/VerificationRoute.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
+        <state relative-caret-position="65">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#133#249#1#PHP" expanded="true" />
@@ -1176,20 +914,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/ChangepasswordRoute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding>
-            <element signature="e#6#91#0#PHP" expanded="true" />
-            <element signature="e#134#272#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ForgotpasswordController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="143">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#6#91#0#PHP" expanded="true" />
@@ -1202,7 +929,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/ForgotpasswordRoute.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="52">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#6#91#0#PHP" expanded="true" />
@@ -1221,9 +948,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/MainRoute.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/ChangepasswordRoute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="true" />
+            <element signature="e#134#272#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ChangepasswordController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Messages/Message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="e#5492#5588#0#PHP" expanded="true" />
+            <element signature="e#5595#5696#0#PHP" expanded="true" />
+            <element signature="e#5702#5799#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

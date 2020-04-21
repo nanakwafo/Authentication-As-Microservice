@@ -40,7 +40,7 @@ class ChangepasswordController extends Controller
 
         $user = Sentinel::update($user, $newpassword);
 
-        return $response->getResponse ($this->message->getActivateUser (), $user, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
+        return $response->getResponse ($this->message->getchangepasswordUser (), $user, parent::$statusSuccess, $this->statuscode->getSUCCESS ());
 
     }
 

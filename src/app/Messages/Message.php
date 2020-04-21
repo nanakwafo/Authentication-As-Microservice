@@ -37,6 +37,7 @@ class Message
     private static $accountVerified = "User Account Verified";
     public static $accountNotVerified = "Verification Code do not match";
     public static $forgotpasswordmailSuccess = "Mail Sent";
+    public static $passwordchangeSuccess = "Password Changed Successfully";
 
     /**
      * @return string
@@ -229,11 +230,16 @@ class Message
     {
         return self::$accountNotVerified;
     }
-    
-    
-    public function getForgotpasswordUser(){
+
+
+    public function getForgotpasswordUser ()
+    {
         return self::$forgotpasswordmailSuccess;
     }
 
+    public function getchangepasswordUser ()
+    {
+        return self::$passwordchangeSuccess;
+    }
 
 }
