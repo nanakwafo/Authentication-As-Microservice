@@ -42,7 +42,7 @@ class RegistrationController extends Controller
             $user = Sentinel::register (['email' => $request->email, 'password' => $request->password,]);
             $activation = Activation::create ($user);
             Accountverification::create (['account' => $request->email, 'code' => $code, 'expiry' => $expiry, 'verified' => '0']);
-            $json = json_decode (file_get_contents ('http://3.91.94.89:8083/notification/' . urlencode($request->email) . '/' .urlencode( $code)), true);
+           $json = json_decode (file_get_contents ('http://3.91.94.89:8083/notification/email/verification/' . urlencode($request->email) . '/' .urlencode( $code)), true);
 
 
         } catch (Exception $exception) {
@@ -68,6 +68,8 @@ class RegistrationController extends Controller
             $user = Sentinel::register (['mobile' => $request->mobile, 'password' => $request->password,]);
             $activation = Activation::create ($user);
             Accountverification::create (['account' => $request->mobile, 'code' => $code, 'expiry' => $expiry, 'verified' => '0']);
+            $json = json_decode (file_get_contents ('http://3.91.94.89:8083/notification/sms/verification/' . urlencode($request->mobile) . '/' .urlencode( $code)), true);
+
             //send text mesage with verification code
         } catch (Exception $exception) {
             return $exception->getMessage ();
