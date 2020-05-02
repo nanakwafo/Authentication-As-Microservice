@@ -15,9 +15,26 @@ pipeline {
             }
             steps{
                 withCredentials([sshUserPrivateKey(credentialsId: 'testing', keyFileVariable: 'private_key',passphraseVariable:'',usernameVariable: 'ubuntu')]) {
-                     echo 'Variables are correct'
+                     sshPublisher(
+                         failOnError: true,
+                         continueOnError: false,
+                         publishers: [
+                             sshPublisherDesc(
+                                  configName: 'staging',
+                                  sshCredentials: [
+                                       username: "$ubuntu",
+                                       key: "$private_key"
+                                  ],
+                                  transfers: [
+                                      sshTransfer(
+                                          execCommand: 'sudo ls -la'
+                                      )
+                                  ]
+                             )
+                         ]
+                     )
                     }
-               // withCredentials([credentialsId:])
+           
             }
         }
     }
