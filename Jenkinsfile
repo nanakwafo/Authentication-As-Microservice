@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Running build automation'
                 sh 'ls -la'
-                archiveArtifacts artifacts: 'dist/Auntention_service.zip'
+                
             }
         }
     }
