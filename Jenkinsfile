@@ -5,6 +5,7 @@ pipeline {
             steps {
                 echo 'Running build automation'
                 sh 'ls -la'
+              
                 
             }
         }
@@ -13,8 +14,9 @@ pipeline {
               branch 'master'
             }
             steps{
-                sh 'cd dist'
-                sh 'ls'
+                withCredentials([sshUserPrivateKey(credentialsId: 'testing', keyFileVariable: 'private_key',passphraseVariable:'',usernameVariable: 'ubuntu')]) {
+                     echo 'Variables are correct'
+                    }
                // withCredentials([credentialsId:])
             }
         }
