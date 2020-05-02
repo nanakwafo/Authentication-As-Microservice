@@ -22,7 +22,6 @@ pipeline {
                              sshPublisherDesc(
                                   configName: 'staging',
                                   sshCredentials: [
-                                       username: "$ubuntu",
                                        key: "$private_key"
                                   ],
                                   transfers: [
