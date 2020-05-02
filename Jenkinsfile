@@ -21,9 +21,10 @@ pipeline {
                          publishers: [
                              sshPublisherDesc(
                                   configName: 'staging',
-                                 // sshCredentials: [
-                                     //  key: "$private_key"
-                                 // ],
+                                  sshCredentials: [
+                                      username: "$ubuntu",
+                                      key: "$private_key"
+                                 ],
                                   transfers: [
                                       sshTransfer(
                                           execCommand: 'sudo ls -la'
