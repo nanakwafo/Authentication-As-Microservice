@@ -15,7 +15,9 @@ pipeline {
             }
             steps{
                 withCredentials([sshUserPrivateKey(credentialsId: 'testing', keyFileVariable: 'private_key',passphraseVariable:'',usernameVariable: 'ubuntu')]) {
-                  echo "$private_key"
+                  
+MY_FILE_DATA="cat $private_key"
+echo "The secret file data is: $MY_FILE_DATA"
                     }
            
             }
