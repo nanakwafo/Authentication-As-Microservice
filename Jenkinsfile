@@ -8,5 +8,15 @@ pipeline {
                 
             }
         }
+        stage('DeployToStaging') {
+            when {
+              branch 'master'
+            }
+            steps{
+                sh 'cd dist'
+                sh 'ls'
+               // withCredentials([credentialsId:])
+            }
+        }
     }
 }
