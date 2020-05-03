@@ -40,7 +40,10 @@ pipeline {
             }
         }
 	stage('Testing'){
-	       echo 'Smoke Test completed'
+		steps{
+                    echo 'Smoke Test completed'
+		}
+	   
 	}
 	stage('DeployToProduction'){
             when {
