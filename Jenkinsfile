@@ -38,13 +38,13 @@ pipeline {
            
             }
         }
-		stage(Testing){
+         stage(Testing){
 		 echo 'looks Good'
-		}
-		stage('DeployToProduction'){
-		   when {
-              branch 'master'
-            }
+	}
+	stage('DeployToProduction'){
+			     when {
+			      branch 'master'
+			    }
 			steps{
 			 input 'Does the Production Environment look Ok?'
 			  sshPublisher(	                 
