@@ -38,5 +38,34 @@ pipeline {
            
             }
         }
+		stage(Testing){
+		 echo 'looks Good'
+		}
+		stage('DeployToProduction'){
+		   when {
+              branch 'master'
+            }
+			steps{
+			 input 'Does the Production Environment look Ok?'
+			  sshPublisher(	                 
+                         failOnError: true,	
+                         continueOnError: false,	
+                         publishers: [	
+                             sshPublisherDesc(	
+                                  configName: 'staging',	
+                                  verbose: true,
+                                  transfers: [	
+                                      sshTransfer(	
+                                          sourceFiles: '**/*',
+                                          remoteDirectory: '/authenticationservice',
+                                          execCommand: 'sudo ls -la'	
+                                      )	
+                                  ]	
+                             )	
+                         ]	
+                     )
+			}
+			
+		}
     }
 }
