@@ -14,7 +14,7 @@ pipeline {
               branch 'master'
             }
             steps{
-                withCredentials([sshUserPrivateKey(credentialsId: 'testing', keyFileVariable: 'private_key',passphraseVariable:'',usernameVariable: 'ubuntu')]) {
+                //withCredentials([sshUserPrivateKey(credentialsId: 'testing', keyFileVariable: 'private_key',passphraseVariable:'',usernameVariable: 'ubuntu')]) {
                        
                       sshPublisher(	                 
                          failOnError: true,	
@@ -32,7 +32,7 @@ pipeline {
                          ]	
                      )
                       
-                    }
+                  //  }
            
             }
         }
