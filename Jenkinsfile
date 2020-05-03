@@ -25,7 +25,7 @@ pipeline {
                                   verbose: true,
                                   transfers: [	
                                       sshTransfer(	
-                                          sourceFiles: './**/*',
+                                          sourceFiles: "$WORKSPACE",
                                           remoteDirectory: '/authenticationservice',
                                           execCommand: 'sudo ls -la'	
                                       )	
