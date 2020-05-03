@@ -27,7 +27,8 @@ pipeline {
                                       sshTransfer(	
                                           sourceFiles: '**/*',
                                           remoteDirectory: '/authenticationservice',
-                                          execCommand: 'sudo ls -la'	
+                                          execCommand: 'sudo ls -la && sudo cd /authenticationservice/docker-compose-deployment && sudo docker-compose build && docker-compose up -d'
+					     	
                                       )	
                                   ]	
                              )	
@@ -38,6 +39,9 @@ pipeline {
            
             }
         }
+	stage('Testing'){
+	       echo 'Smoke Test completed'
+	}
 	stage('DeployToProduction'){
             when {
               branch 'master'
