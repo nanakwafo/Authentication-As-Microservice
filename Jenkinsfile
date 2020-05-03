@@ -22,7 +22,7 @@ pipeline {
                          publishers: [	
                              sshPublisherDesc(	
                                   configName: 'staging',	
-                                  verbose: true
+                                  verbose: true,
                                   transfers: [	
                                       sshTransfer(	
                                           execCommand: 'sudo ls -la'	
