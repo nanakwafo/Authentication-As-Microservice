@@ -16,25 +16,29 @@ pipeline {
             steps{
                 //withCredentials([sshUserPrivateKey(credentialsId: 'testing', keyFileVariable: 'private_key',passphraseVariable:'',usernameVariable: 'ubuntu')]) {
                        
-                      sshPublisher(	                 
-                         failOnError: true,	
-                         continueOnError: false,	
-                         publishers: [	
-                             sshPublisherDesc(	
-                                  configName: 'staging',	
-                                  verbose: true,
-                                  transfers: [	
-                                      sshTransfer(	
-                                          sourceFiles: '**/*',
-                                          remoteDirectory: '/authenticationservice',
-                                          execCommand: 'sudo ls -la && sudo -s && cd authenticationservice/docker-compose-deployment/'
+                     // sshPublisher(	                 
+                       //  failOnError: true,	
+                        // continueOnError: false,	
+                        // publishers: [	
+                         //    sshPublisherDesc(	
+                           //       configName: 'staging',	
+                            //      verbose: true,
+                             //     transfers: [	
+                              //        sshTransfer(	
+                                 //         sourceFiles: '**/*',
+                                   //       remoteDirectory: '/authenticationservice',
+                                   //       execCommand: 'sudo ls -la && sudo -s && cd authenticationservice/docker-compose-deployment/'
 					     	
-                                      )	
-                                  ]	
-                             )	
-                         ]	
-                     )
-                      
+                                    //  )	
+                                //  ]	
+                           //  )	
+                       //  ]	
+                  //   )
+		       sshagent(['sshstaging']) {
+				    // some block
+			           sh 'cd authenticationservice/docker-compose-deployment/'
+				}
+                   
                   //  }
            
             }
