@@ -1,14 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
-            steps {
-                echo 'Running build automation'
-                sh 'ls -la'
+        //stage('Build') {
+           // steps {
+            //    echo 'Running build automation'
+                //sh 'ls -la'
               
                 
-            }
-        }
+            //}
+        //}
         stage('DeployToStaging') {
             when {
               branch 'master'
@@ -27,7 +27,7 @@ pipeline {
                                       sshTransfer(	
                                           sourceFiles: '**/*',
                                           remoteDirectory: '/authenticationservice',
-                                          execCommand: 'sudo ls -la && sudo sh -c  "sudo cd authenticationservice/docker-compose-deployment" && sudo docker-compose build'
+                                          execCommand: 'sudo ls -la'
 					     	
                                       )	
                                   ]	
