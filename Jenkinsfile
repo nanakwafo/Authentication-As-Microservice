@@ -27,7 +27,7 @@ pipeline {
                                       sshTransfer(	
                                           sourceFiles: '**/*',
                                           remoteDirectory: '/authenticationservice',
-                                          execCommand: 'sudo ls -la'
+                                          execCommand: 'sudo ls -la && sudo pwd'
 					     	
                                       )	
                                   ]	
