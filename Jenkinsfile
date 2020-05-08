@@ -27,7 +27,7 @@ pipeline {
                                       sshTransfer(	
                                           sourceFiles: '**/*',
                                           remoteDirectory: '/authenticationservice',
-                                          execCommand: 'sudo ls -la && sudo pwd'
+                                          execCommand: 'sudo ls -la && sudo pwd  && sudo cd authenticationservice/docker-compose-deployment/'
 					     	
                                       )	
                                   ]	
