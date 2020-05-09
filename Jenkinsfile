@@ -36,9 +36,12 @@ pipeline {
                   //   )
 		       sshagent(['sshstaging']) {
 				    // some block
-			           sh "ssh -o StrictHostKeyChecking=no  ubuntu@3.16.196.105 cd authenticationservice/docker-compose-deployment/; docker-compose build"
-			          // sh "cd authenticationservice/docker-compose-deployment/"
-			           //sh "ls -la"
+			           //sh "ssh -o StrictHostKeyChecking=no  ubuntu@3.16.196.105 cd authenticationservice/docker-compose-deployment/; docker-compose build"
+			         sh """ssh -tt ubuntu@3.16.196.105 << EOF 
+				    cd authenticationservice/docker-compose-deployment/
+				    docker-compose build
+				    exit
+				    EOF"""
 				}
                    
                   //  }
