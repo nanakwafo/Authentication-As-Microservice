@@ -35,9 +35,8 @@ pipeline {
                        //  ]	
                   //   )
 		       sshagent(['sshstaging']) {
-				    // some block
-			           //sh "ssh -o StrictHostKeyChecking=no  ubuntu@3.16.196.105 cd authenticationservice/docker-compose-deployment/; docker-compose build"
-			         sh """ssh -tt ubuntu@3.16.196.105 << EOF 
+			          sh "sudo scp $WORKSPACE ubuntu@3.16.196.105:/var/removeme/ &&
+				  sh """ssh -tt ubuntu@3.16.196.105 << EOF 
 				    cd authenticationservice/docker-compose-deployment/
 				    docker-compose build
 				    exit
