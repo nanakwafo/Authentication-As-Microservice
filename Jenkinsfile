@@ -35,7 +35,7 @@ pipeline {
                        //  ]	
                   //   )
 		       sshagent(['sshstaging']) {
-			          sh "sudo scp $WORKSPACE ubuntu@3.16.196.105:/var/removeme/ &&
+			          sh "sudo scp $WORKSPACE ubuntu@3.16.196.105:/var/removeme/"
 				  sh """ssh -tt ubuntu@3.16.196.105 << EOF 
 				    cd authenticationservice/docker-compose-deployment/
 				    docker-compose build
