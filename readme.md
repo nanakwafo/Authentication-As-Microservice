@@ -3,11 +3,11 @@
 
 
 
-![alt text](https://github.com/nanakwafo/authmicroservice/blob/master/images/icon1.png "Logo Title Text 1")
+![alt text](https://github.com/nanakwafo/authmicroservice/blob/master/authentication-design/images/icon1.png "Logo Title Text 1")
 
 ## Database Diagrams
 
-![alt text](https://github.com/nanakwafo/authmicroservice/blob/master/images/icon3.png "Logo Title Text 1")
+![alt text](https://github.com/nanakwafo/authmicroservice/blob/master/authentication-design/images/icon3.png "Logo Title Text 1")
 
 ## Api Documentation
 Documentation for this can be found on the [Auth as a microservice](https://documenter.getpostman.com/view/1213803/SzKPWhH9?version=latest)
