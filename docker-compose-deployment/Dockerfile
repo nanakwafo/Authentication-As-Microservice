@@ -14,8 +14,6 @@ RUN  apt-get install -y git
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-#COPY entrypoint.sh /
-#ENTRYPOINT [ "sh", "/entrypoint.sh" ]
 RUN  composer config -g github-oauth.github.com de05b52a4a3e9b133cfd93a6e3c33b4dda90ba50
 RUN composer install 
 RUN chmod 755 -R ./

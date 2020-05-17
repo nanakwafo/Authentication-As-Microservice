@@ -26,8 +26,8 @@ pipeline {
                             )	
                         ]	
                     )
-		       sshagent(['sshstaging']) {
-			          sh """ssh -tt ubuntu@stagingIp << EOF 
+		       sshagent(['staging']) {
+			          sh """ssh -tt ubuntu@3.16.196.105 << EOF 
 				    cd authenticationservice/docker-compose-deployment/
 				    docker-compose build
 				    docker-compose up -d
