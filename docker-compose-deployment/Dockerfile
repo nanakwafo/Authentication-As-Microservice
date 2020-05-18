@@ -22,4 +22,3 @@ WORKDIR /var/www/html
 EXPOSE 9000
 
 CMD bash -c "composer install"
-T
