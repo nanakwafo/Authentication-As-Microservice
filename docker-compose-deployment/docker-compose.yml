@@ -8,6 +8,7 @@ services:
   nginx:
     image: nginx:stable-alpine
     container_name: "${COMPOSE_PROJECT_NAME}_microservice-nginx"
+    restart: always
     ports:
       - "8088:80"
     volumes:
