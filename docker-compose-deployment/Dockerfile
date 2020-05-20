@@ -21,4 +21,4 @@ WORKDIR /var/www/html
 
 EXPOSE 9000
 
-CMD bash -c "composer install && chmod 755 -R /var/www/html/ && php-fpm"
+CMD bash -c "composer install && chmod 755 -R * && php-fpm"
