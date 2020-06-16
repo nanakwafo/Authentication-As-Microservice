@@ -4,7 +4,7 @@ pipeline {
        
         stage('DeployToStaging') {
 	    //enironment{
-		//   server_user 'staging'  
+		//   server_user = "staging" 
 		//}
             when {
               branch 'master'
