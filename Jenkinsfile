@@ -3,6 +3,9 @@ pipeline {
     stages {
        
         stage('DeployToStaging') {
+	    //enironment{
+		//   server_user 'staging'  
+		//}
             when {
               branch 'master'
             }
@@ -42,6 +45,7 @@ pipeline {
 	stage('Testing'){
 		steps{
                     echo 'Smoke Test completed'
+			echo '${env.BUILD_NUMBER}'
 		}
 	   
 	}
