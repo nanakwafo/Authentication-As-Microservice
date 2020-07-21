@@ -18,7 +18,9 @@ pipeline{
                                          sshTransfer(
                                                sourceFiles : '**/*',
                                                remoteDirectory : '/authenticationservice',
-                                               execCommand : 'echo "success"'
+                                               execCommand : 'cd /home/ubuntu/authenticationservice/docker-compose-deployment &&
+                                                              docker-compose build &&
+                                                              docker-compose up -d'
                                                )
                                      ]
                                 )

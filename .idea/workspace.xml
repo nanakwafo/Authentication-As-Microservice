@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57f5f80e-589c-48ab-be34-2f07da32eac8" name="Default" comment="" />
+    <list default="true" id="57f5f80e-589c-48ab-be34-2f07da32eac8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -225,7 +228,7 @@
       <workItem from="1587681186587" duration="1878000" />
       <workItem from="1587841171080" duration="125000" />
       <workItem from="1589836908137" duration="3653000" />
-      <workItem from="1595360996183" duration="2826000" />
+      <workItem from="1595360996183" duration="4398000" />
     </task>
     <servers />
   </component>
