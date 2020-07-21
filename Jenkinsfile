@@ -1,13 +1,9 @@
-pipeline
- {
+pipeline{
     agent any
         stages {
 
             stage('staging') {
 
-                 when {
-                       branch 'master'
-                      }
                  steps
                      {
 
@@ -28,9 +24,10 @@ pipeline
                                 )
                              ]
                           )
-                      }
-             }
+
+                 }
         }
 
      }
+
  }
