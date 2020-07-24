@@ -18,7 +18,7 @@ pipeline{
                                          sshTransfer(
                                                sourceFiles : '**/*',
                                                remoteDirectory : '/authenticationservice',
-                                               execCommand : 'chown -R ubuntu: /home/ubuntu/authenticationservice/docker-compose-deployment/authentication-mysql && cd /home/ubuntu/authenticationservice/docker-compose-deployment && docker-compose build && docker-compose up -d'
+                                               execCommand : 'sudo chown -R ubuntu: /home/ubuntu/authenticationservice/docker-compose-deployment/authentication-mysql && cd /home/ubuntu/authenticationservice/docker-compose-deployment && docker-compose build && docker-compose up -d'
                                                )
                                      ]
                                 )
