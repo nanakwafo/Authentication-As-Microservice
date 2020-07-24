@@ -32,6 +32,7 @@ class ForgotpasswordController extends Controller
 
     public function sendMail (Request $request, Response $response)
     {
+        //
        // $this->user = Sentinel::findByCredentials (['login' => $request->email]);validate ($request, $this->validationrule->validateActivationUserRule ());
 
         $forgotpassword =json_decode (file_get_contents ('http://3.91.94.89:8083/notification/email/forgotpasswordmail' . urlencode($request->email) ), true);
