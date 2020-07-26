@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="57f5f80e-589c-48ab-be34-2f07da32eac8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose-deployment/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-deployment/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +229,7 @@
       <workItem from="1589836908137" duration="3653000" />
       <workItem from="1595360996183" duration="5134000" />
       <workItem from="1595629325006" duration="2270000" />
-      <workItem from="1595779408586" duration="2271000" />
+      <workItem from="1595779408586" duration="4880000" />
     </task>
     <servers />
   </component>
@@ -244,6 +243,12 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2486" y="242" key="RollbackChangesDialog" timestamp="1595794928587">
+      <screen x="1792" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2486" y="242" key="RollbackChangesDialog/1792.23.1920.1057/0.23.1792.1037@1792.23.1920.1057" timestamp="1595794928587" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
