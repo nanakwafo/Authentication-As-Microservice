@@ -24,7 +24,7 @@ services:
     container_name: "${COMPOSE_PROJECT_NAME}_microservice-nginx"
     restart: always
     ports:
-      - "8080:80"
+      - "80:80"
       - "443:443"
     volumes:
       - ../authentication-src:/var/www/html
