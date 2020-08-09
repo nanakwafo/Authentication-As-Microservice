@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="57f5f80e-589c-48ab-be34-2f07da32eac8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-deployment/authentication-mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-deployment/authentication-mysql/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-deployment/authentication-mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-deployment/authentication-mysql/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-deployment/authentication-mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-deployment/authentication-mysql/ibtmp1" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,6 +234,8 @@
       <workItem from="1595629325006" duration="2270000" />
       <workItem from="1595779408586" duration="5978000" />
       <workItem from="1595796304024" duration="2186000" />
+      <workItem from="1596755096232" duration="938000" />
+      <workItem from="1596918396611" duration="709000" />
     </task>
     <servers />
   </component>
