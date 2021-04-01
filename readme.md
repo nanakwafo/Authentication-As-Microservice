@@ -12,10 +12,10 @@
 ## Api Documentation
 Documentation for this can be found on the [Auth as a microservice](https://documenter.getpostman.com/view/1213803/SzKPWhH9?version=latest)
 
-## Setup Instruction
+## Setup/Run Instruction
 
 #Run the app using docker compose
-` docker-compose build && docker-compose up -d`&
+`docker-compose build && docker-compose up -d`&
 #Run the app using docker stack
 `docker stack deploy -c docker-stack.yml authservice`&
 `docker stack ls`&
