@@ -1,12 +1,9 @@
 
-## Architectural Diagrams
-
-
+## Architectural Diagram
 
 ![alt text](https://github.com/nanakwafo/authmicroservice/blob/master/authentication-design/images/icon1.png "Logo Title Text 1")
 
-## Database Diagrams
-
+## Database Diagram
 ![alt text](https://github.com/nanakwafo/authmicroservice/blob/master/authentication-design/images/icon3.png "Logo Title Text 1")
 
 ## Api Documentation
