@@ -14,7 +14,7 @@ Documentation for this can be found on the [Auth as a microservice](https://docu
 
 ## Setup/Run Instruction
 
-#Run the app using docker compose
+#Run the app using docker compose <br />
 `docker-compose build && docker-compose up -d`&
 #Run the app using docker stack
 `docker stack deploy -c docker-stack.yml authservice`&
